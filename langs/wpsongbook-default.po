@@ -1,0 +1,188 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Advanced meta info widget\n"
+"POT-Creation-Date: 2013-10-30 16:06+0100\n"
+"PO-Revision-Date: 2013-10-30 16:06+0100\n"
+"Last-Translator: Sjiamnocna <jancikuvmail@gmail.com>\n"
+"Language-Team: \n"
+"Language: cs_cz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: ../inc\n"
+
+#: ../inc/wpsongs-listshortc.php:49
+msgid "Display whole song"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:4
+msgid "Authors"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:5
+msgid "Author"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:6
+msgid "Search authors"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:7
+msgid "Popular authors"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:8
+msgid "All authors"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:11
+msgid "Edit author"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:12
+msgid "Update author"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:13
+msgid "Add new author"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:14
+msgid "New author name"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:15
+msgid "Separate authors by commas"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:16
+msgid "Add or remove authors"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:17
+msgid "Choose from most used authors"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:18
+msgid "No authors found"
+msgstr ""
+
+#: ../inc/wpsongs-custaxons.php:19
+msgid "Song authors"
+msgstr ""
+
+#: ../inc/wpsongs-contenthooks.php:3
+msgid "Authors: "
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:4
+msgid "How to use songbook plugin"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:5
+msgid ""
+"Using this plugin is very simple. Plugin allows you to add own posts called "
+"song, then you can set it with Authors name and then add some files to it. "
+"I'm trying to make it easy for all users even they're not interested with "
+"wordpress and just needs add contentwpsongbook"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:6
+msgid "Adding songs"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:7
+msgid ""
+"You can add songs simple with clicking on Add new song. You set title, "
+"lyrics, author and you publish it.wpsongbook"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:8
+msgid "Managing authors"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:9
+msgid ""
+"Managing authors is as simple as categories. You can simple add authors name "
+"(if you want you can add description too) and save it. Than you can chose "
+"author/s in edit song screen. Author names shoud appear on single song "
+"output.wpsongbook"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:10
+msgid "Listing songs on public"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:11
+msgid ""
+"For listing all songs you should create page and add shortcode [songbook] in "
+"it. I'll be replaced with alphabet ordered song listwpsongbook"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:15
+msgid "How to use"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:5 ../inc/wpsongs-cuspt.php:17
+msgid "Songs"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:6
+msgid "Song"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:7
+msgid "Add new"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:8
+msgid "Add new song"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:9
+msgid "Edit song"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:10
+msgid "New song"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:11
+msgid "All songs"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:12
+msgid "View song"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:13
+msgid "Search songs"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:14
+msgid "No song found"
+msgstr ""
+
+#: ../inc/wpsongs-cuspt.php:15
+msgid "No song found in trash"
+msgstr ""
+
+#: ../inc/wpsongs-widget.php:8
+msgid "Widget to work with CPT song"
+msgstr ""
+
+#: ../inc/wpsongs-widget.php:10 ../inc/wpsongs-widget.php:37
+msgid "Songbook widget"
+msgstr ""
+
+#: ../inc/wpsongs-widget.php:42
+msgid "Title:"
+msgstr ""
+
+#: ../inc/wpsongs-widget.php:46
+msgid "Count of entries displayed:"
+msgstr ""
