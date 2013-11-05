@@ -8,7 +8,7 @@ function songbook_manpage(){
 	echo'<h3>'.__('Managing authors','wpsongbook').'</h3>';
     echo'<div style="display:block;width:98%;margin:5px auto;">'.__('Managing authors is as simple as categories. You can simple add authors name (if you want you can add description too) and save it. Than you can chose author/s in edit song screen. Author names shoud appear on single song output.','wpsongbook').'</div>';
     echo'<h3>'.__('Listing songs on public','wpsongbook').'</h3>';
-    echo'<div style="display:block;width:98%;margin:5px auto;">'.__('For list of all songs you should create page and add shortcode [songbook_listsongs] in it. I\'ll be replaced with alphabet ordered song list. Than you can put it into your menu or link it from anywhere you want.'.'wpsongbook').'</div>';
+    echo'<div style="display:block;width:98%;margin:5px auto;">'.__('For list of all songs you should create page and add shortcode [songbook_listsongs] in it. It\'ll be replaced with alphabet ordered song list. Than you can put it into your menu or link it from anywhere you want.','wpsongbook').'</div>';
     echo'</div>';
 }
 /*function songbook_settpage(){

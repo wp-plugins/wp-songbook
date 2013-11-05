@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Advanced meta info widget\n"
-"POT-Creation-Date: 2013-10-30 16:06+0100\n"
-"PO-Revision-Date: 2013-10-30 16:06+0100\n"
+"POT-Creation-Date: 2013-11-03 19:48+0100\n"
+"PO-Revision-Date: 2013-11-03 19:48+0100\n"
 "Last-Translator: Sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "Language: cs_cz\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPath-1: ../inc\n"
 
-#: ../inc/wpsongs-listshortc.php:49
+#: ../inc/wpsongs-listshortc.php:57 ../inc/wpsongs-listshortc_1.php:61
 msgid "Display whole song"
 msgstr ""
 
@@ -75,7 +75,7 @@ msgstr ""
 msgid "Song authors"
 msgstr ""
 
-#: ../inc/wpsongs-contenthooks.php:3
+#: ../inc/wpsongs-contenthooks.php:3 ../inc/wpsongs-contenthooks.php:4
 msgid "Authors: "
 msgstr ""
 
@@ -88,7 +88,7 @@ msgid ""
 "Using this plugin is very simple. Plugin allows you to add own posts called "
 "song, then you can set it with Authors name and then add some files to it. "
 "I'm trying to make it easy for all users even they're not interested with "
-"wordpress and just needs add contentwpsongbook"
+"wordpress and just needs add content"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:6
@@ -98,7 +98,7 @@ msgstr ""
 #: ../inc/wpsongs-addadminsettings.php:7
 msgid ""
 "You can add songs simple with clicking on Add new song. You set title, "
-"lyrics, author and you publish it.wpsongbook"
+"lyrics, author and you publish it."
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:8
@@ -110,7 +110,7 @@ msgid ""
 "Managing authors is as simple as categories. You can simple add authors name "
 "(if you want you can add description too) and save it. Than you can chose "
 "author/s in edit song screen. Author names shoud appear on single song "
-"output.wpsongbook"
+"output."
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:10
@@ -119,11 +119,12 @@ msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:11
 msgid ""
-"For listing all songs you should create page and add shortcode [songbook] in "
-"it. I'll be replaced with alphabet ordered song listwpsongbook"
+"For list of all songs you should create page and add shortcode "
+"[songbook_listsongs] in it. I'll be replaced with alphabet ordered song "
+"list. Than you can put it into your menu or link it from anywhere you want."
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:15
+#: ../inc/wpsongs-addadminsettings.php:21
 msgid "How to use"
 msgstr ""
 
