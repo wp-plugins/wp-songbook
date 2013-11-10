@@ -1,6 +1,6 @@
-=== Advanced meta widget ===
+=== WP Songbook ===
 Contributors: Sjiamnocna
-Tags: meta, widget, loginout, redirect, info, admin, user
+Tags: songbook, songs, custom post type, lyrics, info
 Requires at least: 2.7
 Tested up to: 3.5.2
 Stable tag: 2.5.8

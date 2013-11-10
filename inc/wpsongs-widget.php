@@ -6,7 +6,7 @@ function songbook_widget() {
 class songbook_widget extends WP_Widget {
 	function songbook_widget() {
 		$songbook_widget_ops=array('classname'=>'songbookwidget','description'=>__('Widget to work with CPT song','songbook'));
-		$songbook_control_ops=array('width'=>300,'height'=>350,'id_base'=>'metawidget-widget');
+		$songbook_control_ops=array('width'=>300,'height'=>350,'id_base'=>'songbook-widget');
 		$this->WP_Widget('songbook-widget',__('Songbook widget','songbook'),$songbook_widget_ops,$songbook_control_ops);
 	}
 	function widget($args,$instance){
