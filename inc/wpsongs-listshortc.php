@@ -53,11 +53,11 @@ $songbook_listshquery=array(
 </style>
 <?php
 	while ( have_posts()):the_post();
-            $songbook_songauthors='<span>('.strip_tags(get_the_term_list($post->post_id,'songauthor','',', ')).')</span>';
+            $songbook_songauthors=(get_option('songbook_disp_authorsinshc'))?'<span>('.get_the_term_list($post->post_id,'songauthor','',', ').')</span>':'';
             echo'<p class="songbook_songlist_onesong_infodiv"><a href="'.get_permalink().'" alt="'.__('Display whole song','wpsongbook').'">';
             the_title();
             echo'</a>';
-            if(get_the_term_list($post->post_id,'songauthor'))echo'&nbsp;&nbsp;&nbsp;&nbsp;'.$songbook_songauthors;
+            if($songbook_songauthors)echo'&nbsp;&nbsp;&nbsp;&nbsp;'.$songbook_songauthors;
             echo'</p>';
         endwhile;
         wp_reset_query();
