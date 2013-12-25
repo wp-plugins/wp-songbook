@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Songbook\n"
-"POT-Creation-Date: 2013-12-20 21:43+0100\n"
-"PO-Revision-Date: 2013-12-20 21:43+0100\n"
+"POT-Creation-Date: 2013-12-25 13:10+0100\n"
+"PO-Revision-Date: 2013-12-25 13:10+0100\n"
 "Last-Translator: sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -15,6 +15,7 @@ msgstr ""
 "X-Poedit-SearchPath-1: ../inc\n"
 
 #: ../inc/wpsongs-cuspt-song.php:5 ../inc/wpsongs-cuspt-song.php:17
+#: ../inc/wpsongs-addadminsettings.php:120
 msgid "Songs"
 msgstr ""
 
@@ -58,29 +59,29 @@ msgstr ""
 msgid "No song found in trash"
 msgstr ""
 
-#: ../inc/wpsongs-addmbox-files.php:3 ../inc/wpsongs-addmbox-files.php:31
+#: ../inc/wpsongs-addmbox-files.php:4 ../inc/wpsongs-addmbox-files.php:32
 msgid "Link files"
 msgstr ""
 
-#: ../inc/wpsongs-addmbox-files.php:8
+#: ../inc/wpsongs-addmbox-files.php:9
 msgid "Add files"
 msgstr ""
 
-#: ../inc/wpsongs-addmbox-files.php:20
+#: ../inc/wpsongs-addmbox-files.php:21
 msgid ""
 "No files found attached to this post. You should add anything first. You can "
 "choose more files when you hold CTRL"
 msgstr ""
 
-#: ../inc/wpsongs-addmbox-files.php:29
+#: ../inc/wpsongs-addmbox-files.php:30
 msgid "Really unlink from song?"
 msgstr ""
 
-#: ../inc/wpsongs-addmbox-files.php:30
+#: ../inc/wpsongs-addmbox-files.php:31
 msgid "Choose files to link"
 msgstr ""
 
-#: ../inc/wpsongs-addmbox-files.php:32
+#: ../inc/wpsongs-addmbox-files.php:33
 msgid "Remove file"
 msgstr ""
 
@@ -100,7 +101,11 @@ msgstr ""
 msgid "Count of entries displayed:"
 msgstr ""
 
-#: ../inc/wpsongs-contenthooks.php:4
+#: ../inc/wpsongs-shortcs.php:35
+msgid "Display whole song"
+msgstr ""
+
+#: ../inc/wpsongs-contenthooks.php:28
 msgid "Authors: "
 msgstr ""
 
@@ -155,134 +160,205 @@ msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:19
 msgid ""
-"For attaching files with songs I recommend plugin <strong>WP Simple "
-"Filetopostlinker</strong>, becouse it's very simple for using, and good "
-"cooperating with this plugin."
+"For attaching files with songs you can use a box next to text editor. It's "
+"very simple to use. If you hold CTRL you can choose more files to link and "
+"if you click on cross next to filename, the file would be removed."
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:43
-#: ../inc/wpsongs-addadminsettings.php:102
-msgid "Songbook settings"
+#: ../inc/wpsongs-addadminsettings.php:24
+msgid "Changes:"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:46
-msgid "General plugin settings"
+#: ../inc/wpsongs-addadminsettings.php:25
+msgid "No changes were made. Everything is, at it was :)"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:47
-msgid "Basic control for plugin"
+#: ../inc/wpsongs-addadminsettings.php:26
+msgid "Yes"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:48
-msgid "Allow file linking"
-msgstr ""
-
-#: ../inc/wpsongs-addadminsettings.php:49
-msgid "Allow using authors"
-msgstr ""
-
-#: ../inc/wpsongs-addadminsettings.php:50
-msgid "Allow using widget"
-msgstr ""
-
-#: ../inc/wpsongs-addadminsettings.php:51
-msgid "Allow using list shortcode"
-msgstr ""
-
-#: ../inc/wpsongs-addadminsettings.php:54
-msgid "Capabilities"
-msgstr ""
-
-#: ../inc/wpsongs-addadminsettings.php:55
-msgid "Allow only to users that can"
-msgstr ""
-
-#: ../inc/wpsongs-addadminsettings.php:56
-msgid "Add files to songs"
-msgstr ""
-
-#: ../inc/wpsongs-addadminsettings.php:58
-#: ../inc/wpsongs-addadminsettings.php:66
-#: ../inc/wpsongs-addadminsettings.php:74
-#: ../inc/wpsongs-addadminsettings.php:81
+#: ../inc/wpsongs-addadminsettings.php:27
 msgid "Manage options"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:59
-#: ../inc/wpsongs-addadminsettings.php:67
-msgid "Read private messages"
+#: ../inc/wpsongs-addadminsettings.php:28
+msgid "Read private pages"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:60
-#: ../inc/wpsongs-addadminsettings.php:68
-#: ../inc/wpsongs-addadminsettings.php:75
-#: ../inc/wpsongs-addadminsettings.php:82
+#: ../inc/wpsongs-addadminsettings.php:29
 msgid "Publish posts"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:61
-#: ../inc/wpsongs-addadminsettings.php:69
-#: ../inc/wpsongs-addadminsettings.php:76
-#: ../inc/wpsongs-addadminsettings.php:83
+#: ../inc/wpsongs-addadminsettings.php:30
 msgid "Edit posts"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:62
-#: ../inc/wpsongs-addadminsettings.php:70
-#: ../inc/wpsongs-addadminsettings.php:77
-#: ../inc/wpsongs-addadminsettings.php:84
+#: ../inc/wpsongs-addadminsettings.php:31
+msgid "Manage categories"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:32
 msgid "Read"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:64
+#: ../inc/wpsongs-addadminsettings.php:33
+msgid "Display"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:34
+msgid "Last modified"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:35
+msgid "ID"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:36
+msgid "Title"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:37
+msgid "Random"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:38
+msgid "Ascending order"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:39
+msgid "Descending order"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:40
+#: ../inc/wpsongs-addadminsettings.php:204
+msgid "Songbook settings"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:41
+msgid "General settings"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:42
+msgid "Basic controls of plugin"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:43
+msgid "Allow file linking"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:44
+msgid "Allow adding tempo to song"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:45
+msgid "Allow adding video link"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:46
+msgid "Allow using authors"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:47
+msgid "Allow using widget"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:48
+msgid "Allow using list shortcode"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:49
+msgid "Capabilities"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:50
+msgid "Allow only to users that can"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:51
+msgid "Add files to songs"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:52
 msgid "Manage song video link"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:72
+#: ../inc/wpsongs-addadminsettings.php:53
 msgid "Manage song tempo"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:79
+#: ../inc/wpsongs-addadminsettings.php:54
 msgid "Manage song authors"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:88
+#: ../inc/wpsongs-addadminsettings.php:55
 msgid "Behavior"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:89
+#: ../inc/wpsongs-addadminsettings.php:56
 msgid "Appearance and beavior of publicly visible parts"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:90
+#: ../inc/wpsongs-addadminsettings.php:57
+msgid "Display list of attached files in song listing"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:58
 msgid "Display list of attached files automatically in songs"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:91
-msgid "Display attached files also in song list table as icons"
-msgstr ""
-
-#: ../inc/wpsongs-addadminsettings.php:92
-msgid "Display authors name in song listing"
-msgstr ""
-
-#: ../inc/wpsongs-addadminsettings.php:93
+#: ../inc/wpsongs-addadminsettings.php:59
 msgid "Display authors name in song view"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:101
+#: ../inc/wpsongs-addadminsettings.php:60
+msgid "Display authors name in song listing"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:61
+msgid "Song list defaults"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:62
+msgid ""
+"You should use shortcode [songbook] to display songs list. Here you can "
+"specify your own parameters for list."
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:63
+msgid "Order songs by"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:64
+msgid "Order"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:65
+msgid "Show attached files icons"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:66
+msgid ""
+"Automatically add page with shortcode (use just if you are sure, you didn't "
+"do it yet, otherwise you will have it twice on your wordpress)"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:96
+msgid "No"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:203
 msgid "How to use"
 msgstr ""
 
-#: ../inc/wpsongs-addmbox-aditionals.php:3
+#: ../inc/wpsongs-addmbox-aditionals.php:4
 msgid "Another song properties"
 msgstr ""
 
-#: ../inc/wpsongs-addmbox-aditionals.php:11
+#: ../inc/wpsongs-addmbox-aditionals.php:12
 msgid "Song tempo (BPM):"
 msgstr ""
 
-#: ../inc/wpsongs-addmbox-aditionals.php:13
+#: ../inc/wpsongs-addmbox-aditionals.php:14
 msgid "Video link:"
 msgstr ""
 
@@ -340,8 +416,4 @@ msgstr ""
 
 #: ../inc/wpsongs-cuspt-tax-author.php:19
 msgid "Song authors"
-msgstr ""
-
-#: ../inc/wpsongs-listshortc.php:57
-msgid "Display whole song"
 msgstr ""

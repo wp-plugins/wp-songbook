@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP songbook
  * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with song. In future there should be more features as Import from OpenLP and others.
- * Version: 0.9.3
+ * Version: 1.0
  * Text Domain: wpsongbook
  * Domain Path: /langs
  * Author: Sjiamnocna
@@ -17,14 +17,18 @@ function songbook_plugin_init(){
   include_once(plugin_dir_path(__FILE__).'inc/wpsongs-addmbox-aditionals.php');
 // dont include still not working part
 //  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-widget.php');
-  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-listshortc.php');
+  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-shortcs.php');
   include_once(plugin_dir_path(__FILE__).'inc/wpsongs-contenthooks.php');
   include_once(plugin_dir_path(__FILE__).'inc/wpsongs-addadminsettings.php');
 }
 add_action('plugins_loaded','songbook_plugin_init');
+//inc/wpsongs-cuspt-song.php
 add_action('init','songbook_cptbase');
-add_action('init','songbook_authortax');
+add_action('admin_menu','songbook_remove_cpt_onroles');
 add_action('admin_menu','songbook_cptremoveboxes');
+//inc/wpsongs-cuspt-tax-author
+add_action('init','songbook_authortax');
+//inc/wpsongs-addadminsettings.php
 add_action('admin_menu','songbook_registeradminlinks');
 //inc/wpsongs-addmbox-files.php
 add_action('add_meta_boxes','songbook_add_metabox_linkfile');
@@ -33,4 +37,10 @@ add_action('admin_enqueue_scripts','songbook_enqueue_admin_scr');
 //inc/wpsongs-addmbox-aditionals.php
 add_action('add_meta_boxes','songbook_add_metabox_aditionals');
 add_action('save_post','songbook_save_aditionals');
+//inc/wpsongs-shortcs.php
+add_shortcode('songbook','songbook_shc');
+//inc/wpsongs-contenthooks.php
+add_filter('the_content','songbook_contentfilter');
+add_filter('the_time','songbook_timeremover');
+add_filter('the_date','songbook_timeremover');
 ?>

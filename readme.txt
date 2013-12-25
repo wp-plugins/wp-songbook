@@ -27,6 +27,10 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 
 == Changelog ==
 
+= 1.0 =
+*Its great to tell, all basic things are working well :)
+*After saving settings you know what was changed.
+*If you have any problem or idea, let me know.
 = 0.9.3 =
 *Finally added songbook settings page and fixed troubles with metaboxes
 = 0.9.2 =
