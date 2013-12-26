@@ -15,20 +15,25 @@ WP Songbook adds opportunity to manage song lyrics on their Wordpress based blog
 
 == Screenshots ==
 
-1. Plugin screen
-2. How it appears in admin menu(v0.9.1)
-3. Adding new song
-4. Managing authors
-5. Simple "How to use" guide
-
+1. Right after activation you will see this added in your menu
+2. It's about simplycity for basic knowledge people
+3. Managing Authors
+4. Adding song with lyrics and files
+5. Very nice new boxes to add song properties and files
+6. Normal post list
+7. Listing songs is as simple as on this picture.
+8. If you need to deactivate, you still can, but I hope you'll not need it
+9. When you have problem, you can even set some options to make it better :)
 == Installation ==
 
 Unpack archive contents into plugin folder (/wp-content/plugins/) and activate it in Wordpress admin. You should see a bookmark "Songs" after activation. Thats all. Enjoy :)
 
 == Changelog ==
 
+= 1.0.2 =
+*Im very sorry for that troubles I made you. Now it shouldn't happen anymore. Hope :)
 = 1.0.1 =
-*Bug: last version, after wordpress install on some hostings causes error
+*Bug: last version, after wordpress installation on some hostings causes error
 = 1.0 =
 *Its great to tell, all basic things are working well :)
 *After saving settings you know what was changed.
@@ -41,4 +46,3 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 *Solved trouble with displaying, shortcodes and added new feature - Widget for displaying newest songs
 = 0.9 =
 *Added to repository, still not finished but stable. Adds CPT Song, Taxonomy Author and some plugin "guide of use" to Wordpress installation
-
