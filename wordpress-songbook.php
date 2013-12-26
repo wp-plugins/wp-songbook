@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP songbook
  * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with song. In future there should be more features as Import from OpenLP and others.
- * Version: 1.0
+ * Version: 1.0.1
  * Text Domain: wpsongbook
  * Domain Path: /langs
  * Author: Sjiamnocna

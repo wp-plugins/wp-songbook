@@ -27,6 +27,8 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 
 == Changelog ==
 
+= 1.0.1 =
+*Bug: last version, after wordpress install on some hostings causes error
 = 1.0 =
 *Its great to tell, all basic things are working well :)
 *After saving settings you know what was changed.
