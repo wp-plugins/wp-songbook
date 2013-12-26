@@ -10,16 +10,16 @@
  */
 function songbook_plugin_init(){
   load_plugin_textdomain('wpsongbook',false,'wp-songbook/langs/');
-  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-functions.php');
-  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-cuspt-song.php');
-  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-cuspt-tax-author.php');
-  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-addmbox-files.php');
-  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-addmbox-aditionals.php');
+  include_once('inc/wpsongs-functions.php');
+  include_once('inc/wpsongs-cuspt-song.php');
+  include_once('inc/wpsongs-cuspt-tax-author.php');
+  include_once('inc/wpsongs-addmbox-files.php');
+  include_once('inc/wpsongs-addmbox-aditionals.php');
 // dont include still not working part
-//  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-widget.php');
-  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-shortcs.php');
-  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-contenthooks.php');
-  include_once(plugin_dir_path(__FILE__).'inc/wpsongs-addadminsettings.php');
+//  include_once('inc/wpsongs-widget.php');
+  include_once('inc/wpsongs-shortcs.php');
+  include_once('inc/wpsongs-contenthooks.php');
+  include_once('inc/wpsongs-addadminsettings.php');
 }
 add_action('plugins_loaded','songbook_plugin_init');
 //inc/wpsongs-cuspt-song.php
