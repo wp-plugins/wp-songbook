@@ -1,0 +1,91 @@
+/*
+    Name: Theme for admin screen - WP songbook
+    Author: sjiamnocna
+*/
+#obal{
+    width:99%;
+    margin:0px auto;
+}
+#obal.onefile{
+    display:block;
+    margin:0px 1px;
+    width:100%;
+    font-size:110%;
+    font-weight:bold;
+    color:gray;
+    cursor:default;
+}
+#obal p{
+    cursor:default;
+    margin:0px;
+    padding:4px 2%;
+}
+#obal p:hover{
+    background:#e5e5e5;
+}
+#obal.onefile.removeele{
+    color:red !important;
+    cursor:pointer !important;
+}
+#addfile_button{
+    width:99%;
+    margin:5px auto;
+    height:45px;
+    font-size:150%;
+}
+.wrap>.successupd h3{
+    font-weight:bold;
+    color:graytext;
+    margin:3px 10px;
+}
+.wrap>.successupd ul{
+    margin:2px 10px;
+}
+.wrap>.successupd ul li{
+    margin:1px;
+}
+.wrap>.successupd{
+    background:rgba(120,210,120,0.6);
+    color:#000F60;
+    padding:3px;
+    border:2px solid gray;
+}
+.wrap>form .oddil{
+    display:block;
+    width:75%;
+    margin:20px 5px;
+    padding:5px;
+}
+.wrap>form .oddil:hover{
+    background:rgba(160,220,160,0.4);
+}
+.wrap>form .oddil > .poznamka{
+    font-style:italic;
+    margin:0px 0px 0.5cm 2px;
+    font-size:98%;
+    color:graytext;
+}
+.wrap>form .oddil h3{
+    margin:5px 10px 3px;
+    padding:0px;
+    font-size:120%;
+    color:#666600;
+}
+.wrap>form .oddil select{
+    margin-bottom:10px;
+}
+.wrap>form .oddil input{
+    margin-bottom:3px;
+}
+.wrap>form .oddil input[type="submit"]{
+    margin:10px auto;
+}
+.wrap>form .oddil label{
+    display:block;
+}
+.wrap>form .oddil>#songbook_autoaddshcpage{
+    background:red;
+    color:white;
+    border:1px solid blue;
+    padding:5px;
+}
