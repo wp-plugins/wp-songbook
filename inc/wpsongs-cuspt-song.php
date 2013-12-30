@@ -39,7 +39,7 @@ function songbook_cptremoveboxes() {
  remove_meta_box('authordiv','song','normal'); //removes author 
 }
 function songbook_remove_cpt_onroles() {
-    if( !current_user_can('publish_posts') ){
+    if( !current_user_can('edit_posts') ){
       remove_menu_page('edit.php?post_type=song');
     }
 }

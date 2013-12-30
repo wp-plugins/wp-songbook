@@ -33,18 +33,18 @@
     height:45px;
     font-size:150%;
 }
-.wrap>.successupd h3{
+.wrap>form>.successupd h3{
     font-weight:bold;
     color:graytext;
     margin:3px 10px;
 }
-.wrap>.successupd ul{
+.wrap>form>.successupd ul{
     margin:2px 10px;
 }
-.wrap>.successupd ul li{
+.wrap>form>.successupd ul li{
     margin:1px;
 }
-.wrap>.successupd{
+.wrap>form>.successupd{
     background:rgba(120,210,120,0.6);
     color:#000F60;
     padding:3px;

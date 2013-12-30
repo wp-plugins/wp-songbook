@@ -1,16 +1,17 @@
 <?php
-//seznam příspěvků/odkaz na výstup + info o písni (v parametrech)
-function songbook_shc(){
+function songbook_pluginlistshc($songbook_toedit){
+    if(get_the_ID()!=get_option('songbook_shcdefs_listpageid'))return$songbook_toedit;
+    $songbooklist_result=(get_option('songbook_shcdefs_showintext'))?$songbook_toedit:'';
 $songbook_listshquery=array(
 	   	'post_type'=>'song',
                 'nopaging'=>true,
-                'orderby'=>'title',
+                'orderby'=>(get_option('songbook_shcdefs_orderby'))?get_option('songbook_shcdefs_orderby'):'title',
                 'order'=>(get_option('songbook_shcdefs_order'))?get_option('songbook_shcdefs_order'):'desc',
 	   	'posts_per_page'=>-1
 	);
 	query_posts($songbook_listshquery);
-        if(have_posts()){ ?>
-<style type="text/css">
+        if(have_posts()){ $songbooklist_result=
+'<style type="text/css">
     .songbook_songlist{
         width:97%;
         margin:5px auto;
@@ -23,21 +24,17 @@ $songbook_listshquery=array(
     .songbook_songlist>tbody>tr>.songbook_songlist_onesong_info{
         width:70%;
     }
-</style>
-<?php
-if(have_posts()){
-    $songbooklist_result='<table class="songbook_songlist">';
+</style>';
+    $songbooklist_result.='<table class="songbook_songlist">';
 	while ( have_posts()):the_post();
             $songbooklist_result.='<tr>';
             $songbooklist_result.='<td class="songbook_songlist_onesong_info">';
             $songbook_songauthors=(get_option('songbook_disp_authorsinshc'))?'<span>('.strip_tags(get_the_term_list($post->post_id,'songauthor','',', ')).')</span>':'';
             $songbook_files=(get_option('songbook_disp_filelistinshc')=='display'&&get_post_meta(get_the_ID(),'songbook_filebox',true))?explode(',',get_post_meta(get_the_ID(),'songbook_filebox',true)):false;
-            $songbooklist_result.='<a href="'.get_permalink().'" alt="'.__('Display whole song','wpsongbook').'">';
-            the_title();
-            $songbooklist_result.='</a>';
+            $songbooklist_result.='<a href="'.get_permalink().'" alt="'.__('Display whole song','wpsongbook').'">'.get_the_title().'</a>';
             if($songbook_songauthors)$songbooklist_result.='&nbsp;'.$songbook_songauthors;
             $songbooklist_result.='</td>';
-            if(is_user_logged_iechon()&&$songbook_files){
+            if(is_user_logged_in()&&$songbook_files){
             $songbooklist_result.='<td>';
             foreach ($songbook_files as $songbook_toicon_onefile){
                 $songbook_file_ext=pathinfo(wp_get_attachment_url($songbook_toicon_onefile),PATHINFO_EXTENSION);
@@ -52,7 +49,6 @@ if(have_posts()){
             $songbooklist_result.='</tr>';
         endwhile;
         $songbooklist_result.='</table>';
-        }
         wp_reset_query();
         }
         if($songbooklist_result)return$songbooklist_result;

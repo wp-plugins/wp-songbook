@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Songbook\n"
-"POT-Creation-Date: 2013-12-25 13:09+0100\n"
-"PO-Revision-Date: 2013-12-25 13:10+0100\n"
+"POT-Creation-Date: 2013-12-30 15:52+0100\n"
+"PO-Revision-Date: 2013-12-30 16:01+0100\n"
 "Last-Translator: sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
@@ -15,7 +15,10 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../inc/wpsongs-cuspt-song.php:5 ../inc/wpsongs-cuspt-song.php:17
-#: ../inc/wpsongs-addadminsettings.php:120
+#: ../inc/wpsongs-addadminsettings.php:110
+#: ../inc/wpsongs-addadminsettings.php:111
+#: ../inc/wpsongs-addadminsettings.php:118
+#: ../inc/wpsongs-addadminsettings.php:123
 msgid "Songs"
 msgstr "Písně"
 
@@ -103,11 +106,11 @@ msgstr "Název:"
 msgid "Count of entries displayed:"
 msgstr "Počet zobrazovaných písní:"
 
-#: ../inc/wpsongs-shortcs.php:35
+#: ../inc/wpsongs-shortcs.php:34
 msgid "Display whole song"
 msgstr "Zobrazit celou píseň"
 
-#: ../inc/wpsongs-contenthooks.php:28
+#: ../inc/wpsongs-contenthooks.php:30
 msgid "Authors: "
 msgstr "Autoři:"
 
@@ -161,14 +164,11 @@ msgstr "Seznam písní"
 
 #: ../inc/wpsongs-addadminsettings.php:16
 msgid ""
-"For list of all songs you should create page and add shortcode "
-"[songbook_listsongs] in it. It'll be replaced with alphabet ordered song "
-"list. Than you can put it into your menu or link it from anywhere you want."
+"For list of all songs you should create page and set the song list on "
+"options page."
 msgstr ""
-"Pro zobrazení seznamu všech písní, vytvořte stránku a vložte do ní kód "
-"[songbook_listsongs]. Tento kód bude při zobrazování na webu nahrazen za "
-"abecedně řazený seznam písní. Potom tuto stránku můžete přidat do menu, nebo "
-"ji odkazovat odkudkoliv chcete."
+"Seznam písní se vkládá do stránek, a je možné jej pozměnit či změnit v "
+"nastavení."
 
 #: ../inc/wpsongs-addadminsettings.php:18
 msgid "Attaching files into songs"
@@ -250,7 +250,7 @@ msgid "Descending order"
 msgstr "Sestupné pořadí"
 
 #: ../inc/wpsongs-addadminsettings.php:40
-#: ../inc/wpsongs-addadminsettings.php:204
+#: ../inc/wpsongs-addadminsettings.php:231
 msgid "Songbook settings"
 msgstr "Nastavení zpěvníku"
 
@@ -323,42 +323,56 @@ msgid "Display list of attached files in song listing"
 msgstr "Zobrazovat připojené soubory v seznamu písní"
 
 #: ../inc/wpsongs-addadminsettings.php:58
+msgid "Show attached files only to logged-in users"
+msgstr "Zobrazit připojené soubory jen přihlášeným uživatelům"
+
+#: ../inc/wpsongs-addadminsettings.php:59
 msgid "Display list of attached files automatically in songs"
 msgstr "Zobrazovat připojené soubory automaticky v písních"
 
-#: ../inc/wpsongs-addadminsettings.php:59
+#: ../inc/wpsongs-addadminsettings.php:60
 msgid "Display authors name in song view"
 msgstr "Zobrazit jména autorů při čtení textu písně"
 
-#: ../inc/wpsongs-addadminsettings.php:60
+#: ../inc/wpsongs-addadminsettings.php:61
 msgid "Display authors name in song listing"
 msgstr "Zobrazovat jména autorů v seznamu písní"
 
-#: ../inc/wpsongs-addadminsettings.php:61
+#: ../inc/wpsongs-addadminsettings.php:62
 msgid "Song list defaults"
 msgstr "Nastavení seznamu písní"
 
-#: ../inc/wpsongs-addadminsettings.php:62
-msgid ""
-"You should use shortcode [songbook] to display songs list. Here you can "
-"specify your own parameters for list."
-msgstr ""
-"Měli byste používat krátký kód [songbook] ke zobrazení seznamu písní. Zde "
-"můžete nastavit vlastní parametry pro tento seznam."
-
 #: ../inc/wpsongs-addadminsettings.php:63
+msgid ""
+"You should use this options to set behavior of song list. You can specify "
+"own parameters to song list lookout."
+msgstr "Měli byste používat tyto možnosti k nastavení chování seznamu písní"
+
+#: ../inc/wpsongs-addadminsettings.php:64
+msgid "Show songlist on this page"
+msgstr "Zobrazit seznam písní na této stránce"
+
+#: ../inc/wpsongs-addadminsettings.php:65
+msgid ""
+"Show list of songs after text of selected page (or replace it's whole "
+"content))"
+msgstr ""
+"Zobrazit seznam písní až po obsahu vybrané stránky (v opačném případě "
+"nahrazuje celý její obsah)"
+
+#: ../inc/wpsongs-addadminsettings.php:66
 msgid "Order songs by"
 msgstr "Řadit písně podle"
 
-#: ../inc/wpsongs-addadminsettings.php:64
+#: ../inc/wpsongs-addadminsettings.php:67
 msgid "Order"
 msgstr "Pořadí"
 
-#: ../inc/wpsongs-addadminsettings.php:65
+#: ../inc/wpsongs-addadminsettings.php:68
 msgid "Show attached files icons"
 msgstr "Zobrazit ikony připojených souborů"
 
-#: ../inc/wpsongs-addadminsettings.php:66
+#: ../inc/wpsongs-addadminsettings.php:69
 msgid ""
 "Automatically add page with shortcode (use just if you are sure, you didn't "
 "do it yet, otherwise you will have it twice on your wordpress)"
@@ -367,13 +381,51 @@ msgstr ""
 "že jste to již v minulosti neudělali, v opačném případě budete mít stránku v "
 "systému dvakrát)"
 
-#: ../inc/wpsongs-addadminsettings.php:96
+#: ../inc/wpsongs-addadminsettings.php:103
 msgid "No"
 msgstr "Ne"
 
-#: ../inc/wpsongs-addadminsettings.php:203
+#: ../inc/wpsongs-addadminsettings.php:110
+msgid "Page was added yet. You shouldn't have it twice :)"
+msgstr "Stránka byla již přidána. Neměli byste ji na webu mít vícekrát :)"
+
+#: ../inc/wpsongs-addadminsettings.php:122
+msgid ""
+"Page was added correctly. You should set it in settings below and then just "
+"place it into your menu :)"
+msgstr ""
+"Stránka byla úspěšně přidána. Musíte ji však ještě ručně nastavit pro výpis "
+"písní, v možnostech níže. Potom vám nic nebrání umístit ji do menu :)"
+
+#: ../inc/wpsongs-addadminsettings.php:205
+msgid ""
+"No pages found on your site. You should add some, or use automatical adding "
+"below."
+msgstr ""
+"Žádné stránky nebyly nalezeny. Měli byste nějaké přidat, anebo použít "
+"přidávání možností níže."
+
+#: ../inc/wpsongs-addadminsettings.php:224
+msgid "Save settings"
+msgstr "Uložit nastavení"
+
+#: ../inc/wpsongs-addadminsettings.php:230
+#: ../inc/wpsongs-addadminsettings.php:246
+msgid "Guide"
+msgstr "Příručka"
+
+#: ../inc/wpsongs-addadminsettings.php:230
 msgid "How to use"
 msgstr "Jak používat"
+
+#: ../inc/wpsongs-addadminsettings.php:231
+#: ../inc/wpsongs-addadminsettings.php:235
+msgid "Settings"
+msgstr "Nastavení"
+
+#: ../inc/wpsongs-addadminsettings.php:247
+msgid "Donate me"
+msgstr "Podpořte mně"
 
 #: ../inc/wpsongs-addmbox-aditionals.php:4
 msgid "Another song properties"
@@ -442,6 +494,17 @@ msgstr "Žádný autor nenalezen"
 #: ../inc/wpsongs-cuspt-tax-author.php:19
 msgid "Song authors"
 msgstr "Autoři písní"
+
+#~ msgid ""
+#~ "For list of all songs you should create page and add shortcode "
+#~ "[songbook_listsongs] in it. It'll be replaced with alphabet ordered song "
+#~ "list. Than you can put it into your menu or link it from anywhere you "
+#~ "want."
+#~ msgstr ""
+#~ "Pro zobrazení seznamu všech písní, vytvořte stránku a vložte do ní kód "
+#~ "[songbook_listsongs]. Tento kód bude při zobrazování na webu nahrazen za "
+#~ "abecedně řazený seznam písní. Potom tuto stránku můžete přidat do menu, "
+#~ "nebo ji odkazovat odkudkoliv chcete."
 
 #~ msgid "Display attached files also in song list table as icons"
 #~ msgstr "Zobrazovat připojené soubory také v seznamu písní jako ikony"

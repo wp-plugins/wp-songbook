@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Songbook\n"
-"POT-Creation-Date: 2013-12-25 13:10+0100\n"
-"PO-Revision-Date: 2013-12-25 13:10+0100\n"
+"POT-Creation-Date: 2013-12-30 15:52+0100\n"
+"PO-Revision-Date: 2013-12-30 15:52+0100\n"
 "Last-Translator: sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,10 @@ msgstr ""
 "X-Poedit-SearchPath-1: ../inc\n"
 
 #: ../inc/wpsongs-cuspt-song.php:5 ../inc/wpsongs-cuspt-song.php:17
-#: ../inc/wpsongs-addadminsettings.php:120
+#: ../inc/wpsongs-addadminsettings.php:110
+#: ../inc/wpsongs-addadminsettings.php:111
+#: ../inc/wpsongs-addadminsettings.php:118
+#: ../inc/wpsongs-addadminsettings.php:123
 msgid "Songs"
 msgstr ""
 
@@ -101,11 +104,11 @@ msgstr ""
 msgid "Count of entries displayed:"
 msgstr ""
 
-#: ../inc/wpsongs-shortcs.php:35
+#: ../inc/wpsongs-shortcs.php:34
 msgid "Display whole song"
 msgstr ""
 
-#: ../inc/wpsongs-contenthooks.php:28
+#: ../inc/wpsongs-contenthooks.php:30
 msgid "Authors: "
 msgstr ""
 
@@ -149,9 +152,8 @@ msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:16
 msgid ""
-"For list of all songs you should create page and add shortcode "
-"[songbook_listsongs] in it. It'll be replaced with alphabet ordered song "
-"list. Than you can put it into your menu or link it from anywhere you want."
+"For list of all songs you should create page and set the song list on "
+"options page."
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:18
@@ -230,7 +232,7 @@ msgid "Descending order"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:40
-#: ../inc/wpsongs-addadminsettings.php:204
+#: ../inc/wpsongs-addadminsettings.php:231
 msgid "Songbook settings"
 msgstr ""
 
@@ -303,51 +305,99 @@ msgid "Display list of attached files in song listing"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:58
-msgid "Display list of attached files automatically in songs"
+msgid "Show attached files only to logged-in users"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:59
-msgid "Display authors name in song view"
+msgid "Display list of attached files automatically in songs"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:60
-msgid "Display authors name in song listing"
+msgid "Display authors name in song view"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:61
-msgid "Song list defaults"
+msgid "Display authors name in song listing"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:62
-msgid ""
-"You should use shortcode [songbook] to display songs list. Here you can "
-"specify your own parameters for list."
+msgid "Song list defaults"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:63
-msgid "Order songs by"
+msgid ""
+"You should use this options to set behavior of song list. You can specify "
+"own parameters to song list lookout."
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:64
-msgid "Order"
+msgid "Show songlist on this page"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:65
-msgid "Show attached files icons"
+msgid ""
+"Show list of songs after text of selected page (or replace it's whole "
+"content))"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:66
+msgid "Order songs by"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:67
+msgid "Order"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:68
+msgid "Show attached files icons"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:69
 msgid ""
 "Automatically add page with shortcode (use just if you are sure, you didn't "
 "do it yet, otherwise you will have it twice on your wordpress)"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:96
+#: ../inc/wpsongs-addadminsettings.php:103
 msgid "No"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:203
+#: ../inc/wpsongs-addadminsettings.php:110
+msgid "Page was added yet. You shouldn't have it twice :)"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:122
+msgid ""
+"Page was added correctly. You should set it in settings below and then just "
+"place it into your menu :)"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:205
+msgid ""
+"No pages found on your site. You should add some, or use automatical adding "
+"below."
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:224
+msgid "Save settings"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:230
+#: ../inc/wpsongs-addadminsettings.php:246
+msgid "Guide"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:230
 msgid "How to use"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:231
+#: ../inc/wpsongs-addadminsettings.php:235
+msgid "Settings"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:247
+msgid "Donate me"
 msgstr ""
 
 #: ../inc/wpsongs-addmbox-aditionals.php:4

@@ -1,12 +1,13 @@
 <?php
 /**
  * Plugin Name: WP songbook
- * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with song. In future there should be more features as Import from OpenLP and others.
- * Version: 1.0.1
+ * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with songs. In future there should be more features as Import from OpenLP and others.
+ * Version: 1.1
  * Text Domain: wpsongbook
  * Domain Path: /langs
  * Author: Sjiamnocna
- * Author URI: http://sjiaphoto.g6.cz/wp-songbook
+ * Author URI: http://sjiaphoto.g6.cz/
+ * Plugin URI: http://sjiaphoto.g6.cz/wp-songbook/
  */
 function songbook_plugin_init(){
   load_plugin_textdomain('wpsongbook',false,'wp-songbook/langs/');
@@ -38,8 +39,11 @@ add_action('admin_enqueue_scripts','songbook_enqueue_admin_scr');
 add_action('add_meta_boxes','songbook_add_metabox_aditionals');
 add_action('save_post','songbook_save_aditionals');
 //inc/wpsongs-shortcs.php
-add_shortcode('songbook','songbook_shc');
+//add_shortcode('songbook_songlist','songbook_pluginlistshc');
+add_filter('the_content','songbook_pluginlistshc');
 //inc/wpsongs-contenthooks.php
+add_filter('plugin_action_links_'.plugin_basename(__FILE__),'songbook_pluginspagelink',10,2);
+add_filter('plugin_row_meta','songbook_pluginmetalinks',10,2);
 add_filter('the_content','songbook_contentfilter');
 add_filter('the_time','songbook_timeremover');
 add_filter('the_date','songbook_timeremover');

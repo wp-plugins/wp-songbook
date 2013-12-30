@@ -30,6 +30,9 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 
 == Changelog ==
 
+= 1.0.3 =
+*Fixed some language bugs
+*Added settings and guide links to the plugins page
 = 1.0.2 =
 *Im very sorry for that troubles I made you. Now it shouldn't happen anymore. Hope :)
 = 1.0.1 =
