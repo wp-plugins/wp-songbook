@@ -30,6 +30,17 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 
 == Changelog ==
 
+= 1.1.1 =
+*Fixed bugs with attaching files - didn't save value when no file is chosen
+*Files no more appears in song when they were deleted from Wordpress
+*Improved admin script and style including
+*'till this version automatically adds default settings after install
+= 1.1 =
+*Many key core changes
+*Changed song listing system
+*Now existing page with songs is detected by exist, not by option
+*Updated language files
+*Added option to show files to logged/unlogged users
 = 1.0.3 =
 *Fixed some language bugs
 *Added settings and guide links to the plugins page

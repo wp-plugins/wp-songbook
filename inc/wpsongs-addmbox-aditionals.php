@@ -5,8 +5,8 @@ function songbook_add_metabox_aditionals(){
 }
 function songbook_metabox_aditionals(){
     global $post;
-    if(get_option('songbook_enable_setbpm')=='enable')$songbook_forms_set_values['songbook_tempo_meta']=(get_post_meta($post->ID,'songbook_tempo_meta',true))?get_post_meta($post->ID,'songbook_tempo_meta',true):'85';
-    if(get_option('songbook_enable_setvideolink')=='enable')$songbook_forms_set_values['songbook_video_link']=get_post_meta($post->ID,'songbook_video_link',true);
+    if(get_option('songbook_enable_setbpm')=='enable'&&current_user_can(get_option('songbook_mincap_addtempo')))$songbook_forms_set_values['songbook_tempo_meta']=(get_post_meta($post->ID,'songbook_tempo_meta',true))?get_post_meta($post->ID,'songbook_tempo_meta',true):'85';
+    if(get_option('songbook_enable_setvideolink')=='enable'&&current_user_can(get_option('songbook_mincap_addvideolink')))$songbook_forms_set_values['songbook_video_link']=get_post_meta($post->ID,'songbook_video_link',true);
 echo'<div class="songbook_aditional_meta">';
 echo'<input type="hidden" name="songbook_aditionals_noncename" id="songbook_noncename" value="'.wp_create_nonce(plugin_basename(__FILE__) ).'"/>';
 if(get_option('songbook_enable_setbpm')=='enable'&&current_user_can(get_option('songbook_mincap_addtempo')))echo'<label for="songbook_tempo_meta">'.__('Song tempo (BPM):','wpsongbook').'</label>
