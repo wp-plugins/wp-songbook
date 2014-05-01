@@ -18,8 +18,9 @@ if(get_option('songbook_enable_setvideolink')=='enable'&&current_user_can(get_op
 function songbook_save_aditionals($songbook_postid){
     if(!wp_verify_nonce($_POST['songbook_aditionals_noncename'],plugin_basename(__FILE__)))return$songbook_postid;
     if(defined('DOING_AUTOSAVE')&&DOING_AUTOSAVE)return$songbook_postid;
+    if(!current_user_can(get_option('songbook_mincap_addtempo'))||!current_user_can(get_option('songbook_mincap_addvideolink')))return$songbook_postid;
     $songbook_mbox_resulttosave['songbook_tempo_meta']=$_POST['songbook_tempo_meta'];
     $songbook_mbox_resulttosave['songbook_video_link']=$_POST['songbook_video_link'];
-    if($songbook_mbox_resulttosave['songbook_tempo_meta']&&current_user_can(get_option('songbook_mincap_addtempo')))update_post_meta($songbook_postid,'songbook_tempo_meta',$songbook_mbox_resulttosave['songbook_tempo_meta']);
-    if($songbook_mbox_resulttosave['songbook_video_link']&&current_user_can(get_option('songbook_mincap_addvideolink')))update_post_meta($songbook_postid,'songbook_video_link',$songbook_mbox_resulttosave['songbook_video_link']);
+    update_post_meta($songbook_postid,'songbook_tempo_meta',$songbook_mbox_resulttosave['songbook_tempo_meta']);
+    update_post_meta($songbook_postid,'songbook_video_link',$songbook_mbox_resulttosave['songbook_video_link']);
 }

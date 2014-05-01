@@ -1,0 +1,126 @@
+/*
+    Name: Theme for edit screen - WP songbook
+    Author: sjiamnocna
+*/
+    #songbook_addfile_button{
+        width:100%;
+        height:50px;
+        text-align:center;
+        background:rgb(117, 135, 29);
+        color:whitesmoke;
+        transition:background ease-in-out 0.2s 0s;
+        transition:color ease-in-out 0.2s 0s;
+        transition:border ease-in-out 0.4s 0s;
+        border:1px solid black;
+        padding:10px 5% 5px;
+        margin:5px auto;
+        font-size:150%;
+    }
+    #songbook_addfile_button:hover{
+        background:rgb(100,110,10);
+        border-color:darkgray;
+        border-style:ridge;
+        color:white;
+    }
+    #obal{
+        width:98%;
+        margin:5px auto;
+        background:transparent;
+        min-height:120px;
+    }
+    #obal #defaults{
+        display:none;
+    }
+    #obal #nofile{
+        display:block;
+        width:99%;
+        background:rgba(196, 0, 0,0.15);
+        border:rgba(196, 0, 0,0.2);
+    }
+    .file{
+        display:inline-block;
+        overflow:hidden;
+        margin:4px auto;
+        width:97%;
+        background:rgba(10,25,210,0.15);
+        border-radius:3px;
+        padding:4px 1.5%;
+        border:2px solid rgba(10,25,210,0.2);
+        clear:both;
+    }
+    .file:hover{
+        border:2px solid rgba(10,25,210,0.6);
+    }
+    .file .maininfo{
+        float:left;
+        width:86.5%;
+        margin:0px;
+        padding:0px;
+    }
+    .file > .maininfo .filetitle{
+        display:block;
+        width:98%;
+        margin:0px auto;
+        padding:0px 0.5% 0px 1.5%;
+    }
+    .file > .maininfo .filetitle a{
+        margin:0px auto;
+        color:#00384f;
+        text-decoration:none;
+        padding:2px 1.5% 2px 1.5%;
+        transition:color ease-in-out 0.4s 0.025s;
+    }
+    .file > .maininfo .filetitle a:hover{
+        text-decoration:underline;
+        color:#1a6f91;
+    }
+    .file .exticon{
+        float:left;
+        width:13.5%;
+        margin:0px;
+        padding:0px;
+        cursor:move !important;
+        background-position:50% 50%;
+        height:30px;
+    }
+    .file .toolbar{
+        display:block;
+        margin:0px;
+        opacity:0;
+        padding:3px 1.5%;
+        transition:opacity ease-in 0.2s 0.03s;
+    }
+    .file:hover .toolbar{
+        opacity:1;
+    }
+    .toolbar .toolspan{
+        display:block;
+    }
+    .toolbar .toolspan a{
+        display:block;
+        float:left;
+        cursor:pointer;
+        margin:0px 2px;
+        width:10px;
+        height:10px;
+    }
+    .textch{
+        background:url(../img/textedit.png) no-repeat;
+        background-position:50% 50%;
+        background-size:100% 100%;
+    }
+    .toolbar .remover{
+        background:url(../img/remove.png) no-repeat;
+        background-position:50% 50%;
+        background-size:100% 100%;
+    }
+    .file .unlocked{
+        background:url(../img/lock_unset.png) no-repeat;
+        background-position:50% 50%;
+        background-size:100% 100%;
+    }
+    .file .locked{
+        background:url(../img/lock_set.png) no-repeat;
+        background-position:50% 50%;
+        background-size:100% 100%;
+    }

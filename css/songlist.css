@@ -1,0 +1,19 @@
+    .songbook_songlist{
+        width:97%;
+        margin:5px auto;
+        border-spacing:0px;
+        border-collapse:collapse;
+    }
+    .songbook_songlist tr{
+        height:26px;
+        margin:0px;
+    }
+    .songbook_songlist tr:hover{
+        background:rgba(239, 239, 239,0.5);
+    }
+    .songbook_songlist tr td{
+        padding:3px;
+    }
+    .songbook_songlist>tbody>tr>.songbook_songlist_onesong_info{
+        width:70%;
+    }

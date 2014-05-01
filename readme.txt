@@ -3,15 +3,15 @@ Contributors: sjiamnocna
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: songbook, songs, custom post type, lyrics, info
 Requires at least: 2.7
-Tested up to: 3.7.1
+Tested up to: 3.9
 Stable tag: 0.9
 License: GPLv2 or later
 
-Wordpress plugin, allowing people to manage lyrics and all what has something to do with songs on their Wordpress blog
+Wordpress plugin, that allows people to manage song lyrics, with some recordings and music.
 
 == Description ==
 
-WP Songbook adds opportunity to manage song lyrics on their Wordpress based blog. It's simple tool to add lyrics and authors and share lyrics or other files that helps to learn song.
+WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog. It's simple tool to add lyrics or authors and share lyrics or other files that relates to it. For now it allows set Lyrics, Authors, Files, Youtube link and Speed.
 
 == Screenshots ==
 
@@ -30,8 +30,23 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 
 == Changelog ==
 
+= 1.2 =
+*At first, the files are now working, Im sorry for all troubles
+*You can choose song lyrics wrap element to improve look of the page
+*Fixed icons to fit new WP admin lookup
+*If installing, default settings are automatically added
+*Auto creating new page for song list is now option of song list page select
+*If any file is removed from Wordpress, appears as broken in editor and is no more linked to song after saving
+*Option to show Go Back to song list button in all songs
+*Added second column to plugin settings page
+*Removed list of added files from song list - it only caused errors
+*All styles are now external
+= 1.1.2 =
+*When removing plugin, all settings are removed from database
+*Fixed: If no author is set to song, nothing will appear in song list
 = 1.1.1 =
 *Fixed bugs with attaching files - didn't save value when no file is chosen
+*Fixed bug with listing files and songs
 *Files no more appears in song when they were deleted from Wordpress
 *Improved admin script and style including
 *'till this version automatically adds default settings after install

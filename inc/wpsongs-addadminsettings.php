@@ -5,7 +5,7 @@ function songbook_updateopt($songbook_optname,$songbook_newval){
     update_option($songbook_optname,$songbook_newval);
 }
 function songbook_manpage(){
-    echo'<div class="wrap"><div id="icon-tools" class="icon32" style="background:url('.plugins_url('../img/bass_key_icon.png', __FILE__ ).') no-repeat;width:45px;height:45px;"></div>';
+    echo'<div class="songbook_wrap"><div id="icon-tools" class="icon32" style="background:url('.plugins_url('../img/bass_key_icon.png', __FILE__ ).') no-repeat;width:45px;height:45px;"></div>';
     echo'<h2>'.__('How to use songbook plugin','wpsongbook').'</h2>';
     echo'<div style="display:block;width:98%;margin:5px auto;">'.__('Using this plugin is very simple. Plugin allows you to add own posts called song, then you can set it with Authors name and then add some files to it. I\'m trying to make it easy for all users even they\'re not interested with wordpress and just needs add content','wpsongbook').'</div>';
     echo'<h3>'.__('Adding songs','wpsongbook').'</h3>';
@@ -49,17 +49,22 @@ function songbook_settpage(){
         'songbook_caps_desc'=>__('Allow only to users that can','wpsongbook'),
         'songbook_mincap_addfiles'=>__('Add files to songs','wpsongbook'),
         'songbook_mincap_addvideolink'=>__('Manage song video link','wpsongbook'),
-        'songbook_mincap_addtempo'=>__('Manage song tempo','wpsongbook'),
         'songbook_mincap_manauthor'=>__('Manage song authors','wpsongbook'),
         'songbook_behavior'=>__('Behavior','wpsongbook'),
         'songbook_behavior_desc'=>__('Appearance and beavior of publicly visible parts','wpsongbook'),
-        'songbook_disp_filelistinshc'=>__('Display list of attached files in song listing','wpsongbook'),
+        'songbook_disp_backtolistinsong'=>__('Display link back to song list in song','wpsongbook'),
         'songbook_disp_filelistforlogged'=>__('Display attached files only to logged-in users','wpsongbook'),
         'songbook_disp_filelistinsong'=>__('Display list of attached files automatically in songs','wpsongbook'),
         'songbook_disp_videolinkinshc'=>__('Display video link in song list','wpsongbook'),
         'songbook_disp_videolinkinsong'=>__('Display video link in song (as icon next to song title)','wpsongbook'),
         'songbook_disp_authorsinsong'=>__('Display authors name in song view','wpsongbook'),
         'songbook_disp_authorsinshc'=>__('Display authors name in song listing','wpsongbook'),
+        'songbook_disp_lyrelement'=>__('Wrap song lyrics with','wpsongbook'),
+        'songbook_disp_lyrelement_none'=>__('nothing','wpsongbook'),
+        'songbook_disp_lyrelement_div'=>'&lt;'.__('DIV','wpsongbook').'&gt;',
+        'songbook_disp_lyrelement_blockquote'=>'&lt;'.__('BLOCKQUOTE','wpsongbook').'&gt;',
+        'songbook_disp_lyrelement_pre'=>'&lt;'.__('PRE','wpsongbook').'&gt;',
+        'songbook_disp_lyrelement_code'=>'&lt;'.__('CODE','wpsongbook').'&gt;',
         'songbook_shcdefs'=>__('Song list defaults','wpsongbook'),
         'songbook_shcdefs_desc'=>__('You should use this options to set behavior of song list. You can specify own parameters to song list lookout.','wpsongbook'),
         'songbook_shcdefs_listpageid'=>__('Show songlist on this page','wpsongbook'),
@@ -67,14 +72,15 @@ function songbook_settpage(){
         'songbook_shcdefs_orderby'=>__('Order songs by','wpsongbook'),
         'songbook_shcdefs_order'=>__('Order','wpsongbook'),
         'songbook_shcdefs_showfiles'=>__('Show attached files icons','wpsongbook'),
-        'songbook_autoaddshcpage'=>__('Automatically add page with shortcode (use just if you are sure, you didn\'t do it yet, otherwise you will have it twice on your wordpress)','wpsongbook')
+        'songbook_autoaddshcpage'=>__('Automatically add page','wpsongbook')
     );
     ?>
 <div class="wrap"><div id="icon-tools" class="icon32" style="background:url('<?php plugins_url('../img/settings_screen_icon.png', __FILE__ ) ?>') no-repeat;width:45px;height:45px;"></div>
     <h2><?php echo$songbook_translation['songbook_sets']; ?></h2>
     <form action="#" method="post" id="songbook_settsform">
+    <input type="hidden" name="songbook_settings_noncename" id="songbook_noncename" value="<?php echo wp_create_nonce(plugin_basename(__FILE__)); ?>"/>
 <?php
-    if($_POST['songbook_savesets']){
+    if($_POST['songbook_savesets']&&wp_verify_nonce($_GET['songbook_settings_noncename'],plugin_basename(__FILE__))){
         $songbook_newopts['songbook_enable_filelinking']=$_POST['songbook_enable_filelinking']; //y
         $songbook_newopts['songbook_enable_setbpm']=$_POST['songbook_enable_setbpm']; //y
         $songbook_newopts['songbook_enable_setvideolink']=$_POST['songbook_enable_setvideolink']; //y
@@ -83,15 +89,15 @@ function songbook_settpage(){
         $songbook_newopts['songbook_mincap_workwithsongs']=$_POST['songbook_mincap_workwithsongs']; //y
         $songbook_newopts['songbook_mincap_addfiles']=$_POST['songbook_mincap_addfiles']; //y
         $songbook_newopts['songbook_mincap_addvideolink']=$_POST['songbook_mincap_addvideolink']; //y
-        $songbook_newopts['songbook_mincap_addtempo']=$_POST['songbook_mincap_addtempo']; //y
         $songbook_newopts['songbook_mincap_manauthors']=$_POST['songbook_mincap_manauthors']; //y
-        $songbook_newopts['songbook_disp_filelistinshc']=$_POST['songbook_disp_filelistinshc']; //y
+        $songbook_newopts['songbook_disp_backtolistinsong']=$_POST['songbook_disp_backtolistinsong'];
         $songbook_newopts['songbook_disp_filelistforlogged']=$_POST['songbook_disp_filelistforlogged'];
         $songbook_newopts['songbook_disp_filelistinsong']=$_POST['songbook_disp_filelistinsong']; //y
         $songbook_newopts['songbook_disp_videolinkinshc']=$_POST['songbook_disp_videolinkinshc']; //y
         $songbook_newopts['songbook_disp_videolinkinsong']=$_POST['songbook_disp_videolinkinsong']; //y
         $songbook_newopts['songbook_disp_authorsinshc']=$_POST['songbook_disp_authorsinshc']; //y
         $songbook_newopts['songbook_disp_authorsinsong']=$_POST['songbook_disp_authorsinsong']; //y
+        $songbook_newopts['songbook_disp_lyrelement']=$_POST['songbook_disp_lyrelement'];
         $songbook_newopts['songbook_shcdefs_listpageid']=$_POST['songbook_shcdefs_listpageid'];
         $songbook_newopts['songbook_shcdefs_showintext']=$_POST['songbook_shcdefs_showintext'];
         $songbook_newopts['songbook_shcdefs_orderby']=$_POST['songbook_shcdefs_orderby']; //y
@@ -109,7 +115,7 @@ function songbook_settpage(){
                 songbook_saveopt($songbook_key,$songbook_newopts[$songbook_key]);
             }
         }
-        if($_POST['songbook_autoaddshcpage']){
+        if($_POST['songbook_shcdefs_listpageid']=='autoaddpage'){
             if(get_page_by_title(__('Songs','wpsongbook')))$songbook_translation['added_page']=__('Page was added yet. You shouldn\'t have it twice :)','wpsongbook');
             if(!get_page_by_title(__('Songs','wpsongbook'))){
             $post = array(
@@ -122,22 +128,23 @@ function songbook_settpage(){
                 'post_type'      =>'page'
             );  
             wp_insert_post($post);
-            $songbook_translation['added_page']=__('Page was added correctly. You should set it in settings below and then just place it into your menu :)','wpsongbook');
+            $songbook_translation['added_page']=__('Page was added correctly :)','wpsongbook');
             $songbook_page=get_page_by_title(__('Songs','wpsongbook'));
             songbook_updateopt('songbook_shcdefs_listpageid',$songbook_page->ID);
             }
         }
-        if($songbook_changecount<=0&&!$_POST['songbook_autoaddshcpage'])echo'<li>'.$songbook_translation['no_changes'].'</li>';
-        if($_POST['songbook_autoaddshcpage'])echo$songbook_translation['added_page'];
+        if($songbook_changecount<=0&&($_POST['songbook_shcdefs_listpageid']!='autoaddpage'||$_POST['songbook_shcdefs_listpageid']!=get_option('songbook_shcdefs_listpageid')))echo'<li>'.$songbook_translation['no_changes'].'</li>';
+        if($_POST['songbook_shcdefs_listpageid']=='autoaddpage')echo$songbook_translation['added_page'];
         echo'</ul>';
         echo'</div>';
+    }elseif($_POST['songbook_setdefs']){
+        songbook_setdefaults();
     } ?>
         <div id="fields">
         <div class="oddil">
     <h3><?php echo$songbook_translation['songbook_general']; ?></h3>
             <p class="poznamka"><?php echo$songbook_translation['songbook_general_desc']; ?></p>
                 <input type="checkbox" name="songbook_enable_filelinking" value="enable" <?php checked(get_option('songbook_enable_filelinking'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_filelinking']; ?><br/>
-                <input type="checkbox" name="songbook_enable_setbpm" value="enable" <?php checked(get_option('songbook_enable_setbpm'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_setbpm']; ?><br/>
                 <input type="checkbox" name="songbook_enable_setvideolink" value="enable" <?php checked(get_option('songbook_enable_setvideolink'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_setvideolink']; ?><br/>
                 <input type="checkbox" name="songbook_enable_authorstax" value="enable" <?php checked(get_option('songbook_enable_authorstax'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_authorstax']; ?><br/>
                 <input type="checkbox" name="songbook_enable_widget" value="enable" <?php checked(get_option('songbook_enable_widget'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_widget']; ?>&nbsp;&nbsp;&nbsp;<span style="color:graytext;font-size:102%;font-style:italic;">//still not implemented</span><br/>
@@ -161,13 +168,6 @@ function songbook_settpage(){
                 <option value="edit_posts" <?php selected(get_option('songbook_mincap_addvideolink'),'edit_posts'); ?>>&nbsp;<?php echo$songbook_translation['edit_posts']; ?>
                 <option value="read" <?php selected(get_option('songbook_mincap_addvideolink'),'read')?>>&nbsp;<?php echo$songbook_translation['read']; ?>
             </select>
-        <label for="songbook_mincap_addtempo"><?php echo$songbook_translation['songbook_mincap_addtempo']; ?></label>
-            <select name="songbook_mincap_addtempo" id="songbook_mincap_addtempo">'
-                <option value="manage_options" <?php selected(get_option('songbook_mincap_addtempo'),'manage_options') ?>>&nbsp;<?php echo$songbook_translation['manage_options']; ?>
-                <option value="read_private_pages" <?php selected(get_option('songbook_mincap_addtempo'),'read_private_pages'); ?>>&nbsp;<?php echo$songbook_translation['read_private_pages']; ?>
-                <option value="edit_posts" <?php selected(get_option('songbook_mincap_addtempo'),'edit_posts')?>>&nbsp;<?php echo$songbook_translation['edit_posts']; ?>
-                <option value="read" <?php selected(get_option('songbook_mincap_addtempo'),'read'); ?>>&nbsp;<?php echo$songbook_translation['read']; ?>
-            </select>
         <label for="songbook_mincap_manauthor"><?php echo$songbook_translation['songbook_mincap_manauthor']; ?></label>
             <select name="songbook_mincap_manauthor" id="songbook_mincap_manauthor">'
                 <option value="manage_options" <?php selected(get_option('songbook_mincap_manauthor'),'manage_options') ?>>&nbsp;<?php echo$songbook_translation['manage_options']; ?>
@@ -180,15 +180,23 @@ function songbook_settpage(){
         <div class="oddil">
     <h3><?php echo$songbook_translation['songbook_behavior']; ?></h3>
             <p class="poznamka"><?php echo$songbook_translation['songbook_behavior_desc']; ?></p>
+            <input type="checkbox" name="songbook_disp_backtolistinsong" value="display" <?php checked(get_option('songbook_disp_backtolistinsong'),'display'); ?>><?php echo$songbook_translation['songbook_disp_backtolistinsong']; ?><br/>
             <input type="checkbox" name="songbook_disp_filelistinsong" value="display" <?php checked(get_option('songbook_disp_filelistinsong'),'display'); ?>><?php echo$songbook_translation['songbook_disp_filelistinsong']; ?><br/>
-            <input type="checkbox" name="songbook_disp_filelistinshc" value="display" <?php checked(get_option('songbook_disp_filelistinshc'),'display'); ?>><?php echo$songbook_translation['songbook_disp_filelistinshc']; ?><br/>
             <input type="checkbox" name="songbook_disp_filelistforlogged" value="display" <?php checked(get_option('songbook_disp_filelistforlogged'),'display'); ?>><?php echo$songbook_translation['songbook_disp_filelistforlogged']; ?><br/>
             <input type="checkbox" name="songbook_disp_videolinkinshc" value="display" <?php checked(get_option('songbook_disp_videolinkinshc'),'display'); ?>><?php echo$songbook_translation['songbook_disp_videolinkinshc']; ?><br/>
             <input type="checkbox" name="songbook_disp_videolinkinsong" value="display" <?php checked(get_option('songbook_disp_videolinkinsong'),'display'); ?>><?php echo$songbook_translation['songbook_disp_videolinkinsong']; ?><br/>
             <input type="checkbox" name="songbook_disp_authorsinshc" value="display" <?php checked(get_option('songbook_disp_authorsinshc'),'display'); ?>><?php echo$songbook_translation['songbook_disp_authorsinshc']; ?><br/>
             <input type="checkbox" name="songbook_disp_authorsinsong" value="display" <?php checked(get_option('songbook_disp_authorsinsong'),'display'); ?>><?php echo$songbook_translation['songbook_disp_authorsinsong']; ?><br/>
+            <label for="songbook_disp_lyrelement"><?php echo$songbook_translation['songbook_disp_lyrelement']; ?></label>
+            <select name="songbook_disp_lyrelement" id="songbook_disp_lyrelement">'
+                <option value="none" <?php selected(get_option('songbook_disp_lyrelement'),'none')?>>&nbsp;<?php echo$songbook_translation['songbook_disp_lyrelement_none']; ?>
+                <option value="div" <?php selected(get_option('songbook_disp_lyrelement'),'div') ?>>&nbsp;<?php echo$songbook_translation['songbook_disp_lyrelement_div']; ?>
+                <option value="blockquote" <?php selected(get_option('songbook_disp_lyrelement'),'blockquote') ?>>&nbsp;<?php echo$songbook_translation['songbook_disp_lyrelement_blockquote']; ?>
+                <option value="pre" <?php selected(get_option('songbook_disp_lyrelement'),'pre'); ?>>&nbsp;<?php echo$songbook_translation['songbook_disp_lyrelement_pre']; ?>
+                <option value="code" <?php selected(get_option('songbook_disp_lyrelement'),'code')?>>&nbsp;<?php echo$songbook_translation['songbook_disp_lyrelement_code']; ?>
+            </select>
         </div>
-        <div class="oddil">
+        <div class="oddil" id="shcdefs">
     <h3><?php echo$songbook_translation['songbook_shcdefs']; ?></h3>
             <p class="poznamka"><?php echo$songbook_translation['songbook_shcdefs_desc']; ?></p>
             <?php
@@ -198,6 +206,7 @@ function songbook_settpage(){
     if(have_posts()){
         $songbook_pageselect='<label for="songbook_mincap_manauthor">'.$songbook_translation['songbook_shcdefs_listpageid'].'</label>';
         $songbook_pageselect.='<select name="songbook_shcdefs_listpageid" id="songbook_shcdefs_listpageid">';
+        $songbook_pageselect.='<option value="autoaddpage">'.$songbook_translation['songbook_autoaddshcpage'];
     while (have_posts()):the_post();
     $songbook_selected=(get_option('songbook_shcdefs_listpageid')==get_the_ID())?'selected="selected"':'';
     $songbook_pageselect.='<option value="'.get_the_ID().'" '.$songbook_selected.'>&nbsp;'.get_the_title();
@@ -221,11 +230,16 @@ function songbook_settpage(){
                 <option value="asc"<?php selected(get_option('songbook_shcdefs_order'),'asc') ?>>&nbsp;<?php echo$songbook_translation['asc']; ?>
                 <option value="desc"<?php selected(get_option('songbook_shcdefs_order'),'desc') ?>>&nbsp;<?php echo$songbook_translation['desc']; ?>
             </select><br/>
-            <input type="checkbox" name="songbook_autoaddshcpage" id="songbook_autoaddshcpage" value="autoadd"><?php echo$songbook_translation['songbook_autoaddshcpage']; ?><br/>
         </div>
         </div>
         <input type="submit" value="<?php _e('Save settings','wpsongbook'); ?>" name="songbook_savesets" id="songbook_savesets" class="button-primary">
     </form>
+    <div id="seccol">
+        <div class="oddil">
+        <a id="donatebutt" style="background:url(<?php echo plugins_url('../img/paypal-donate-button.png', __FILE__ ); ?>);" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"></a>
+        <?php _e('If you like this plugin, donate me with some money. Every pence can encourage me in developing the best :)','wpsongbook'); ?>
+        </div>
+    </div>
     </div>
 <?php
 }

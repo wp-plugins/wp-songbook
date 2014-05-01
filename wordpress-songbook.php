@@ -2,30 +2,96 @@
 /**
  * Plugin Name: WP songbook
  * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with songs. In future there should be more features as Import from OpenLP and others.
- * Version: 1.1.1
+ * Version: 1.2
  * Text Domain: wpsongbook
  * Domain Path: /langs
  * Author: Sjiamnocna
  * Author URI: http://sjiaphoto.g6.cz/
  * Plugin URI: http://sjiaphoto.g6.cz/wp-songbook/
  */
-function songbook_plugin_init(){
-  load_plugin_textdomain('wpsongbook',false,'wp-songbook/langs/');
+//include other files
   include_once('inc/wpsongs-functions.php');
   include_once('inc/wpsongs-cuspt-song.php');
   include_once('inc/wpsongs-cuspt-tax-author.php');
   include_once('inc/wpsongs-addmbox-files.php');
   include_once('inc/wpsongs-addmbox-aditionals.php');
-// dont include still not working part
-//  include_once('inc/wpsongs-widget.php');
+//dont include still not working part
+//include_once('inc/wpsongs-widget.php');
   include_once('inc/wpsongs-shortcs.php');
   include_once('inc/wpsongs-contenthooks.php');
   include_once('inc/wpsongs-addadminsettings.php');
-  wp_register_script('songbook_filebox_script',plugins_url().'/wp-songbook/js/filescript.js');
-  wp_register_script('songbook_settings_script',plugins_url().'/wp-songbook/js/setts_script.js');
+function songbook_plugin_init(){
+//load textdomain
+  load_plugin_textdomain('wpsongbook',false,'wp-songbook/langs/');
+
+//register all scripts
+  if(!songbook_check_wp_version('3.9')){
+      wp_deregister_script('jquery');
+      wp_register_script('jquery',plugins_url().'/wp-songbook/js/jquery/js/jquery-1.10.2.js');
+  }
+  wp_register_script('songbook_jquery_custom',plugins_url().'/wp-songbook/js/jquery/js/jquery-ui-1.10.4.custom.js',array('jquery'));
+  wp_register_script('songbook_jquery_dragsort',plugins_url().'/wp-songbook/js/jquery.dragsort-0.5.1.min.js',array('jquery'));
+  wp_register_script('songbook_files_functions',plugins_url().'/wp-songbook/js/files_fcs.js',array('jquery'));
+  wp_register_script('songbook_filebox_script',plugins_url().'/wp-songbook/js/filescript.js',array('jquery','songbook_files_functions'));
+  wp_register_script('songbook_tooltips_script',plugins_url().'/wp-songbook/js/tooltips.js',array('jquery','songbook_jquery_custom'));
+  wp_register_style('songbook_jqueryuistyle',plugins_url().'/wp-songbook/css/jqueryui_customstyle.css');
   wp_register_style('songbook_filebox_style',plugins_url().'/wp-songbook/css/filestyle.css');
+  wp_register_style('songbook_filetypes_css',plugins_url().'/wp-songbook/css/filetypes.css');
   wp_register_style('songbook_settings_style',plugins_url().'/wp-songbook/css/settstyle.css');
+  wp_register_style('songbook_songlist_style',plugins_url().'/wp-songbook/css/songlist.css');
+  wp_register_style('songbook_songbase_style',plugins_url().'/wp-songbook/css/songbasics.css');
+//localize scripts
+    $songbook_filebox_functions_translation=array(
+        'unlink_confirm'=>__('Really unlink file from song?','wpsongbook'),
+        'new_title'=>__('New title:','wpsongbook')
+    );
+    $songbook_filebox_script_translation=array(
+        'choosefiles'=>__('Choose files to link','wpsongbook'),
+        'selectfiles_butt'=>__('Link files','wpsongbook')
+        );
+    $songbook_tooltips_script_translation=array(
+        'textch'=>__('Set new title for the file (will be shown instead of filename)','wpsongbook'),
+        'lock'=>__('Set file publicly visible or visible to users only','wpsongbook'),
+        'remover'=>__('Unlink file from song','wpsongbook'),
+        'songbook_addfile_button'=>__('Click to link files to song','wpsongbook'),
+        'songbook_tempo_meta'=>__('Set song speed','wpsongbook')
+        );
+    wp_localize_script('songbook_files_functions','songbook_filebox_func',$songbook_filebox_functions_translation);
+    wp_localize_script('songbook_filebox_script','songbook_filebox_script',$songbook_filebox_script_translation);
+    wp_localize_script('songbook_tooltips_script','songbook_tooltips_script',$songbook_tooltips_script_translation);
 }
+function songbook_enqueue_admin(){
+    $songbook_enq_page=basename($_SERVER['PHP_SELF'])."?".$_SERVER['QUERY_STRING'];
+    if((ereg('^(edit\.php|post-new\.php|post\.php).*$',$songbook_enq_page)&&get_post_type()=='song')){
+        wp_enqueue_media();
+        wp_enqueue_style('songbook_filebox_style');
+        wp_enqueue_style('songbook_jqueryuistyle');
+        wp_enqueue_style('songbook_filetypes_css');
+        wp_enqueue_script('songbook_jquery_custom');
+        wp_enqueue_script('songbook_jquery_dragsort');
+        wp_enqueue_script('songbook_tooltips_script');
+        wp_enqueue_script('songbook_files_functions');
+        wp_enqueue_script('songbook_filebox_script');
+    }elseif($_GET['page']=='songbook-settlink'){
+        wp_enqueue_style('songbook_settings_style');
+        wp_enqueue_script('songbook_jquery_custom');
+        wp_enqueue_script('thickbox');
+        wp_enqueue_script('songbook_tooltips');
+    }elseif($_GET['page']=='songbook-helplink'){
+        wp_enqueue_script('songbook_jquery_custom');
+        wp_enqueue_script('thickbox');
+        wp_enqueue_script('songbook_tooltips');
+    }
+}
+function songbook_enqueue_public(){
+    $sb_listpageid=get_option('songbook_shcdefs_listpageid');
+    if($sb_listpageid==get_the_ID())wp_enqueue_style('songbook_songlist_style');
+    if(is_single&&get_post_type()=='song'){
+        wp_enqueue_style('songbook_songbase_style');
+        wp_enqueue_style('songbook_filetypes_css');
+    }
+}
+//activation hook
 function songbook_activation(){
     include_once('inc/wpsongs-functions.php');
     if(get_option('songbook_version')){
@@ -38,25 +104,9 @@ function songbook_activation(){
         songbook_setdefaults(songbook_version());
     }
 }
-function songbook_enqueue_admin(){
-    $songbook_enq_page=basename($_SERVER['PHP_SELF'])."?".$_SERVER['QUERY_STRING'];
-    if((ereg('^(edit\.php|post-new\.php|post\.php).*$',$songbook_enq_page)&&get_post_type()=='song')){
-    wp_enqueue_style('songbook_filebox_style');
-    wp_enqueue_script('songbook_filebox_script');
-    $songbook_filescript_translation=array(
-        'unlink_confirm'=>__('Really unlink from song?','wpsongbook'),
-        'choosefiles'=>__('Choose files to link','wpsongbook'),
-        'selectfiles_butt'=>__('Link files','wpsongbook'),
-        'removefile'=>__('Remove file','wpsongbook')
-        );
-    wp_localize_script('songbook_filebox_script','songbook_filescr_translation',$songbook_filescript_translation);
-    }elseif($_GET['page']=='songbook-settlink'){
-        wp_enqueue_style('songbook_settings_style');
-        wp_enqueue_script('songbook_settings_script');
-    }
-}
 register_activation_hook(__FILE__,'songbook_activation');
 add_action('plugins_loaded','songbook_plugin_init');
+add_action('wp_enqueue_scripts','songbook_enqueue_public');
 add_action('admin_enqueue_scripts','songbook_enqueue_admin');
 //inc/wpsongs-cuspt-song.php
 add_action('init','songbook_cptbase');

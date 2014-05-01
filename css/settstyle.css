@@ -1,0 +1,90 @@
+/*
+    Name: Theme for settings screen - WP Songbook
+    Author: sjiamnocna
+*/
+#songbook_settsform{
+    width:69%;
+    float:left;
+}
+#songbook_settsform>.successupd h3{
+    font-weight:bold;
+    color:graytext;
+    margin:3px 10px;
+}
+#songbook_settsform>.successupd ul{
+    margin:2px 10px;
+}
+#songbook_settsform>.successupd ul li{
+    margin:1px;
+}
+#songbook_settsform>.successupd{
+    background:rgba(120,210,120,0.6);
+    color:#000F60;
+    padding:3px;
+    border:2px solid gray;
+}
+#songbook_settsform .oddil{
+    display:block;
+    margin:20px 5px;
+    padding:5px;
+}
+#songbook_settsform .oddil:hover{
+    background:rgba(160,220,160,0.4);
+}
+#songbook_settsform .oddil > .poznamka{
+    font-style:italic;
+    margin:0px 0px 0.5cm 2px;
+    font-size:98%;
+    color:graytext;
+}
+#songbook_settsform .oddil h3{
+    margin:5px 10px 3px;
+    padding:0px;
+    font-size:120%;
+    color:#666600;
+}
+#songbook_settsform .oddil select{
+    margin-bottom:10px;
+}
+#songbook_settsform .oddil input{
+    margin-bottom:3px;
+}
+#songbook_settsform .oddil input[type="submit"]{
+    margin:10px auto;
+}
+#songbook_settsform .oddil label{
+    display:block;
+}
+#songbook_settsform .oddil>#songbook_autoaddshcpage{
+    background:red;
+    color:white;
+    border:1px solid blue;
+    padding:5px;
+}
+#seccol{
+    width:30%;
+    display:block;
+    padding-left:5px;
+    float:left;
+}
+#seccol h1,#seccol h2,#seccol h3,#seccol h4,#seccol h5,#seccol h6{
+    margin:10px 5px 3px 3%;
+}
+#seccol .oddil{
+    display:block;
+    padding:3px 2px 0 4px;
+}
+#seccol .oddil:hover{
+    display:block;
+    background:rgba(160,220,160,0.4);
+    font-weight:bolder;
+}
+#seccol #donatebutt{
+    display:block;
+    background-size:100% 100% !important;
+    background-repeat:no-repeat;
+    width:160px;
+    height:60px;
+    cursor:pointer;
+    margin:4px 4px 4px;
+}
