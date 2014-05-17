@@ -1,6 +1,6 @@
 <?php
 function songbook_dispfiles($songid){
-    if(get_option('songbook_disp_filelistinsong')!='display'||!get_post_meta($songid,'songbook_filebox',true))return '<div class="file">'.__('The value is not a number','wpsongbook').'</div>';
+    if(get_option('songbook_disp_filelistinsong')!='display'||!get_post_meta($songid,'songbook_filebox',true))return NULL;
 //download file when _get download
     if($_GET['download']){
 $filePath=parse_url(wp_get_attachment_url($_GET['download']),PHP_URL_PATH);
@@ -25,6 +25,10 @@ $mimeType=str_replace('.','',pathinfo(parse_url(wp_get_attachment_url($_GET['dow
     //Send Headers
     header('Content-Type: ' . $mimeTypes[$mimeType]); 
     header('Content-Disposition: attachment; filename="' . $fileName . '"');
+    header('Content-Transfer-Encoding: binary');
+    header('Accept-Ranges: bytes');
+    header('Cache-Control: private');
+    header('Pragma: private');
     //run it
     readfile($filePath);
 }
@@ -35,6 +39,7 @@ $mimeType=str_replace('.','',pathinfo(parse_url(wp_get_attachment_url($_GET['dow
     if(!is_array($songbook_filearr))return false;
     else{
         $result='<div class="sb_songfiles" title="'.__('Linked files','wpsongbook').'">';
+        $filesdisplayedcount=0;
     foreach(array_keys($songbook_filearr) as $file){
         if(is_int($file)&&$file!="N"){
         //get attachment to complete info, that wasnt added with file directly
@@ -46,21 +51,25 @@ $mimeType=str_replace('.','',pathinfo(parse_url(wp_get_attachment_url($_GET['dow
         $indent=($songbook_filearr[$file]['indent'])?$songbook_filearr[$file]['indent']:NULL;
         $extension=($songbook_filearr[$file]['extension'])?$songbook_filearr[$file]['extension']:str_replace('.','',pathinfo(parse_url($url,PHP_URL_PATH), PATHINFO_EXTENSION));
         //finaly add content
-        if($lockedordisplay&&file_exists(parse_url(wp_get_attachment_url($file),PHP_URL_PATH))){
-        $result.='<div class="file">';
-        $result.='<span class="exticon '.$extension.'"></span>';
-        $result.='<div class="maininfo">';
-        $result.='<p class="filetitle">'.$title.'</p>';
-        $result.='<p class="toolbar"><a href="'.$url.'" title="'.$title.'">'.__('Show','wpsongbook').'</a>';
-//        $result.='<a href="?download='.$file.'">'.__('Download','wpsongbook').'</a>';
-        $result.='</div>';
-        $result.='</div>';
-        }else{$result.='<div class="file">'.__('You must be logged to see this file','wpsongbook').'</div>';}
+        if($lockedordisplay){
+                $result.='<div class="file">';
+                $result.='<span class="exticon '.$extension.'"></span>';
+                $result.='<div class="maininfo">';
+                $result.='<p class="filetitle">'.$title.'</p>';
+                $result.='<p class="toolbar"><a href="'.$url.'" title="'.$title.'">'.__('Show','wpsongbook').'</a>';
+//              $result.='<a href="?download='.$file.'">'.__('Download','wpsongbook').'</a>';
+                $result.='</div>';
+                $result.='</div>';
+                $filesdisplayedcount++;
+        }else{
+            $protected=true;
+        }
         }
     }
+        if($protected)$result.=(!$protected)?'<div class="file">'.__('You must be logged to see these files','wpsongbook').'</div>':null;
         $result.='</div>';
     }
-    return $result;
+    if($filesdisplayedcount>0)return $result;
 }
 
 function songbook_contentfilter($songbook_toedit) {
@@ -105,4 +114,3 @@ function songbook_timeremover($songbook_timetoedit){
    if(get_post_type()=='song')return'';
    else return$songbook_timetoedit;
 }
-?>

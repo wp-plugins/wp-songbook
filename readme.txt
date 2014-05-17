@@ -30,6 +30,10 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 
 == Changelog ==
 
+= 1.2.1 =
+*If theres any file to display (and not blocked by private rule), is displayed.
+*Removed Fancybox for license troubles
+
 = 1.2 =
 *At first, the files are now working, Im sorry for all troubles
 *You can choose song lyrics wrap element to improve look of the page
@@ -41,37 +45,48 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 *Added second column to plugin settings page
 *Removed list of added files from song list - it only caused errors
 *All styles are now external
+
 = 1.1.2 =
 *When removing plugin, all settings are removed from database
 *Fixed: If no author is set to song, nothing will appear in song list
+
 = 1.1.1 =
 *Fixed bugs with attaching files - didn't save value when no file is chosen
 *Fixed bug with listing files and songs
 *Files no more appears in song when they were deleted from Wordpress
 *Improved admin script and style including
 *'till this version automatically adds default settings after install
+
 = 1.1 =
 *Many key core changes
 *Changed song listing system
 *Now existing page with songs is detected by exist, not by option
 *Updated language files
 *Added option to show files to logged/unlogged users
+
 = 1.0.3 =
 *Fixed some language bugs
 *Added settings and guide links to the plugins page
+
 = 1.0.2 =
 *Im very sorry for that troubles I made you. Now it shouldn't happen anymore. Hope :)
+
 = 1.0.1 =
 *Bug: last version, after wordpress installation on some hostings causes error
+
 = 1.0 =
 *Its great to tell, all basic things are working well :)
 *After saving settings you know what was changed.
 *If you have any problem or idea, let me know.
+
 = 0.9.3 =
 *Finally added songbook settings page and fixed troubles with metaboxes
+
 = 0.9.2 =
 *Added filebox for adding files to songs and other to add aditional info about song. Now you can define song tempo or add link to video on internet.
+
 = 0.9.1 =
 *Solved trouble with displaying, shortcodes and added new feature - Widget for displaying newest songs
+
 = 0.9 =
 *Added to repository, still not finished but stable. Adds CPT Song, Taxonomy Author and some plugin "guide of use" to Wordpress installation

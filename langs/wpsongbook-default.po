@@ -1,10 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Songbook\n"
-"POT-Creation-Date: 2014-04-23 21:19+0100\n"
-"PO-Revision-Date: 2014-04-23 21:20+0100\n"
+"POT-Creation-Date: 2014-05-02 22:01+0100\n"
+"PO-Revision-Date: 2014-05-02 22:01+0100\n"
 "Last-Translator: Sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
+"Language: toedit\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,39 +15,39 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPath-1: ../inc\n"
 
-#: ../wordpress-songbook.php:44
+#: ../wordpress-songbook.php:45
 msgid "Really unlink file from song?"
 msgstr ""
 
-#: ../wordpress-songbook.php:45
+#: ../wordpress-songbook.php:46
 msgid "New title:"
 msgstr ""
 
-#: ../wordpress-songbook.php:48
+#: ../wordpress-songbook.php:49
 msgid "Choose files to link"
 msgstr ""
 
-#: ../wordpress-songbook.php:49 ../inc/wpsongs-addmbox-files.php:4
+#: ../wordpress-songbook.php:50 ../inc/wpsongs-addmbox-files.php:4
 msgid "Link files"
 msgstr ""
 
-#: ../wordpress-songbook.php:52
+#: ../wordpress-songbook.php:53
 msgid "Set new title for the file (will be shown instead of filename)"
 msgstr ""
 
-#: ../wordpress-songbook.php:53
+#: ../wordpress-songbook.php:54
 msgid "Set file publicly visible or visible to users only"
 msgstr ""
 
-#: ../wordpress-songbook.php:54
+#: ../wordpress-songbook.php:55
 msgid "Unlink file from song"
 msgstr ""
 
-#: ../wordpress-songbook.php:55
+#: ../wordpress-songbook.php:56
 msgid "Click to link files to song"
 msgstr ""
 
-#: ../wordpress-songbook.php:56
+#: ../wordpress-songbook.php:57
 msgid "Set song speed"
 msgstr ""
 
@@ -484,15 +485,23 @@ msgstr ""
 msgid "Display whole song"
 msgstr ""
 
-#: ../inc/wpsongs-contenthooks.php:12
+#: ../inc/wpsongs-contenthooks.php:41
 msgid "Linked files"
 msgstr ""
 
-#: ../inc/wpsongs-contenthooks.php:32
+#: ../inc/wpsongs-contenthooks.php:58
+msgid "Show"
+msgstr ""
+
+#: ../inc/wpsongs-contenthooks.php:63
+msgid "You must be logged to see these files"
+msgstr ""
+
+#: ../inc/wpsongs-contenthooks.php:79
 msgid "Go back to song list"
 msgstr ""
 
-#: ../inc/wpsongs-contenthooks.php:35
+#: ../inc/wpsongs-contenthooks.php:82
 msgid "Author: "
 msgstr ""
 
@@ -500,7 +509,7 @@ msgstr ""
 msgid "Add files"
 msgstr ""
 
-#: ../inc/wpsongs-addmbox-files.php:45
+#: ../inc/wpsongs-addmbox-files.php:46
 msgid ""
 "No file linked with this song. You have to link some first, to see it here. "
 "Simply click one of the buttons above :)"

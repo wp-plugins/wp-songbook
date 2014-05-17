@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Songbook\n"
-"POT-Creation-Date: 2014-04-23 21:20+0100\n"
-"PO-Revision-Date: 2014-04-23 21:26+0100\n"
+"POT-Creation-Date: 2014-05-02 22:01+0100\n"
+"PO-Revision-Date: 2014-05-02 22:01+0100\n"
 "Last-Translator: Sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
@@ -14,40 +14,40 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wordpress-songbook.php:44
+#: ../wordpress-songbook.php:45
 msgid "Really unlink file from song?"
 msgstr "Opravdu odebrat soubory z písně?"
 
-#: ../wordpress-songbook.php:45
+#: ../wordpress-songbook.php:46
 msgid "New title:"
 msgstr "Nový titulek:"
 
-#: ../wordpress-songbook.php:48
+#: ../wordpress-songbook.php:49
 msgid "Choose files to link"
 msgstr "Zvolte soubory k přidání"
 
-#: ../wordpress-songbook.php:49 ../inc/wpsongs-addmbox-files.php:4
+#: ../wordpress-songbook.php:50 ../inc/wpsongs-addmbox-files.php:4
 msgid "Link files"
 msgstr "Připojit soubory"
 
-#: ../wordpress-songbook.php:52
+#: ../wordpress-songbook.php:53
 msgid "Set new title for the file (will be shown instead of filename)"
 msgstr "Nastavit nový titulek pro soubor (zobrazí se místo jména souboru)"
 
-#: ../wordpress-songbook.php:53
+#: ../wordpress-songbook.php:54
 msgid "Set file publicly visible or visible to users only"
 msgstr ""
 "Nastavit soubor veřejně viditelným, nebo viditelným pouze pro přihlášené"
 
-#: ../wordpress-songbook.php:54
+#: ../wordpress-songbook.php:55
 msgid "Unlink file from song"
 msgstr "Odebrat soubor z písně"
 
-#: ../wordpress-songbook.php:55
+#: ../wordpress-songbook.php:56
 msgid "Click to link files to song"
 msgstr "Kliknutím připojíte soubory k písni"
 
-#: ../wordpress-songbook.php:56
+#: ../wordpress-songbook.php:57
 msgid "Set song speed"
 msgstr "Nastavit rychlost písně"
 
@@ -507,15 +507,24 @@ msgstr "Autoři písní"
 msgid "Display whole song"
 msgstr "Zobrazit celou píseň"
 
-#: ../inc/wpsongs-contenthooks.php:12
+#: ../inc/wpsongs-contenthooks.php:41
 msgid "Linked files"
 msgstr "Připojené soubory"
 
-#: ../inc/wpsongs-contenthooks.php:32
+#: ../inc/wpsongs-contenthooks.php:58
+msgid "Show"
+msgstr "Otevřít"
+
+#: ../inc/wpsongs-contenthooks.php:63
+#, fuzzy
+msgid "You must be logged to see these files"
+msgstr "Musíte být přihlášení, abyste viděli tyto soubory"
+
+#: ../inc/wpsongs-contenthooks.php:79
 msgid "Go back to song list"
 msgstr "Zpět k seznamu písní"
 
-#: ../inc/wpsongs-contenthooks.php:35
+#: ../inc/wpsongs-contenthooks.php:82
 msgid "Author: "
 msgstr "Autor:"
 
@@ -523,7 +532,7 @@ msgstr "Autor:"
 msgid "Add files"
 msgstr "Přidat soubory"
 
-#: ../inc/wpsongs-addmbox-files.php:45
+#: ../inc/wpsongs-addmbox-files.php:46
 msgid ""
 "No file linked with this song. You have to link some first, to see it here. "
 "Simply click one of the buttons above :)"
@@ -546,6 +555,10 @@ msgstr "Název:"
 #: ../inc/wpsongs-widget.php:46
 msgid "Count of entries displayed:"
 msgstr "Počet zobrazovaných písní:"
+
+#, fuzzy
+#~ msgid "The value is not a number"
+#~ msgstr "The value is not a number"
 
 #~ msgid "Remove file"
 #~ msgstr "Odebrat soubor"
