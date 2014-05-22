@@ -66,7 +66,7 @@ function songbook_settpage(){
         'songbook_disp_lyrelement_pre'=>'&lt;'.__('PRE','wpsongbook').'&gt;',
         'songbook_disp_lyrelement_code'=>'&lt;'.__('CODE','wpsongbook').'&gt;',
         'songbook_shcdefs'=>__('Song list defaults','wpsongbook'),
-        'songbook_shcdefs_desc'=>__('You should use this options to set behavior of song list. You can specify own parameters to song list lookout.','wpsongbook'),
+        'songbook_shcdefs_desc'=>__('You should use these options to set behavior of song list. You can specify own parameters to song list lookout.','wpsongbook'),
         'songbook_shcdefs_listpageid'=>__('Show songlist on this page','wpsongbook'),
         'songbook_shcdefs_showintext'=>__('Show list of songs after text of selected page (or replace it\'s whole content))','wpsongbook'),
         'songbook_shcdefs_orderby'=>__('Order songs by','wpsongbook'),
