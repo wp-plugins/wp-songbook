@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Songbook\n"
-"POT-Creation-Date: 2014-05-02 22:01+0100\n"
-"PO-Revision-Date: 2014-05-02 22:01+0100\n"
+"POT-Creation-Date: 2014-05-22 20:09+0100\n"
+"PO-Revision-Date: 2014-05-22 20:09+0100\n"
 "Last-Translator: Sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
@@ -364,8 +364,9 @@ msgid "Song list defaults"
 msgstr "Nastavení seznamu písní"
 
 #: ../inc/wpsongs-addadminsettings.php:69
+#, fuzzy
 msgid ""
-"You should use this options to set behavior of song list. You can specify "
+"You should use these options to set behavior of song list. You can specify "
 "own parameters to song list lookout."
 msgstr "Měli byste používat tyto možnosti k nastavení chování seznamu písní"
 
@@ -511,20 +512,19 @@ msgstr "Zobrazit celou píseň"
 msgid "Linked files"
 msgstr "Připojené soubory"
 
-#: ../inc/wpsongs-contenthooks.php:58
+#: ../inc/wpsongs-contenthooks.php:59
 msgid "Show"
 msgstr "Otevřít"
 
-#: ../inc/wpsongs-contenthooks.php:63
-#, fuzzy
+#: ../inc/wpsongs-contenthooks.php:69
 msgid "You must be logged to see these files"
-msgstr "Musíte být přihlášení, abyste viděli tyto soubory"
+msgstr "Musíte být přihlášeni, abyste viděli tyto soubory"
 
-#: ../inc/wpsongs-contenthooks.php:79
+#: ../inc/wpsongs-contenthooks.php:81
 msgid "Go back to song list"
 msgstr "Zpět k seznamu písní"
 
-#: ../inc/wpsongs-contenthooks.php:82
+#: ../inc/wpsongs-contenthooks.php:84
 msgid "Author: "
 msgstr "Autor:"
 
