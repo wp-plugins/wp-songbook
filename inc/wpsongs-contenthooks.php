@@ -32,8 +32,8 @@ $mimeType=str_replace('.','',pathinfo(parse_url(wp_get_attachment_url($_GET['dow
     //run it
     readfile($filePath);
 }
-
-    $songbook_fileval=(is_array(get_post_meta($songid,'songbook_filebox',true)))?get_post_meta($songid,'songbook_filebox',true)[0]:get_post_meta($songid,'songbook_filebox',true);
+    $postmeta=(is_array(get_post_meta($songid,'songbook_filebox',true)))?get_post_meta($songid,'songbook_filebox',true)[0]:get_post_meta($songid,'songbook_filebox',true);
+    $songbook_fileval=(is_array(get_post_meta($songid,'songbook_filebox',true)))?$postmeta:get_post_meta($songid,'songbook_filebox',true);
     $sb_fileval_serialized=(unserialize($songbook_fileval));
     $songbook_filearr=($sb_fileval_serialized)?unserialize($songbook_fileval):explode(',',$songbook_fileval);
     if(!is_array($songbook_filearr))return false;

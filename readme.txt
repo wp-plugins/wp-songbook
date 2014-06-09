@@ -2,9 +2,9 @@
 Contributors: sjiamnocna
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: songbook, songs, lyrics, info, music, songlist
-Requires at least: 2.7
-Tested up to: 3.9
-Stable tag: 1.2.1
+Requires at least: 3.2
+Tested up to: 3.9.1
+Stable tag: 0.9
 License: GPLv2 or later
 
 Wordpress plugin, that allows people to manage song lyrics and adds many other features to edit them.
@@ -53,6 +53,10 @@ WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog.
 - In menu Songs, go to the Guide, and read some basic information about working with this plugin
 
 == Changelog ==
+
+= 1.2.3 =
+-Added warnings and messages to inform if something is wrong
+-Fixed saving the options
 
 = 1.2.2 =
 - Language files revision

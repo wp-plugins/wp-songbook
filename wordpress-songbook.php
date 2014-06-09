@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP songbook
  * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with songs. In future there should be more features as Import from OpenLP and others.
- * Version: 1.2.2
+ * Version: 1.2.3
  * Text Domain: wpsongbook
  * Domain Path: /langs
  * Author: Sjiamnocna
@@ -60,6 +60,15 @@ function songbook_plugin_init(){
     wp_localize_script('songbook_filebox_script','songbook_filebox_script',$songbook_filebox_script_translation);
     wp_localize_script('songbook_tooltips_script','songbook_tooltips_script',$songbook_tooltips_script_translation);
 }
+
+function songbook_warnmessages(){
+        function sb_nolistpage() {
+            echo '
+            <div id="error" class="updated fade"><p><strong>'.sprintf(__('You haven\'t set your songbook page. Go %1$s to the settings %2$s and set it, if you want to see the songs on website.'),'<a href="'.admin_url('admin.php').'" alt="'.__('Go to the settings page','wpsongbook').'">','</a>').'</strong> '.'</p></div>';
+        }
+    if(!get_option('songbook_shcdefs_listpageid'))add_action('admin_notices', 'sb_nolistpage');
+}
+
 function songbook_enqueue_admin(){
     $songbook_enq_page=basename($_SERVER['PHP_SELF'])."?".$_SERVER['QUERY_STRING'];
     if((ereg('^(edit\.php|post-new\.php|post\.php).*$',$songbook_enq_page)&&get_post_type()=='song')){
@@ -69,6 +78,7 @@ function songbook_enqueue_admin(){
         wp_enqueue_style('songbook_filetypes_css');
         wp_enqueue_script('songbook_jquery_custom');
         wp_enqueue_script('songbook_jquery_dragsort');
+        wp_enqueue_script('jquery-ui-tooltip');
         wp_enqueue_script('songbook_tooltips_script');
         wp_enqueue_script('songbook_files_functions');
         wp_enqueue_script('songbook_filebox_script');
@@ -98,8 +108,16 @@ function songbook_activation(){
         $songbook_updated=(get_option('songbook_version')!=songbook_version());
         if($songbook_updated){
             songbook_saveopt('songbook_version',songbook_version());
+            function sb_upgraded() {
+            echo '<div id="updated" class="updated fade"><p><strong>'.sprintf(__('Congratulations. You have successfuly upgraded your WP songbook plugin from version %2$s to %1$s'),songbook_version(),get_option('songbook_version')).'</strong> '.'</p></div>';
+            }
+            add_action('admin_notices','sb_upgraded');
         }
     }else{
+            function sb_firstlaunch() {
+            echo'<div id="updated" class="updated fade"><p><strong>'.sprintf(__('Welcome, I\'m the Songbook. You can use me to manage lyrics and add files to it. You can have a nice view on settings page, to recognize what am I able to do :)')).'</strong> '.'</p></div>';
+            }
+            add_action('admin_notices','sb_upgraded');
         songbook_saveopt('songbook_version',songbook_version());
         songbook_setdefaults(songbook_version());
     }
@@ -110,6 +128,7 @@ add_action('wp_enqueue_scripts','songbook_enqueue_public');
 add_action('admin_enqueue_scripts','songbook_enqueue_admin');
 //inc/wpsongs-cuspt-song.php
 add_action('init','songbook_cptbase');
+add_action('init','songbook_warnmessages');
 add_action('admin_menu','songbook_remove_cpt_onroles');
 add_action('admin_menu','songbook_cptremoveboxes');
 //inc/wpsongs-cuspt-tax-author

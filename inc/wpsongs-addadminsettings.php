@@ -80,7 +80,7 @@ function songbook_settpage(){
     <form action="#" method="post" id="songbook_settsform">
     <input type="hidden" name="songbook_settings_noncename" id="songbook_noncename" value="<?php echo wp_create_nonce(plugin_basename(__FILE__)); ?>"/>
 <?php
-    if($_POST['songbook_savesets']&&wp_verify_nonce($_GET['songbook_settings_noncename'],plugin_basename(__FILE__))){
+    if($_POST['songbook_savesets']){
         $songbook_newopts['songbook_enable_filelinking']=$_POST['songbook_enable_filelinking']; //y
         $songbook_newopts['songbook_enable_setbpm']=$_POST['songbook_enable_setbpm']; //y
         $songbook_newopts['songbook_enable_setvideolink']=$_POST['songbook_enable_setvideolink']; //y
@@ -217,7 +217,6 @@ function songbook_settpage(){
     }
     echo$songbook_pageselect
             ?>
-            </select>
             <input type="checkbox" name="songbook_shcdefs_showintext" value="display" <?php checked(get_option('songbook_shcdefs_showintext'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_showintext']; ?><br/>
             <label for="songbook_shcdefs_orderby"><?php echo$songbook_translation['songbook_shcdefs_orderby'] ?></label>
             <select name="songbook_shcdefs_orderby" id="songbook_shcdefs_orderby">
@@ -236,8 +235,11 @@ function songbook_settpage(){
     </form>
     <div id="seccol">
         <div class="oddil">
-        <a id="donatebutt" style="background:url(<?php echo plugins_url('../img/paypal-donate-button.png', __FILE__ ); ?>);" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"></a>
-        <?php _e('If you like this plugin, donate me with some money. Every pence can encourage me in developing the best :)','wpsongbook'); ?>
+            <a id="donatebutt" style="background:url(<?php echo plugins_url('../img/paypal-donate-button.png', __FILE__ ); ?>);" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"></a>
+            <?php _e('If you like this plugin, donate me with some money. Every pence can encourage me in developing the best :)','wpsongbook'); ?>
+        </div>
+        <div class="oddil">
+            <a id=""
         </div>
     </div>
     </div>

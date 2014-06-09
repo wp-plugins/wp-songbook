@@ -1,7 +1,7 @@
 <?php
 function songbook_pluginlistshc($songbook_toedit){
     if(get_the_ID()!=get_option('songbook_shcdefs_listpageid'))return$songbook_toedit;
-    $songbooklist_result=(get_option('songbook_shcdefs_showintext'))?$songbook_toedit:'';
+    $songbooklist_result=(get_option('songbook_shcdefs_showintext')=='display')?$songbook_toedit:'';
 $songbook_listshquery=array(
 	   	'post_type'=>'song',
                 'nopaging'=>true,
