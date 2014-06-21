@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP songbook
  * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with songs. In future there should be more features as Import from OpenLP and others.
- * Version: 1.2.3
+ * Version: 1.3
  * Text Domain: wpsongbook
  * Domain Path: /langs
  * Author: Sjiamnocna
@@ -25,10 +25,8 @@ function songbook_plugin_init(){
   load_plugin_textdomain('wpsongbook',false,'wp-songbook/langs/');
 
 //register all scripts
-  if(!songbook_check_wp_version('3.9')){
-      wp_deregister_script('jquery');
-      wp_register_script('jquery',plugins_url().'/wp-songbook/js/jquery/js/jquery-1.10.2.js');
-  }
+$wp_version = get_bloginfo('version');
+
   wp_register_script('songbook_jquery_custom',plugins_url().'/wp-songbook/js/jquery/js/jquery-ui-1.10.4.custom.js',array('jquery'));
   wp_register_script('songbook_jquery_dragsort',plugins_url().'/wp-songbook/js/jquery.dragsort-0.5.1.min.js',array('jquery'));
   wp_register_script('songbook_files_functions',plugins_url().'/wp-songbook/js/files_fcs.js',array('jquery'));
@@ -145,6 +143,7 @@ add_action('save_post','songbook_save_aditionals');
 //add_shortcode('songbook_songlist','songbook_pluginlistshc');
 add_filter('the_content','songbook_pluginlistshc');
 //inc/wpsongs-contenthooks.php
+add_filter('term_link','authorsongsurl',10,3);
 add_filter('plugin_action_links_'.plugin_basename(__FILE__),'songbook_pluginspagelink',10,2);
 add_filter('plugin_row_meta','songbook_pluginmetalinks',10,2);
 add_filter('the_content','songbook_contentfilter');

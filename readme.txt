@@ -13,7 +13,7 @@ Wordpress plugin, that allows people to manage song lyrics and adds many other f
 
 WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog. It's simple tool to add lyrics or authors and share lyrics or other files that relates to it. For now it allows set Lyrics, Authors, Files, Youtube link and Speed.
 
-= Song manager =
+= Songs managing =
 - Custom post type "Songs"
 - Using editor you can edit lyrics or chords of your song
 - Adds custom box for uploading and linking files to songs
@@ -54,9 +54,15 @@ WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog.
 
 == Changelog ==
 
+= 1.3 =
+- Now its possible to display list of author's songs
+- Button for displaying Authors name was added to song list
+- Added options to show or hide list header and link to list of author
+- Updated language files
+
 = 1.2.3 =
--Added warnings and messages to inform if something is wrong
--Fixed saving the options
+- Added warnings and messages to inform if something is wrong
+- Fixed saving the options
 
 = 1.2.2 =
 - Language files revision
@@ -65,7 +71,7 @@ WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog.
 
 = 1.2.1 =
 - Fixed readme.txt to give relevant informations about this plugin
-- If theres any file to display (and not blocked by any private rule), is displayed.
+- If theres any file to display (and not blocked by any private rule), is displayed
 - Removed Fancybox for license troubles
 
 = 1.2 =

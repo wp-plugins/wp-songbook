@@ -66,6 +66,8 @@ function songbook_settpage(){
         'songbook_disp_lyrelement_pre'=>'&lt;'.__('PRE','wpsongbook').'&gt;',
         'songbook_disp_lyrelement_code'=>'&lt;'.__('CODE','wpsongbook').'&gt;',
         'songbook_shcdefs'=>__('Song list defaults','wpsongbook'),
+        'songbook_shcdefs_dispthead'=>__('Show table header in songlist','wpsongbook'),
+        'songbook_shcdefs_dispauthslink'=>__('Show link to authors list','wpsongbook'),
         'songbook_shcdefs_desc'=>__('You should use these options to set behavior of song list. You can specify own parameters to song list lookout.','wpsongbook'),
         'songbook_shcdefs_listpageid'=>__('Show songlist on this page','wpsongbook'),
         'songbook_shcdefs_showintext'=>__('Show list of songs after text of selected page (or replace it\'s whole content))','wpsongbook'),
@@ -97,9 +99,12 @@ function songbook_settpage(){
         $songbook_newopts['songbook_disp_videolinkinsong']=$_POST['songbook_disp_videolinkinsong']; //y
         $songbook_newopts['songbook_disp_authorsinshc']=$_POST['songbook_disp_authorsinshc']; //y
         $songbook_newopts['songbook_disp_authorsinsong']=$_POST['songbook_disp_authorsinsong']; //y
-        $songbook_newopts['songbook_disp_lyrelement']=$_POST['songbook_disp_lyrelement'];
-        $songbook_newopts['songbook_shcdefs_listpageid']=$_POST['songbook_shcdefs_listpageid'];
-        $songbook_newopts['songbook_shcdefs_showintext']=$_POST['songbook_shcdefs_showintext'];
+        $songbook_newopts['songbook_disp_lyrelement']=$_POST['songbook_disp_lyrelement']; //y
+        $songbook_newopts['songbook_disp_lyrelement']=$_POST['songbook_disp_lyrelement']; //y
+        $songbook_newopts['songbook_shcdefs_dispthead']=$_POST['songbook_shcdefs_dispthead']; //y
+        $songbook_newopts['songbook_shcdefs_dispauthslink']=$_POST['songbook_shcdefs_dispauthslink']; //y
+        $songbook_newopts['songbook_shcdefs_listpageid']=$_POST['songbook_shcdefs_listpageid']; //y
+        $songbook_newopts['songbook_shcdefs_showintext']=$_POST['songbook_shcdefs_showintext']; //y
         $songbook_newopts['songbook_shcdefs_orderby']=$_POST['songbook_shcdefs_orderby']; //y
         $songbook_newopts['songbook_shcdefs_order']=$_POST['songbook_shcdefs_order']; //y
         echo'<div class="successupd">';
@@ -137,8 +142,6 @@ function songbook_settpage(){
         if($_POST['songbook_shcdefs_listpageid']=='autoaddpage')echo$songbook_translation['added_page'];
         echo'</ul>';
         echo'</div>';
-    }elseif($_POST['songbook_setdefs']){
-        songbook_setdefaults();
     } ?>
         <div id="fields">
         <div class="oddil">
@@ -199,6 +202,8 @@ function songbook_settpage(){
         <div class="oddil" id="shcdefs">
     <h3><?php echo$songbook_translation['songbook_shcdefs']; ?></h3>
             <p class="poznamka"><?php echo$songbook_translation['songbook_shcdefs_desc']; ?></p>
+            <input type="checkbox" name="songbook_shcdefs_dispthead" value="display" <?php checked(get_option('songbook_shcdefs_dispthead'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispthead']; ?><br/>
+            <input type="checkbox" name="songbook_shcdefs_dispauthslink" value="display" <?php checked(get_option('songbook_shcdefs_dispauthslink'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispauthslink']; ?><br/>
             <?php
 	query_posts(array(
 	   	'post_type'=>'page','nopaging'=>true,'orderby'=>'title'

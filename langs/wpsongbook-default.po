@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Songbook\n"
-"POT-Creation-Date: 2014-05-22 20:09+0100\n"
-"PO-Revision-Date: 2014-05-22 20:09+0100\n"
+"POT-Creation-Date: 2014-06-21 20:06+0100\n"
+"PO-Revision-Date: 2014-06-21 20:06+0100\n"
 "Last-Translator: Sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "Language: toedit\n"
@@ -15,47 +15,72 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPath-1: ../inc\n"
 
-#: ../wordpress-songbook.php:45
+#: ../wordpress-songbook.php:43
 msgid "Really unlink file from song?"
 msgstr ""
 
-#: ../wordpress-songbook.php:46
+#: ../wordpress-songbook.php:44
 msgid "New title:"
 msgstr ""
 
-#: ../wordpress-songbook.php:49
+#: ../wordpress-songbook.php:47
 msgid "Choose files to link"
 msgstr ""
 
-#: ../wordpress-songbook.php:50 ../inc/wpsongs-addmbox-files.php:4
+#: ../wordpress-songbook.php:48 ../inc/wpsongs-addmbox-files.php:4
 msgid "Link files"
 msgstr ""
 
-#: ../wordpress-songbook.php:53
+#: ../wordpress-songbook.php:51
 msgid "Set new title for the file (will be shown instead of filename)"
 msgstr ""
 
-#: ../wordpress-songbook.php:54
+#: ../wordpress-songbook.php:52
 msgid "Set file publicly visible or visible to users only"
 msgstr ""
 
-#: ../wordpress-songbook.php:55
+#: ../wordpress-songbook.php:53
 msgid "Unlink file from song"
 msgstr ""
 
-#: ../wordpress-songbook.php:56
+#: ../wordpress-songbook.php:54
 msgid "Click to link files to song"
 msgstr ""
 
-#: ../wordpress-songbook.php:57
+#: ../wordpress-songbook.php:55
 msgid "Set song speed"
 msgstr ""
 
+#: ../wordpress-songbook.php:65
+#, php-format
+msgid ""
+"You haven't set your songbook page. Go %1$s to the settings %2$s and set it, "
+"if you want to see the songs on website."
+msgstr ""
+
+#: ../wordpress-songbook.php:65
+msgid "Go to the settings page"
+msgstr ""
+
+#: ../wordpress-songbook.php:110
+#, php-format
+msgid ""
+"Congratulations. You have successfuly upgraded your WP songbook plugin from "
+"version %2$s to %1$s"
+msgstr ""
+
+#: ../wordpress-songbook.php:116
+msgid ""
+"Welcome, I'm the Songbook. You can use me to manage lyrics and add files to "
+"it. You can have a nice view on settings page, to recognize what am I able "
+"to do :)"
+msgstr ""
+
 #: ../inc/wpsongs-cuspt-song.php:5 ../inc/wpsongs-cuspt-song.php:17
-#: ../inc/wpsongs-addadminsettings.php:119
-#: ../inc/wpsongs-addadminsettings.php:120
-#: ../inc/wpsongs-addadminsettings.php:127
+#: ../inc/wpsongs-addadminsettings.php:124
+#: ../inc/wpsongs-addadminsettings.php:125
 #: ../inc/wpsongs-addadminsettings.php:132
+#: ../inc/wpsongs-addadminsettings.php:137
 msgid "Songs"
 msgstr ""
 
@@ -97,18 +122,6 @@ msgstr ""
 
 #: ../inc/wpsongs-cuspt-song.php:15
 msgid "No song found in trash"
-msgstr ""
-
-#: ../inc/wpsongs-addmbox-aditionals.php:4
-msgid "Another song properties"
-msgstr ""
-
-#: ../inc/wpsongs-addmbox-aditionals.php:12
-msgid "Song tempo (BPM):"
-msgstr ""
-
-#: ../inc/wpsongs-addmbox-aditionals.php:14
-msgid "Video link:"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:9
@@ -231,7 +244,7 @@ msgid "Descending order"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:40
-#: ../inc/wpsongs-addadminsettings.php:248
+#: ../inc/wpsongs-addadminsettings.php:255
 msgid "Songbook settings"
 msgstr ""
 
@@ -348,80 +361,88 @@ msgid "Song list defaults"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:69
+msgid "Show table header in songlist"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:70
+msgid "Show link to authors list"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:71
 msgid ""
 "You should use these options to set behavior of song list. You can specify "
 "own parameters to song list lookout."
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:70
+#: ../inc/wpsongs-addadminsettings.php:72
 msgid "Show songlist on this page"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:71
+#: ../inc/wpsongs-addadminsettings.php:73
 msgid ""
 "Show list of songs after text of selected page (or replace it's whole "
 "content))"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:72
+#: ../inc/wpsongs-addadminsettings.php:74
 msgid "Order songs by"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:73
+#: ../inc/wpsongs-addadminsettings.php:75
 msgid "Order"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:74
+#: ../inc/wpsongs-addadminsettings.php:76
 msgid "Show attached files icons"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:75
+#: ../inc/wpsongs-addadminsettings.php:77
 msgid "Automatically add page"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:111
+#: ../inc/wpsongs-addadminsettings.php:116
 msgid "No"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:119
+#: ../inc/wpsongs-addadminsettings.php:124
 msgid "Page was added yet. You shouldn't have it twice :)"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:131
+#: ../inc/wpsongs-addadminsettings.php:136
 msgid "Page was added correctly :)"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:216
+#: ../inc/wpsongs-addadminsettings.php:221
 msgid ""
 "No pages found on your site. You should add some, or use automatical adding "
 "below."
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:235
+#: ../inc/wpsongs-addadminsettings.php:239
 msgid "Save settings"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:240
+#: ../inc/wpsongs-addadminsettings.php:244
 msgid ""
 "If you like this plugin, donate me with some money. Every pence can "
 "encourage me in developing the best :)"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:247
-#: ../inc/wpsongs-addadminsettings.php:263
+#: ../inc/wpsongs-addadminsettings.php:254
+#: ../inc/wpsongs-addadminsettings.php:270
 msgid "Guide"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:247
+#: ../inc/wpsongs-addadminsettings.php:254
 msgid "How to use"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:248
-#: ../inc/wpsongs-addadminsettings.php:252
+#: ../inc/wpsongs-addadminsettings.php:255
+#: ../inc/wpsongs-addadminsettings.php:259
 msgid "Settings"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:264
+#: ../inc/wpsongs-addadminsettings.php:271
 msgid "Donate me"
 msgstr ""
 
@@ -481,7 +502,53 @@ msgstr ""
 msgid "Song authors"
 msgstr ""
 
-#: ../inc/wpsongs-shortcs.php:19
+#: ../inc/wpsongs-addmbox-files.php:9
+msgid "Add files"
+msgstr ""
+
+#: ../inc/wpsongs-addmbox-files.php:46
+msgid ""
+"No file linked with this song. You have to link some first, to see it here. "
+"Simply click one of the buttons above :)"
+msgstr ""
+
+#: ../inc/wpsongs-addmbox-aditionals.php:4
+msgid "Another song properties"
+msgstr ""
+
+#: ../inc/wpsongs-addmbox-aditionals.php:12
+msgid "Song tempo (BPM):"
+msgstr ""
+
+#: ../inc/wpsongs-addmbox-aditionals.php:14
+msgid "Video link:"
+msgstr ""
+
+#: ../inc/wpsongs-shortcs.php:31
+msgid "View all songs of"
+msgstr ""
+
+#: ../inc/wpsongs-shortcs.php:34 ../inc/wpsongs-contenthooks.php:81
+msgid "Go back to song list"
+msgstr ""
+
+#: ../inc/wpsongs-shortcs.php:34
+msgid "Go back"
+msgstr ""
+
+#: ../inc/wpsongs-shortcs.php:58
+msgid "Song title and author"
+msgstr ""
+
+#: ../inc/wpsongs-shortcs.php:58
+msgid "Show list of all authors"
+msgstr ""
+
+#: ../inc/wpsongs-shortcs.php:58
+msgid "Show all authors"
+msgstr ""
+
+#: ../inc/wpsongs-shortcs.php:64
 msgid "Display whole song"
 msgstr ""
 
@@ -497,22 +564,8 @@ msgstr ""
 msgid "You must be logged to see these files"
 msgstr ""
 
-#: ../inc/wpsongs-contenthooks.php:81
-msgid "Go back to song list"
-msgstr ""
-
 #: ../inc/wpsongs-contenthooks.php:84
 msgid "Author: "
-msgstr ""
-
-#: ../inc/wpsongs-addmbox-files.php:9
-msgid "Add files"
-msgstr ""
-
-#: ../inc/wpsongs-addmbox-files.php:46
-msgid ""
-"No file linked with this song. You have to link some first, to see it here. "
-"Simply click one of the buttons above :)"
 msgstr ""
 
 #: ../inc/wpsongs-widget.php:8

@@ -73,3 +73,9 @@ function songbook_setdefaults(){
         }
     }
 }
+function authorsongsurl($url,$term,$taxonomy){
+    $term_con=(array) $term;
+    $listurl=get_permalink(get_option('songbook_shcdefs_listpageid'));
+    if($taxonomy!=='songauthor')return $url;
+    if($taxonomy=='songauthor')return $listurl.'?author='.$term_con['slug'];
+}
