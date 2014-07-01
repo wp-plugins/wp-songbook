@@ -35,12 +35,7 @@ function songbook_cptbase() {
 }
 function songbook_cptremoveboxes() {
  remove_meta_box('postexcerpt','song','normal'); //removes comments status
- remove_meta_box('postimagediv','song','normal'); //removes comments
+ remove_meta_box('postimagediv','song','normal'); //removes featured images
  remove_meta_box('authordiv','song','normal'); //removes author 
-}
-function songbook_remove_cpt_onroles() {
-    if( !current_user_can('edit_posts') ){
-      remove_menu_page('edit.php?post_type=song');
-    }
 }
 ?>

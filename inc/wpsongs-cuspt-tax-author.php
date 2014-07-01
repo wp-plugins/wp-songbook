@@ -25,4 +25,5 @@ function songbook_authortax(){
         );
     register_taxonomy('songauthor','song',$songbook_taxauthor_args);
 }
+add_action('init','songbook_authortax');
 ?>

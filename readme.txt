@@ -54,6 +54,12 @@ WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog.
 
 == Changelog ==
 
+= 1.4 =
+- Added taxonomy Album + enable option to settings
+- Added taxonomy Genre + enable option to settings
+- Now there's an option to use publish date in the songlist (you can set time in editor on right side in publication controls)
+- Added options to allow of displaying song list grid new columns Album, Genre and Year
+- Updated language files with few new phrases
 = 1.3 =
 - Now its possible to display list of author's songs
 - Button for displaying Authors name was added to song list

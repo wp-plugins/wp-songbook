@@ -44,6 +44,8 @@ function songbook_settpage(){
         'songbook_enable_setbpm'=>__('Allow adding tempo to song','wpsongbook'),
         'songbook_enable_setvideolink'=>__('Allow adding video link','wpsongbook'),
         'songbook_enable_authorstax'=>__('Allow using authors','wpsongbook'),
+        'songbook_enable_albumstax'=>__('Allow using albums','wpsongbook'),
+        'songbook_enable_genrestax'=>__('Allow using genres','wpsongbook'),
         'songbook_enable_widget'=>__('Allow using widget','wpsongbook'),
         'songbook_caps'=>__('Capabilities','wpsongbook'),
         'songbook_caps_desc'=>__('Allow only to users that can','wpsongbook'),
@@ -69,6 +71,9 @@ function songbook_settpage(){
         'songbook_shcdefs_dispthead'=>__('Show table header in songlist','wpsongbook'),
         'songbook_shcdefs_dispauthslink'=>__('Show link to authors list','wpsongbook'),
         'songbook_shcdefs_desc'=>__('You should use these options to set behavior of song list. You can specify own parameters to song list lookout.','wpsongbook'),
+        'songbook_shcdefs_dispyear'=>__('Show year that the song was published in','wpsongbook'),
+        'songbook_shcdefs_dispgenre'=>__('Show song genre in list','wpsongbook'),
+        'songbook_shcdefs_dispalbum'=>__('Show song album in list','wpsongbook'),
         'songbook_shcdefs_listpageid'=>__('Show songlist on this page','wpsongbook'),
         'songbook_shcdefs_showintext'=>__('Show list of songs after text of selected page (or replace it\'s whole content))','wpsongbook'),
         'songbook_shcdefs_orderby'=>__('Order songs by','wpsongbook'),
@@ -87,6 +92,8 @@ function songbook_settpage(){
         $songbook_newopts['songbook_enable_setbpm']=$_POST['songbook_enable_setbpm']; //y
         $songbook_newopts['songbook_enable_setvideolink']=$_POST['songbook_enable_setvideolink']; //y
         $songbook_newopts['songbook_enable_authorstax']=$_POST['songbook_enable_authorstax']; //y
+        $songbook_newopts['songbook_enable_genrestax']=$_POST['songbook_enable_genrestax']; //y
+        $songbook_newopts['songbook_enable_albumstax']=$_POST['songbook_enable_albumstax']; //y
         $songbook_newopts['songbook_enable_widget']=$_POST['songbook_enable_widget'];
         $songbook_newopts['songbook_mincap_workwithsongs']=$_POST['songbook_mincap_workwithsongs']; //y
         $songbook_newopts['songbook_mincap_addfiles']=$_POST['songbook_mincap_addfiles']; //y
@@ -102,6 +109,9 @@ function songbook_settpage(){
         $songbook_newopts['songbook_disp_lyrelement']=$_POST['songbook_disp_lyrelement']; //y
         $songbook_newopts['songbook_disp_lyrelement']=$_POST['songbook_disp_lyrelement']; //y
         $songbook_newopts['songbook_shcdefs_dispthead']=$_POST['songbook_shcdefs_dispthead']; //y
+        $songbook_newopts['songbook_shcdefs_dispyear']=$_POST['songbook_shcdefs_dispyear']; //y
+        $songbook_newopts['songbook_shcdefs_dispgenre']=$_POST['songbook_shcdefs_dispgenre']; //y
+        $songbook_newopts['songbook_shcdefs_dispalbum']=$_POST['songbook_shcdefs_dispalbum']; //y
         $songbook_newopts['songbook_shcdefs_dispauthslink']=$_POST['songbook_shcdefs_dispauthslink']; //y
         $songbook_newopts['songbook_shcdefs_listpageid']=$_POST['songbook_shcdefs_listpageid']; //y
         $songbook_newopts['songbook_shcdefs_showintext']=$_POST['songbook_shcdefs_showintext']; //y
@@ -150,6 +160,8 @@ function songbook_settpage(){
                 <input type="checkbox" name="songbook_enable_filelinking" value="enable" <?php checked(get_option('songbook_enable_filelinking'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_filelinking']; ?><br/>
                 <input type="checkbox" name="songbook_enable_setvideolink" value="enable" <?php checked(get_option('songbook_enable_setvideolink'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_setvideolink']; ?><br/>
                 <input type="checkbox" name="songbook_enable_authorstax" value="enable" <?php checked(get_option('songbook_enable_authorstax'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_authorstax']; ?><br/>
+                <input type="checkbox" name="songbook_enable_genrestax" value="enable" <?php checked(get_option('songbook_enable_genrestax'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_genrestax']; ?><br/>
+                <input type="checkbox" name="songbook_enable_albumstax" value="enable" <?php checked(get_option('songbook_enable_albumstax'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_albumstax']; ?><br/>
                 <input type="checkbox" name="songbook_enable_widget" value="enable" <?php checked(get_option('songbook_enable_widget'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_widget']; ?>&nbsp;&nbsp;&nbsp;<span style="color:graytext;font-size:102%;font-style:italic;">//still not implemented</span><br/>
         </div>
         <div class="oddil">
@@ -188,7 +200,6 @@ function songbook_settpage(){
             <input type="checkbox" name="songbook_disp_filelistforlogged" value="display" <?php checked(get_option('songbook_disp_filelistforlogged'),'display'); ?>><?php echo$songbook_translation['songbook_disp_filelistforlogged']; ?><br/>
             <input type="checkbox" name="songbook_disp_videolinkinshc" value="display" <?php checked(get_option('songbook_disp_videolinkinshc'),'display'); ?>><?php echo$songbook_translation['songbook_disp_videolinkinshc']; ?><br/>
             <input type="checkbox" name="songbook_disp_videolinkinsong" value="display" <?php checked(get_option('songbook_disp_videolinkinsong'),'display'); ?>><?php echo$songbook_translation['songbook_disp_videolinkinsong']; ?><br/>
-            <input type="checkbox" name="songbook_disp_authorsinshc" value="display" <?php checked(get_option('songbook_disp_authorsinshc'),'display'); ?>><?php echo$songbook_translation['songbook_disp_authorsinshc']; ?><br/>
             <input type="checkbox" name="songbook_disp_authorsinsong" value="display" <?php checked(get_option('songbook_disp_authorsinsong'),'display'); ?>><?php echo$songbook_translation['songbook_disp_authorsinsong']; ?><br/>
             <label for="songbook_disp_lyrelement"><?php echo$songbook_translation['songbook_disp_lyrelement']; ?></label>
             <select name="songbook_disp_lyrelement" id="songbook_disp_lyrelement">'
@@ -203,7 +214,13 @@ function songbook_settpage(){
     <h3><?php echo$songbook_translation['songbook_shcdefs']; ?></h3>
             <p class="poznamka"><?php echo$songbook_translation['songbook_shcdefs_desc']; ?></p>
             <input type="checkbox" name="songbook_shcdefs_dispthead" value="display" <?php checked(get_option('songbook_shcdefs_dispthead'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispthead']; ?><br/>
+            <input type="checkbox" name="songbook_disp_authorsinshc" value="display" <?php checked(get_option('songbook_disp_authorsinshc'),'display'); ?>><?php echo$songbook_translation['songbook_disp_authorsinshc']; ?><br/>
             <input type="checkbox" name="songbook_shcdefs_dispauthslink" value="display" <?php checked(get_option('songbook_shcdefs_dispauthslink'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispauthslink']; ?><br/>
+            <input type="checkbox" name="songbook_shcdefs_dispgenre" value="display" <?php checked(get_option('songbook_shcdefs_dispgenre'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispgenre']; ?><br/>
+            <input type="checkbox" name="songbook_shcdefs_dispyear" value="display" <?php checked(get_option('songbook_shcdefs_dispyear'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispyear']; ?><br/>
+            <input type="checkbox" name="songbook_shcdefs_dispalbum" value="display" <?php checked(get_option('songbook_shcdefs_dispalbum'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispalbum']; ?><br/>
+
+
             <?php
 	query_posts(array(
 	   	'post_type'=>'page','nopaging'=>true,'orderby'=>'title'
@@ -242,9 +259,6 @@ function songbook_settpage(){
         <div class="oddil">
             <a id="donatebutt" style="background:url(<?php echo plugins_url('../img/paypal-donate-button.png', __FILE__ ); ?>);" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"></a>
             <?php _e('If you like this plugin, donate me with some money. Every pence can encourage me in developing the best :)','wpsongbook'); ?>
-        </div>
-        <div class="oddil">
-            <a id=""
         </div>
     </div>
     </div>
