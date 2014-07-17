@@ -2,14 +2,14 @@
 /**
  * Plugin Name: WP songbook
  * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with songs. In future there should be more features as Import from OpenLP and others.
- * Version: 1.4
+ * Version: 1.4.2
  * Text Domain: wpsongbook
  * Domain Path: /langs
  * Author: Sjiamnocna
  * Author URI: http://sjiaphoto.g6.cz/
  * Plugin URI: http://sjiaphoto.g6.cz/wp-songbook/
  */
-//include other files
+//include other filesgo 
   include_once('inc/wpsongs-functions.php');
   include_once('inc/wpsongs-cuspt-song.php');
   if(get_option('songbook_enable_authorstax')==='enable')include_once('inc/wpsongs-cuspt-tax-author.php');
@@ -64,9 +64,14 @@ $wp_version = get_bloginfo('version');
 function songbook_warnmessages(){
         function sb_nolistpage() {
             echo '
-            <div id="error" class="updated fade"><p><strong>'.sprintf(__('You haven\'t set your songbook page. Go %1$s to the settings %2$s and set it, if you want to see the songs on website.'),'<a href="'.admin_url('admin.php').'" alt="'.__('Go to the settings page','wpsongbook').'">','</a>').'</strong> '.'</p></div>';
+            <div id="error" class="updated fade"><p><strong>'.sprintf(__('You haven\'t set your songbook page. Go %1$s to the settings %2$s and set it, if you want to see the song list on website.'),'<a href="'.admin_url('edit.php?post_type=song&page=songbook-settlink').'" alt="'.__('Go to the settings page','wpsongbook').'">','</a>').'</strong> '.'</p></div>';
+        }
+        function sb_lowwp() {
+            echo '
+            <div id="error" class="updated fade"><p><strong>'.sprintf(__('Your Wordpress version is to old (you use version %3$s) to run plugin WP Songbook. You can update to newest version in %1$s Dashboard %2$s'),'<a href="'.admin_url('update-core.php').'">','</a>',songbook_check_wp_version()).'</strong> '.'</p></div>';
         }
     if(!get_option('songbook_shcdefs_listpageid'))add_action('admin_notices', 'sb_nolistpage');
+    if(!songbook_check_wp_version('3.9'))add_action('admin_notices', 'sb_lowwp');
 }
 
 function songbook_enqueue_admin(){

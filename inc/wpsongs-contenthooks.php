@@ -2,38 +2,12 @@
 function songbook_dispfiles($songid){
     if(get_option('songbook_disp_filelistinsong')!='display'||!get_post_meta($songid,'songbook_filebox',true))return NULL;
 //download file when _get download
-    if($_GET['download']){
-$filePath=parse_url(wp_get_attachment_url($_GET['download']),PHP_URL_PATH);
-$fileName=pathinfo(wp_get_attachment_url($_GET['download']),PATHINFO_BASENAME);
-$mimeType=str_replace('.','',pathinfo(parse_url(wp_get_attachment_url($_GET['download']),PHP_URL_PATH), PATHINFO_EXTENSION));
-    $mimeTypes = array(
-        'pdf' => 'application/pdf',
-        'txt' => 'text/plain',
-        'html' => 'text/html',
-        'exe' => 'application/octet-stream',
-        'zip' => 'application/zip',
-        'doc' => 'application/msword',
-        'xls' => 'application/vnd.ms-excel',
-        'ppt' => 'application/vnd.ms-powerpoint',
-        'gif' => 'image/gif',
-        'png' => 'image/png',
-        'jpeg' => 'image/jpg',
-        'jpg' => 'image/jpg',
-        'php' => 'text/plain'
-    );
-
-    //Send Headers
-    header('Content-Type: ' . $mimeTypes[$mimeType]); 
-    header('Content-Disposition: attachment; filename="' . $fileName . '"');
-    header('Content-Transfer-Encoding: binary');
-    header('Accept-Ranges: bytes');
-    header('Cache-Control: private');
-    header('Pragma: private');
-    //run it
-    readfile($filePath);
-}
-    $postmeta=(is_array(get_post_meta($songid,'songbook_filebox',true)))?get_post_meta($songid,'songbook_filebox',true)[0]:get_post_meta($songid,'songbook_filebox',true);
-    $songbook_fileval=(is_array(get_post_meta($songid,'songbook_filebox',true)))?$postmeta:get_post_meta($songid,'songbook_filebox',true);
+    if($_GET['download'])songbook_downfile($_GET['download']);
+//    $postmeta=(is_array(get_post_meta($songid,'songbook_filebox',true)))?get_post_meta($songid,'songbook_filebox',true)[0]:get_post_meta($songid,'songbook_filebox',true);
+    $postmeta=get_post_meta($songid,'songbook_filebox',true);
+//    $songbook_fileval=(is_array(get_post_meta($songid,'songbook_filebox',true)))?$postmeta:get_post_meta($songid,'songbook_filebox',true);
+    $songbook_fileval=get_post_meta($songid,'songbook_filebox',true);
+    
     $sb_fileval_serialized=(unserialize($songbook_fileval));
     $songbook_filearr=($sb_fileval_serialized)?unserialize($songbook_fileval):explode(',',$songbook_fileval);
     if(!is_array($songbook_filearr))return false;

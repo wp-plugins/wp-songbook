@@ -54,6 +54,12 @@ WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog.
 
 == Changelog ==
 
+= 1.4.2 =
+- Added new warnings
+- Improved few functions to work better
+- Removed few parts, that could be wrong and arent necessary
+= 1.4.1 =
+- Fixed missing files, that resulted in error
 = 1.4 =
 - Added taxonomy Album + enable option to settings
 - Added taxonomy Genre + enable option to settings

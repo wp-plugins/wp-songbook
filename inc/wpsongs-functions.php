@@ -1,5 +1,5 @@
 <?php
-function songbook_check_wp_version($minver) {
+function songbook_check_wp_version($minver='1') {
     global $wp_version;
     if ($wp_version >= $minver) {
         return $wp_version;
@@ -31,6 +31,36 @@ function songbook_getfilesasarray($postid){
         $result[$count]=$files[$count];
         $count++;
     }
+}
+function songbook_downfile($file_id){
+$filePath=parse_url(wp_get_attachment_url($file_id),PHP_URL_PATH);
+$fileName=pathinfo(wp_get_attachment_url($file_id),PATHINFO_BASENAME);
+$mimeType=str_replace('.','',pathinfo(parse_url(wp_get_attachment_url($file_id),PHP_URL_PATH), PATHINFO_EXTENSION));
+    $mimeTypes = array(
+        'pdf' => 'application/pdf',
+        'txt' => 'text/plain',
+        'html' => 'text/html',
+        'exe' => 'application/octet-stream',
+        'zip' => 'application/zip',
+        'doc' => 'application/msword',
+        'xls' => 'application/vnd.ms-excel',
+        'ppt' => 'application/vnd.ms-powerpoint',
+        'gif' => 'image/gif',
+        'png' => 'image/png',
+        'jpeg' => 'image/jpg',
+        'jpg' => 'image/jpg',
+        'php' => 'text/plain'
+    );
+
+    //Send Headers
+    header('Content-Type: ' . $mimeTypes[$mimeType]); 
+    header('Content-Disposition: attachment; filename="' . $fileName . '"');
+    header('Content-Transfer-Encoding: binary');
+    header('Accept-Ranges: bytes');
+    header('Cache-Control: private');
+    header('Pragma: private');
+    //run it
+    readfile($filePath);
 }
 function songbook_version(){
 	if ( ! function_exists( 'get_plugins' ) )

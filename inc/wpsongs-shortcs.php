@@ -1,5 +1,5 @@
 <?php
-function objectToArray($d) {
+function songbook_objectToArray($d) {
   if(is_object($d)) {
     $d = get_object_vars($d);
   }
@@ -9,6 +9,7 @@ function objectToArray($d) {
     return $d;
   }
 }
+
 function songbook_pluginlistshc($songbook_toedit) {
     if (get_the_ID() != get_option('songbook_shcdefs_listpageid'))
         return$songbook_toedit;
@@ -18,7 +19,7 @@ function songbook_pluginlistshc($songbook_toedit) {
     $authorsongs = $_GET['author'];
 
     if($_GET['authors']){
-    $allauthors=objectToArray(get_terms('songauthor'));
+    $allauthors=songbook_objectToArray(get_terms('songauthor'));
     $i=0;
     
     $sb_authorsdialog='<div id="authors">';
