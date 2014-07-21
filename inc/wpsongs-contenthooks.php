@@ -2,7 +2,7 @@
 function songbook_dispfiles($songid){
     if(get_option('songbook_disp_filelistinsong')!='display'||!get_post_meta($songid,'songbook_filebox',true))return NULL;
 //download file when _get download
-    if($_GET['download'])songbook_downfile($_GET['download']);
+//    if($_GET['download'])songbook_downfile($_GET['download']);
 //    $postmeta=(is_array(get_post_meta($songid,'songbook_filebox',true)))?get_post_meta($songid,'songbook_filebox',true)[0]:get_post_meta($songid,'songbook_filebox',true);
     $postmeta=get_post_meta($songid,'songbook_filebox',true);
 //    $songbook_fileval=(is_array(get_post_meta($songid,'songbook_filebox',true)))?$postmeta:get_post_meta($songid,'songbook_filebox',true);

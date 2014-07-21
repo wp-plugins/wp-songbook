@@ -15,12 +15,13 @@ WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog.
 
 = Songs managing =
 - Custom post type "Songs"
-- Using editor you can edit lyrics or chords of your song
+- Using editor you can edit lyrics of your song
 - Adds custom box for uploading and linking files to songs
 - Adds custom box for adding Youtube video and song tempo
+- Adds custom box for Authors, Albums and Genres.
 
 = Linked file manager =
-- Allows to sort, lock or unlink files from songs
+- Allows to sort, lock for private or unlink files from songs
 - Displays linked files under the song lyrics
 
 = Song list =
@@ -32,6 +33,14 @@ WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog.
 = Song appearance =
 - You can specify the wrapper element that will wrap the lyrics
 - You can set to display song author or song files or not in settings
+
+= Settings page =
+If you miss something, you can use settings page
+
+= Guide =
+Guide page is also added to your "Songs" menu to make you understand song managing
+
+If anything doesn't work, please visit "Support" tab, and leave a topic in forum. I'll also appreciate every idea to improve, so don't hesitate to leave a topic in forum.
 
 == Screenshots ==
 
@@ -54,6 +63,9 @@ WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog.
 
 == Changelog ==
 
+= 1.4.3 =
+- Fixed warnings and notices shown by WP_DEBUG that may couse errors
+- Updated language files
 = 1.4.2 =
 - Added new warnings
 - Improved few functions to work better

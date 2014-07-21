@@ -41,7 +41,6 @@ function songbook_settpage(){
         'songbook_general'=>__('General settings','wpsongbook'),
         'songbook_general_desc'=>__('Basic controls of plugin','wpsongbook'),
         'songbook_enable_filelinking'=>__('Allow file linking','wpsongbook'),
-        'songbook_enable_setbpm'=>__('Allow adding tempo to song','wpsongbook'),
         'songbook_enable_setvideolink'=>__('Allow adding video link','wpsongbook'),
         'songbook_enable_authorstax'=>__('Allow using authors','wpsongbook'),
         'songbook_enable_albumstax'=>__('Allow using albums','wpsongbook'),
@@ -51,7 +50,7 @@ function songbook_settpage(){
         'songbook_caps_desc'=>__('Allow only to users that can','wpsongbook'),
         'songbook_mincap_addfiles'=>__('Add files to songs','wpsongbook'),
         'songbook_mincap_addvideolink'=>__('Manage song video link','wpsongbook'),
-        'songbook_mincap_manauthor'=>__('Manage song authors','wpsongbook'),
+        'songbook_mincap_manauthors'=>__('Manage song authors','wpsongbook'),
         'songbook_behavior'=>__('Behavior','wpsongbook'),
         'songbook_behavior_desc'=>__('Appearance and beavior of publicly visible parts','wpsongbook'),
         'songbook_disp_backtolistinsong'=>__('Display link back to song list in song','wpsongbook'),
@@ -87,36 +86,35 @@ function songbook_settpage(){
     <form action="#" method="post" id="songbook_settsform">
     <input type="hidden" name="songbook_settings_noncename" id="songbook_noncename" value="<?php echo wp_create_nonce(plugin_basename(__FILE__)); ?>"/>
 <?php
-    if($_POST['songbook_savesets']){
-        $songbook_newopts['songbook_enable_filelinking']=$_POST['songbook_enable_filelinking']; //y
-        $songbook_newopts['songbook_enable_setbpm']=$_POST['songbook_enable_setbpm']; //y
-        $songbook_newopts['songbook_enable_setvideolink']=$_POST['songbook_enable_setvideolink']; //y
-        $songbook_newopts['songbook_enable_authorstax']=$_POST['songbook_enable_authorstax']; //y
-        $songbook_newopts['songbook_enable_genrestax']=$_POST['songbook_enable_genrestax']; //y
-        $songbook_newopts['songbook_enable_albumstax']=$_POST['songbook_enable_albumstax']; //y
-        $songbook_newopts['songbook_enable_widget']=$_POST['songbook_enable_widget'];
-        $songbook_newopts['songbook_mincap_workwithsongs']=$_POST['songbook_mincap_workwithsongs']; //y
-        $songbook_newopts['songbook_mincap_addfiles']=$_POST['songbook_mincap_addfiles']; //y
-        $songbook_newopts['songbook_mincap_addvideolink']=$_POST['songbook_mincap_addvideolink']; //y
-        $songbook_newopts['songbook_mincap_manauthors']=$_POST['songbook_mincap_manauthors']; //y
-        $songbook_newopts['songbook_disp_backtolistinsong']=$_POST['songbook_disp_backtolistinsong'];
-        $songbook_newopts['songbook_disp_filelistforlogged']=$_POST['songbook_disp_filelistforlogged'];
-        $songbook_newopts['songbook_disp_filelistinsong']=$_POST['songbook_disp_filelistinsong']; //y
-        $songbook_newopts['songbook_disp_videolinkinshc']=$_POST['songbook_disp_videolinkinshc']; //y
-        $songbook_newopts['songbook_disp_videolinkinsong']=$_POST['songbook_disp_videolinkinsong']; //y
-        $songbook_newopts['songbook_disp_authorsinshc']=$_POST['songbook_disp_authorsinshc']; //y
-        $songbook_newopts['songbook_disp_authorsinsong']=$_POST['songbook_disp_authorsinsong']; //y
-        $songbook_newopts['songbook_disp_lyrelement']=$_POST['songbook_disp_lyrelement']; //y
-        $songbook_newopts['songbook_disp_lyrelement']=$_POST['songbook_disp_lyrelement']; //y
-        $songbook_newopts['songbook_shcdefs_dispthead']=$_POST['songbook_shcdefs_dispthead']; //y
-        $songbook_newopts['songbook_shcdefs_dispyear']=$_POST['songbook_shcdefs_dispyear']; //y
-        $songbook_newopts['songbook_shcdefs_dispgenre']=$_POST['songbook_shcdefs_dispgenre']; //y
-        $songbook_newopts['songbook_shcdefs_dispalbum']=$_POST['songbook_shcdefs_dispalbum']; //y
-        $songbook_newopts['songbook_shcdefs_dispauthslink']=$_POST['songbook_shcdefs_dispauthslink']; //y
-        $songbook_newopts['songbook_shcdefs_listpageid']=$_POST['songbook_shcdefs_listpageid']; //y
-        $songbook_newopts['songbook_shcdefs_showintext']=$_POST['songbook_shcdefs_showintext']; //y
-        $songbook_newopts['songbook_shcdefs_orderby']=$_POST['songbook_shcdefs_orderby']; //y
-        $songbook_newopts['songbook_shcdefs_order']=$_POST['songbook_shcdefs_order']; //y
+    $ifposted=(isset($_POST['songbook_savesets'])&&count($_POST)>0)?$_POST:false;
+    if($ifposted){
+        $songbook_newopts['songbook_enable_filelinking']=$ifposted['songbook_enable_filelinking']; //y
+        $songbook_newopts['songbook_enable_setvideolink']=$ifposted['songbook_enable_setvideolink']; //y
+        $songbook_newopts['songbook_enable_authorstax']=$ifposted['songbook_enable_authorstax']; //y
+        $songbook_newopts['songbook_enable_genrestax']=$ifposted['songbook_enable_genrestax']; //y
+        $songbook_newopts['songbook_enable_albumstax']=$ifposted['songbook_enable_albumstax']; //y
+        $songbook_newopts['songbook_enable_widget']=$ifposted['songbook_enable_widget'];
+        $songbook_newopts['songbook_mincap_addfiles']=$ifposted['songbook_mincap_addfiles']; //y
+        $songbook_newopts['songbook_mincap_addvideolink']=$ifposted['songbook_mincap_addvideolink']; //y
+        $songbook_newopts['songbook_mincap_manauthors']=$ifposted['songbook_mincap_manauthors']; //y
+        $songbook_newopts['songbook_disp_backtolistinsong']=$ifposted['songbook_disp_backtolistinsong'];
+        $songbook_newopts['songbook_disp_filelistforlogged']=$ifposted['songbook_disp_filelistforlogged'];
+        $songbook_newopts['songbook_disp_filelistinsong']=$ifposted['songbook_disp_filelistinsong']; //y
+        $songbook_newopts['songbook_disp_videolinkinshc']=$ifposted['songbook_disp_videolinkinshc']; //y
+        $songbook_newopts['songbook_disp_videolinkinsong']=$ifposted['songbook_disp_videolinkinsong']; //y
+        $songbook_newopts['songbook_disp_authorsinshc']=$ifposted['songbook_disp_authorsinshc']; //y
+        $songbook_newopts['songbook_disp_authorsinsong']=$ifposted['songbook_disp_authorsinsong']; //y
+        $songbook_newopts['songbook_disp_lyrelement']=$ifposted['songbook_disp_lyrelement']; //y
+        $songbook_newopts['songbook_disp_lyrelement']=$ifposted['songbook_disp_lyrelement']; //y
+        $songbook_newopts['songbook_shcdefs_dispthead']=$ifposted['songbook_shcdefs_dispthead']; //y
+        $songbook_newopts['songbook_shcdefs_dispyear']=$ifposted['songbook_shcdefs_dispyear']; //y
+        $songbook_newopts['songbook_shcdefs_dispgenre']=$ifposted['songbook_shcdefs_dispgenre']; //y
+        $songbook_newopts['songbook_shcdefs_dispalbum']=$ifposted['songbook_shcdefs_dispalbum']; //y
+        $songbook_newopts['songbook_shcdefs_dispauthslink']=$ifposted['songbook_shcdefs_dispauthslink']; //y
+        $songbook_newopts['songbook_shcdefs_listpageid']=$ifposted['songbook_shcdefs_listpageid']; //y
+        $songbook_newopts['songbook_shcdefs_showintext']=$ifposted['songbook_shcdefs_showintext']; //y
+        $songbook_newopts['songbook_shcdefs_orderby']=$ifposted['songbook_shcdefs_orderby']; //y
+        $songbook_newopts['songbook_shcdefs_order']=$ifposted['songbook_shcdefs_order']; //y
         echo'<div class="successupd">';
         echo'<h3>'.$songbook_translation['changes'].'</h3>';
         echo'<ul>';
@@ -183,13 +181,13 @@ function songbook_settpage(){
                 <option value="edit_posts" <?php selected(get_option('songbook_mincap_addvideolink'),'edit_posts'); ?>>&nbsp;<?php echo$songbook_translation['edit_posts']; ?>
                 <option value="read" <?php selected(get_option('songbook_mincap_addvideolink'),'read')?>>&nbsp;<?php echo$songbook_translation['read']; ?>
             </select>
-        <label for="songbook_mincap_manauthor"><?php echo$songbook_translation['songbook_mincap_manauthor']; ?></label>
-            <select name="songbook_mincap_manauthor" id="songbook_mincap_manauthor">'
-                <option value="manage_options" <?php selected(get_option('songbook_mincap_manauthor'),'manage_options') ?>>&nbsp;<?php echo$songbook_translation['manage_options']; ?>
-                <option value="manage_categories" <?php selected(get_option('songbook_mincap_manauthor'),'manage_categories') ?>>&nbsp;<?php echo$songbook_translation['manage_categories']; ?>
-                <option value="read_private_pages" <?php selected(get_option('songbook_mincap_manauthor'),'read_private_pages'); ?>>&nbsp;<?php echo$songbook_translation['read_private_pages']; ?>
-                <option value="edit_posts" <?php selected(get_option('songbook_mincap_manauthor'),'edit_posts')?>>&nbsp;<?php echo$songbook_translation['edit_posts']; ?>
-                <option value="read" <?php selected(get_option('songbook_mincap_manauthor'),'read'); ?>>&nbsp;<?php echo$songbook_translation['read']; ?>
+        <label for="songbook_mincap_manauthors"><?php echo$songbook_translation['songbook_mincap_manauthors']; ?></label>
+            <select name="songbook_mincap_manauthors" id="songbook_mincap_manauthors">'
+                <option value="manage_options" <?php selected(get_option('songbook_mincap_manauthors'),'manage_options') ?>>&nbsp;<?php echo$songbook_translation['manage_options']; ?>
+                <option value="manage_categories" <?php selected(get_option('songbook_mincap_manauthors'),'manage_categories') ?>>&nbsp;<?php echo$songbook_translation['manage_categories']; ?>
+                <option value="read_private_pages" <?php selected(get_option('songbook_mincap_manauthors'),'read_private_pages'); ?>>&nbsp;<?php echo$songbook_translation['read_private_pages']; ?>
+                <option value="edit_posts" <?php selected(get_option('songbook_mincap_manauthors'),'edit_posts')?>>&nbsp;<?php echo$songbook_translation['edit_posts']; ?>
+                <option value="read" <?php selected(get_option('songbook_mincap_manauthors'),'read'); ?>>&nbsp;<?php echo$songbook_translation['read']; ?>
             </select>
         </div>
         <div class="oddil">
@@ -226,7 +224,7 @@ function songbook_settpage(){
 	   	'post_type'=>'page','nopaging'=>true,'orderby'=>'title'
 	));
     if(have_posts()){
-        $songbook_pageselect='<label for="songbook_mincap_manauthor">'.$songbook_translation['songbook_shcdefs_listpageid'].'</label>';
+        $songbook_pageselect='<label for="songbook_shcdefs_listpageid">'.$songbook_translation['songbook_shcdefs_listpageid'].'</label>';
         $songbook_pageselect.='<select name="songbook_shcdefs_listpageid" id="songbook_shcdefs_listpageid">';
         $songbook_pageselect.='<option value="autoaddpage">'.$songbook_translation['songbook_autoaddshcpage'];
     while (have_posts()):the_post();

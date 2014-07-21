@@ -15,10 +15,10 @@ function songbook_pluginlistshc($songbook_toedit) {
         return$songbook_toedit;
     $songbooklist_result = (get_option('songbook_shcdefs_showintext') == 'display') ? $songbook_toedit : '';
 
-    $orderby = $_GET['orderby'];
-    $authorsongs = $_GET['author'];
+    $orderby = (isset($_GET['orderby']))?$_GET['orderby']:false;
+    $authorsongs = (isset($_GET['author']))?$_GET['author']:false;
 
-    if($_GET['authors']){
+    if(isset($_GET['authors'])){
     $allauthors=songbook_objectToArray(get_terms('songauthor'));
     $i=0;
     

@@ -51,19 +51,31 @@ function songbook_metabox_files(){
         echo'</div>';
 }
 function songbook_save_filemetabox($songbook_postid){
-    if(!wp_verify_nonce($_POST['songbook_filebox_noncename'],plugin_basename(__FILE__))||!current_user_can('edit_post'))return$songbook_postid;
-    if(defined('DOING_AUTOSAVE')&&DOING_AUTOSAVE)return$songbook_postid;
+    if(!wp_verify_nonce($_POST['songbook_filebox_noncename'],plugin_basename(__FILE__))||!current_user_can('edit_post'))return;
+    if(defined('DOING_AUTOSAVE')&&DOING_AUTOSAVE)return;
         $songbook_fileids=$_POST['fileid'];
-        foreach($songbook_fileids as $songbook_fileid){
-            if($songbook_fileid!==0)
-            $files[$songbook_fileid]=array(
-                'url'=>$_POST['url_'.$songbook_fileid],
-                'private'=>$_POST['private_'.$songbook_fileid],
-                'title'=>$_POST['title_'.$songbook_fileid],
-                'indent'=>$_POST['level_'.$songbook_fileid],
-                'extension'=>$_POST['fileext_'.$songbook_fileid]
-            );
-        }
+        if(count($songbook_fileids)>1){
+            foreach($songbook_fileids as $songbook_fileid){
+                if($songbook_fileid!==0)
+                $files[$songbook_fileid]=array(
+                    'url'=>$_POST['url_'.$songbook_fileid],
+                    'private'=>$_POST['private_'.$songbook_fileid],
+                    'title'=>$_POST['title_'.$songbook_fileid],
+                    'indent'=>$_POST['level_'.$songbook_fileid],
+                    'extension'=>$_POST['fileext_'.$songbook_fileid]
+                );
+            }
+        }elseif(count($songbook_fileids)===1){
+                if($songbook_fileid!==0)
+                $files[$songbook_fileid]=array(
+                    'url'=>$_POST['url_'.$songbook_fileid],
+                    'private'=>$_POST['private_'.$songbook_fileid],
+                    'title'=>$_POST['title_'.$songbook_fileid],
+                    'indent'=>$_POST['level_'.$songbook_fileid],
+                    'extension'=>$_POST['fileext_'.$songbook_fileid]
+                );
+            }
+        if(!$files)return;
         $songbook_savevalue=serialize($files);
         update_post_meta($songbook_postid,'songbook_filebox',$songbook_savevalue);
 }
