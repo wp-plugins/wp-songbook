@@ -63,6 +63,11 @@ If anything doesn't work, please visit "Support" tab, and leave a topic in forum
 
 == Changelog ==
 
+= 1.5 =
+- Now allows choose content displayed in the list by default
+- Improved filtering archive link for custom taxonomies
+- Improved creating list table to be easier to add new columns for future
+- Updated language files
 = 1.4.3 =
 - Fixed warnings and notices shown by WP_DEBUG that may couse errors
 - Updated language files
@@ -75,7 +80,7 @@ If anything doesn't work, please visit "Support" tab, and leave a topic in forum
 = 1.4 =
 - Added taxonomy Album + enable option to settings
 - Added taxonomy Genre + enable option to settings
-- Now there's an option to use publish date in the songlist (you can set time in editor on right side in publication controls)
+- Now there's an option to use publish year in the songlist (you can set time in editor on right side in publication controls)
 - Added options to allow of displaying song list grid new columns Album, Genre and Year
 - Updated language files with few new phrases
 = 1.3 =

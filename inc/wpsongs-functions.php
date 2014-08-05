@@ -1,9 +1,83 @@
 <?php
+function sb_array_removeempty($input){
+    if(is_array($input)){
+        function filter_arr($filinput){
+            return ($filinput !== NULL && $filinput !== '');
+        }
+        return array_filter($input,'filter_arr');
+    }
+}
+
+class sbclass_maketable{
+
+private $cellnum;
+private $toreturn;
+
+public function __construct($cellnum,$headtext,$rowdata,$tableclass=''){
+$this->cellnum=$cellnum;
+
+$tableclass_fin=($tableclass)?' '.$tableclass:'';
+$this->toreturn='<table'.$tableclass_fin.'>';
+$this->toreturn.=($headtext)?$this->thead($cellnum,$headtext):'';
+$this->toreturn.=($rowdata)?$this->rowcontent($cellnum,$rowdata):'';
+$this->toreturn.='</table>';
+return 'Mazanec';
+}
+
+private function thead($cellnum,$content){
+if(!is_array($content))return null;
+$i=0;
+$toreturn='<thead>';
+while($i<$cellnum){
+	$text=($content[$i])?$content[$i]:' ';
+$toreturn.=($content[$i]!==false)?'<td>'.$content[$i].'</td>':'<td>&nbsp;</td>';
+$i++;
+}
+$toreturn.='</thead>';
+return $toreturn;
+}
+
+private function rowcontent($cellnum,$content){
+if(!is_array($content))return null;
+$x=0;
+$toreturn='';
+while($x<count($content)){
+$i=0;
+$toreturn.='<tr id="'.$x.'">';
+while($i<$cellnum){
+$value=(isset($content[$x][$i]))?$content[$x][$i]:' ';
+$toreturn.=($value!==false)?'<td>'.$value.'</td>':'<td>&nbsp;</td>';
+$i++;
+}
+$toreturn.='</tr>';
+$x++;
+}
+return $toreturn;
+}
+
+public function returnresult(){
+return $this->toreturn;
+}
+
+public function echoresult(){
+echo $this->toreturn;
+}
+}
 function songbook_check_wp_version($minver='1') {
     global $wp_version;
     if ($wp_version >= $minver) {
         return $wp_version;
     } else return false;
+}
+function songbook_objectToArray($d) {
+  if(is_object($d)) {
+    $d = get_object_vars($d);
+  }
+  if(is_array($d)) {
+    return array_map(__FUNCTION__, $d); // recursive
+  } else {
+    return $d;
+  }
 }
 function songbook_saveopt($songbook_optname,$songbook_newoptvalue){
     if(!get_option($songbook_optname))add_option($songbook_optname);
@@ -106,6 +180,21 @@ function songbook_setdefaults(){
 function authorsongsurl($url,$term,$taxonomy){
     $term_con=(array) $term;
     $listurl=get_permalink(get_option('songbook_shcdefs_listpageid'));
-    if($taxonomy!=='songauthor')return $url;
-    if($taxonomy=='songauthor')return $listurl.'?author='.$term_con['slug'];
+    if(!in_array($taxonomy,array('songauthor','songalbum','songgenre')))return $url;
+    
+    $ending='';
+    switch($taxonomy){
+        case'songauthor':
+            $ending='cont=authors&tag='.$term_con['slug'];
+        break;
+        case'songgenre':
+            $ending='cont=genres&tag='.$term_con['slug'];
+        break;
+        case'songalbum':
+            $ending='cont=albums&tag='.$term_con['slug'];
+        break;
+    }
+    if(stripos($listurl,'?'))$ending_f='&'.$ending;
+    else $ending_f='?'.$ending;
+    return $listurl.$ending_f;
 }

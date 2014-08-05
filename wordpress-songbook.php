@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: WP songbook
- * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with songs. In future there should be more features as Import from OpenLP and others.
- * Version: 1.4.3
+ * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with songs. More info in description
+ * Version: 1.5
  * Text Domain: wpsongbook
  * Domain Path: /langs
  * Author: Sjiamnocna
@@ -15,6 +15,7 @@
   if(get_option('songbook_enable_authorstax')==='enable')include_once('inc/wpsongs-cuspt-tax-author.php');
   if(get_option('songbook_enable_albumstax')==='enable')include_once('inc/wpsongs-cuspt-tax-album.php');
   if(get_option('songbook_enable_genrestax')==='enable')include_once('inc/wpsongs-cuspt-tax-genre.php');
+  if(get_option('songbook_enable_songwidgets')==='enable')include_once('inc/wpsongs-songsidewidgets.php'); 
   include_once('inc/wpsongs-addmbox-files.php');
   include_once('inc/wpsongs-addmbox-aditionals.php');
 //dont include still not working part

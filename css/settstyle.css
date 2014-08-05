@@ -44,6 +44,7 @@
     color:#666600;
 }
 #songbook_settsform .oddil select{
+    display:block;
     margin-bottom:10px;
 }
 #songbook_settsform .oddil input{

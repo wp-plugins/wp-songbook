@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Songbook\n"
-"POT-Creation-Date: 2014-07-21 09:57+0100\n"
-"PO-Revision-Date: 2014-07-21 09:59+0100\n"
+"POT-Creation-Date: 2014-08-05 08:59+0100\n"
+"PO-Revision-Date: 2014-08-05 09:03+0100\n"
 "Last-Translator: Sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
@@ -14,44 +14,44 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wordpress-songbook.php:56
+#: ../wordpress-songbook.php:57
 msgid "Really unlink file from song?"
 msgstr "Opravdu odebrat soubory z písně?"
 
-#: ../wordpress-songbook.php:57
+#: ../wordpress-songbook.php:58
 msgid "New title:"
 msgstr "Nový titulek:"
 
-#: ../wordpress-songbook.php:60
+#: ../wordpress-songbook.php:61
 msgid "Choose files to link"
 msgstr "Zvolte soubory k přidání"
 
-#: ../wordpress-songbook.php:61 ../inc/wpsongs-addmbox-files.php:4
+#: ../wordpress-songbook.php:62 ../inc/wpsongs-addmbox-files.php:4
 msgid "Link files"
 msgstr "Připojit soubory"
 
-#: ../wordpress-songbook.php:64
+#: ../wordpress-songbook.php:65
 msgid "Set new title for the file (will be shown instead of filename)"
 msgstr "Nastavit nový titulek pro soubor (zobrazí se místo jména souboru)"
 
-#: ../wordpress-songbook.php:65
+#: ../wordpress-songbook.php:66
 msgid "Set file publicly visible or visible to users only"
 msgstr ""
 "Nastavit soubor veřejně viditelným, nebo viditelným pouze pro přihlášené"
 
-#: ../wordpress-songbook.php:66
+#: ../wordpress-songbook.php:67
 msgid "Unlink file from song"
 msgstr "Odebrat soubor z písně"
 
-#: ../wordpress-songbook.php:67
+#: ../wordpress-songbook.php:68
 msgid "Click to link files to song"
 msgstr "Kliknutím připojíte soubory k písni"
 
-#: ../wordpress-songbook.php:68
+#: ../wordpress-songbook.php:69
 msgid "Set song speed"
 msgstr "Nastavit rychlost písně"
 
-#: ../wordpress-songbook.php:78
+#: ../wordpress-songbook.php:79
 #, php-format
 msgid ""
 "You haven't set your songbook page. Go %1$s to the settings %2$s and set it, "
@@ -60,11 +60,11 @@ msgstr ""
 "Ještě jste nenastavili stránku pro seznam písní.%1$s Běžte do nastavení %2$s "
 "a nastavte ji, pokud chcete vidět seznam písní na webu."
 
-#: ../wordpress-songbook.php:78
+#: ../wordpress-songbook.php:79
 msgid "Go to the settings page"
 msgstr "Jděte na stránku nastavení"
 
-#: ../wordpress-songbook.php:82
+#: ../wordpress-songbook.php:83
 #, php-format
 msgid ""
 "Your Wordpress version is to old (you use version %3$s) to run plugin WP "
@@ -74,7 +74,7 @@ msgstr ""
 "aby na ní mohl fungovat plugin WP Songbook. Systém můžete aktualizovat v "
 "%1$s Nástěnce %2$s"
 
-#: ../wordpress-songbook.php:134
+#: ../wordpress-songbook.php:135
 #, php-format
 msgid ""
 "Congratulations. You have successfuly upgraded your WP songbook plugin from "
@@ -83,7 +83,7 @@ msgstr ""
 "Gratuluji. úspěšně jste aktualizovali plugin WP Songbook z verze %2$s na "
 "verzi %1$s"
 
-#: ../wordpress-songbook.php:140
+#: ../wordpress-songbook.php:141
 msgid ""
 "Welcome, I'm the Songbook. You can use me to manage lyrics and add files to "
 "it. You can have a nice view on settings page, to recognize what am I able "
@@ -93,11 +93,12 @@ msgstr ""
 "přidávání souborů k písním. Můžete se mrknout na nastavení, abyste poznali, "
 "co vše dovedu :)"
 
-#: ../inc/wpsongs-cuspt-tax-album.php:4
+#: ../inc/wpsongs-cuspt-tax-album.php:4 ../inc/wpsongs-addadminsettings.php:29
 msgid "Albums"
 msgstr "Alba"
 
-#: ../inc/wpsongs-cuspt-tax-album.php:5 ../inc/wpsongs-shortcs.php:63
+#: ../inc/wpsongs-cuspt-tax-album.php:5 ../inc/wpsongs-shortcs.php:23
+#: ../inc/wpsongs-shortcs.php:98
 msgid "Album"
 msgstr "Album"
 
@@ -161,45 +162,36 @@ msgstr "Rychlost písně:"
 msgid "Video link:"
 msgstr "Odkaz na video:"
 
-#: ../inc/wpsongs-shortcs.php:32
-msgid "View all songs of"
-msgstr "Zobrazit všechny písně od"
-
-#: ../inc/wpsongs-shortcs.php:35 ../inc/wpsongs-contenthooks.php:55
-msgid "Go back to song list"
-msgstr "Zpět k seznamu písní"
-
-#: ../inc/wpsongs-shortcs.php:35
-msgid "Go back"
-msgstr "Jít zpět"
-
-#: ../inc/wpsongs-shortcs.php:61
+#: ../inc/wpsongs-shortcs.php:21
 msgid "Song title"
 msgstr "Název písně"
 
-#: ../inc/wpsongs-shortcs.php:62 ../inc/wpsongs-cuspt-tax-author.php:5
+#: ../inc/wpsongs-shortcs.php:22 ../inc/wpsongs-shortcs.php:94
+#: ../inc/wpsongs-cuspt-tax-author.php:5
 msgid "Author"
 msgstr "Autor"
 
-#: ../inc/wpsongs-shortcs.php:64 ../inc/wpsongs-cuspt-tax-genre.php:5
+#: ../inc/wpsongs-shortcs.php:24 ../inc/wpsongs-shortcs.php:102
+#: ../inc/wpsongs-cuspt-tax-genre.php:5
 msgid "Genre"
 msgstr "Žánr"
 
-#: ../inc/wpsongs-shortcs.php:65
+#: ../inc/wpsongs-shortcs.php:25
 msgid "Year"
 msgstr "Rok"
 
-#: ../inc/wpsongs-shortcs.php:66
-msgid "Show list of all authors"
-msgstr "Zobrazit seznam všech autorů"
-
-#: ../inc/wpsongs-shortcs.php:66
-msgid "Show all authors"
-msgstr "Všichni autoři"
-
 #: ../inc/wpsongs-shortcs.php:79
-msgid "Display whole song"
+msgid "See whole song"
 msgstr "Zobrazit celou píseň"
+
+#: ../inc/wpsongs-shortcs.php:94 ../inc/wpsongs-shortcs.php:98
+#: ../inc/wpsongs-shortcs.php:102
+msgid "Song count"
+msgstr "Počet písní"
+
+#: ../inc/wpsongs-shortcs.php:112
+msgid "See all songs of author"
+msgstr "Zobrazit všechny písně autora"
 
 #: ../inc/wpsongs-contenthooks.php:15
 msgid "Linked files"
@@ -213,11 +205,15 @@ msgstr "Otevřít"
 msgid "You must be logged to see these files"
 msgstr "Musíte být přihlášeni, abyste viděli tyto soubory"
 
+#: ../inc/wpsongs-contenthooks.php:55
+msgid "Go back to song list"
+msgstr "Zpět k seznamu písní"
+
 #: ../inc/wpsongs-contenthooks.php:58
 msgid "Author: "
 msgstr "Autor:"
 
-#: ../inc/wpsongs-cuspt-tax-genre.php:4
+#: ../inc/wpsongs-cuspt-tax-genre.php:4 ../inc/wpsongs-addadminsettings.php:30
 msgid "Genres"
 msgstr "Žánry"
 
@@ -310,20 +306,20 @@ msgstr ""
 "přiřadíte autory a publikujete ji."
 
 #: ../inc/wpsongs-addadminsettings.php:13
-msgid "Managing authors"
-msgstr "Správa autorů"
+msgid "Managing authors, albums and genres"
+msgstr "Správa autorů, alb a žánrů"
 
 #: ../inc/wpsongs-addadminsettings.php:14
 msgid ""
-"Managing authors is as simple as categories. You can simple add authors name "
-"(if you want you can add description too) and save it. Than you can chose "
-"author/s in edit song screen. Author names shoud appear on single song "
-"output."
+"Managing authors, albums and genres is as simple as managing categories. You "
+"can simple add authors name (if you want you can add description too) and "
+"save it. Than you can chose author (s) in edit song screen. Author names "
+"shoud appear on single song output."
 msgstr ""
-"Správa autorů je stejně jednoduchá, jako úprava kategorií. Můžete jednoduše "
-"přidat autorovo jméno (pokud chcete popis) a uložit jej. Potom můžete autory "
-"přiřazovat k písním přímo v editoru. Jména autorů se zobrazují při výpisu "
-"celé písně."
+"Správa autorů, alb a žánrů je stejně jednoduchá, jako úprava kategorií. "
+"Můžete jednoduše přidat názvy a uložit je, a to jak v záložce, tak v "
+"editoru, kde stačí pouze napsat název. Potom je můžete přiřazovat k písním "
+"přímo v editoru. Jména autorů se zobrazují při výpisu celé písně."
 
 #: ../inc/wpsongs-addadminsettings.php:15
 msgid "Listing songs on public"
@@ -353,7 +349,7 @@ msgstr ""
 "souboru, soubor bude z písně odebrán."
 
 #: ../inc/wpsongs-addadminsettings.php:24
-msgid "Changes:"
+msgid "Changes"
 msgstr "Změny:"
 
 #: ../inc/wpsongs-addadminsettings.php:25
@@ -365,187 +361,197 @@ msgid "Yes"
 msgstr "Ano"
 
 #: ../inc/wpsongs-addadminsettings.php:27
+#: ../inc/wpsongs-addadminsettings.php:139
+#: ../inc/wpsongs-addadminsettings.php:140
+#: ../inc/wpsongs-addadminsettings.php:147
+#: ../inc/wpsongs-addadminsettings.php:152 ../inc/wpsongs-cuspt-song.php:5
+#: ../inc/wpsongs-cuspt-song.php:17
+msgid "Songs"
+msgstr "Písně"
+
+#: ../inc/wpsongs-addadminsettings.php:28
+#: ../inc/wpsongs-cuspt-tax-author.php:4
+msgid "Authors"
+msgstr "Autoři"
+
+#: ../inc/wpsongs-addadminsettings.php:31
 msgid "Manage options"
 msgstr "Upravovat nastavení"
 
-#: ../inc/wpsongs-addadminsettings.php:28
+#: ../inc/wpsongs-addadminsettings.php:32
 msgid "Read private pages"
 msgstr "Číst soukromé stránky"
 
-#: ../inc/wpsongs-addadminsettings.php:29
+#: ../inc/wpsongs-addadminsettings.php:33
 msgid "Publish posts"
 msgstr "Publikovat"
 
-#: ../inc/wpsongs-addadminsettings.php:30
+#: ../inc/wpsongs-addadminsettings.php:34
 msgid "Edit posts"
 msgstr "Upravovat příspěvky"
 
-#: ../inc/wpsongs-addadminsettings.php:31
+#: ../inc/wpsongs-addadminsettings.php:35
 msgid "Manage categories"
 msgstr "Spravovat kategorie (rubriky)"
 
-#: ../inc/wpsongs-addadminsettings.php:32
+#: ../inc/wpsongs-addadminsettings.php:36
 msgid "Read"
 msgstr "Číst"
 
-#: ../inc/wpsongs-addadminsettings.php:33
+#: ../inc/wpsongs-addadminsettings.php:37
 msgid "Display"
 msgstr "Zobrazit"
 
-#: ../inc/wpsongs-addadminsettings.php:34
+#: ../inc/wpsongs-addadminsettings.php:38
 msgid "Last modified"
 msgstr "Data poslední změny"
 
-#: ../inc/wpsongs-addadminsettings.php:35
+#: ../inc/wpsongs-addadminsettings.php:39
 msgid "ID"
 msgstr "ID"
 
-#: ../inc/wpsongs-addadminsettings.php:36
+#: ../inc/wpsongs-addadminsettings.php:40
 msgid "Title"
 msgstr "Název"
 
-#: ../inc/wpsongs-addadminsettings.php:37
+#: ../inc/wpsongs-addadminsettings.php:41
 msgid "Random"
 msgstr "Náhodně"
 
-#: ../inc/wpsongs-addadminsettings.php:38
+#: ../inc/wpsongs-addadminsettings.php:42
 msgid "Ascending order"
 msgstr "Vzestupné pořadí"
 
-#: ../inc/wpsongs-addadminsettings.php:39
+#: ../inc/wpsongs-addadminsettings.php:43
 msgid "Descending order"
 msgstr "Sestupné pořadí"
 
-#: ../inc/wpsongs-addadminsettings.php:40
-#: ../inc/wpsongs-addadminsettings.php:267
+#: ../inc/wpsongs-addadminsettings.php:44
+#: ../inc/wpsongs-addadminsettings.php:281
 msgid "Songbook settings"
 msgstr "Nastavení zpěvníku"
 
-#: ../inc/wpsongs-addadminsettings.php:41
+#: ../inc/wpsongs-addadminsettings.php:45
 msgid "General settings"
 msgstr "Základní nastavení"
 
-#: ../inc/wpsongs-addadminsettings.php:42
+#: ../inc/wpsongs-addadminsettings.php:46
 msgid "Basic controls of plugin"
 msgstr "Základní kontrola pluginu"
 
-#: ../inc/wpsongs-addadminsettings.php:43
+#: ../inc/wpsongs-addadminsettings.php:47
 msgid "Allow file linking"
 msgstr "Povolit připojování souborů"
 
-#: ../inc/wpsongs-addadminsettings.php:44
+#: ../inc/wpsongs-addadminsettings.php:48
 msgid "Allow adding video link"
 msgstr "Povolit připojování videí"
 
-#: ../inc/wpsongs-addadminsettings.php:45
+#: ../inc/wpsongs-addadminsettings.php:49
 msgid "Allow using authors"
 msgstr "Povolit používání autorů u písní"
 
-#: ../inc/wpsongs-addadminsettings.php:46
+#: ../inc/wpsongs-addadminsettings.php:50
 msgid "Allow using albums"
 msgstr "Povolit používání alb"
 
-#: ../inc/wpsongs-addadminsettings.php:47
+#: ../inc/wpsongs-addadminsettings.php:51
 msgid "Allow using genres"
 msgstr "Povolit používání žánrů"
 
-#: ../inc/wpsongs-addadminsettings.php:48
-msgid "Allow using widget"
+#: ../inc/wpsongs-addadminsettings.php:52
+msgid "Allow using sidebar widget"
 msgstr "Povolit používání widgetu"
 
-#: ../inc/wpsongs-addadminsettings.php:49
+#: ../inc/wpsongs-addadminsettings.php:53
+msgid "Allow using songbook widgets (Under songs)"
+msgstr "Povolit používání malých widgetů pod písněmi"
+
+#: ../inc/wpsongs-addadminsettings.php:54
 msgid "Capabilities"
 msgstr "Oprávnění"
 
-#: ../inc/wpsongs-addadminsettings.php:50
+#: ../inc/wpsongs-addadminsettings.php:55
 msgid "Allow only to users that can"
 msgstr "Povolit pouze uživatelům, kteří mohou"
 
-#: ../inc/wpsongs-addadminsettings.php:51
+#: ../inc/wpsongs-addadminsettings.php:56
 msgid "Add files to songs"
 msgstr "Připojit soubory k písni"
 
-#: ../inc/wpsongs-addadminsettings.php:52
+#: ../inc/wpsongs-addadminsettings.php:57
 msgid "Manage song video link"
 msgstr "Spravovat odkaz na video"
 
-#: ../inc/wpsongs-addadminsettings.php:53
+#: ../inc/wpsongs-addadminsettings.php:58
 msgid "Manage song authors"
 msgstr "Spravovat autory písní"
 
-#: ../inc/wpsongs-addadminsettings.php:54
+#: ../inc/wpsongs-addadminsettings.php:59
 msgid "Behavior"
 msgstr "Vzhled"
 
-#: ../inc/wpsongs-addadminsettings.php:55
+#: ../inc/wpsongs-addadminsettings.php:60
 msgid "Appearance and beavior of publicly visible parts"
 msgstr "Vzhled a chování veřejně viditelných částí"
 
-#: ../inc/wpsongs-addadminsettings.php:56
+#: ../inc/wpsongs-addadminsettings.php:61
 msgid "Display link back to song list in song"
 msgstr "Zobrazovat odkaz zpět k seznamu písní"
 
-#: ../inc/wpsongs-addadminsettings.php:57
+#: ../inc/wpsongs-addadminsettings.php:62
 msgid "Display attached files only to logged-in users"
 msgstr "Zobrazit připojené soubory jen přihlášeným uživatelům"
 
-#: ../inc/wpsongs-addadminsettings.php:58
+#: ../inc/wpsongs-addadminsettings.php:63
 msgid "Display list of attached files automatically in songs"
 msgstr "Zobrazovat připojené soubory automaticky v písních"
 
-#: ../inc/wpsongs-addadminsettings.php:59
+#: ../inc/wpsongs-addadminsettings.php:64
 msgid "Display video link in song list"
 msgstr "Zobrazovat odkaz na video v seznamu písní"
 
-#: ../inc/wpsongs-addadminsettings.php:60
+#: ../inc/wpsongs-addadminsettings.php:65
 msgid "Display video link in song (as icon next to song title)"
 msgstr "Zobrazit odkaz na video v písni (jako ikonu vedle názvu písně)"
 
-#: ../inc/wpsongs-addadminsettings.php:61
+#: ../inc/wpsongs-addadminsettings.php:66
 msgid "Display authors name in song view"
 msgstr "Zobrazit jména autorů při čtení textu písně"
 
-#: ../inc/wpsongs-addadminsettings.php:62
+#: ../inc/wpsongs-addadminsettings.php:67
 msgid "Display authors name in song listing"
 msgstr "Zobrazovat jména autorů v seznamu písní"
 
-#: ../inc/wpsongs-addadminsettings.php:63
+#: ../inc/wpsongs-addadminsettings.php:68
 msgid "Wrap song lyrics with"
 msgstr "Uzavřít text písní v"
 
-#: ../inc/wpsongs-addadminsettings.php:64
+#: ../inc/wpsongs-addadminsettings.php:69
 msgid "nothing"
 msgstr "ničem"
 
-#: ../inc/wpsongs-addadminsettings.php:65
+#: ../inc/wpsongs-addadminsettings.php:70
 msgid "DIV"
 msgstr "DIV"
 
-#: ../inc/wpsongs-addadminsettings.php:66
+#: ../inc/wpsongs-addadminsettings.php:71
 msgid "BLOCKQUOTE"
 msgstr "BLOCKQUOTE"
 
-#: ../inc/wpsongs-addadminsettings.php:67
+#: ../inc/wpsongs-addadminsettings.php:72
 msgid "PRE"
 msgstr "PRE"
 
-#: ../inc/wpsongs-addadminsettings.php:68
+#: ../inc/wpsongs-addadminsettings.php:73
 msgid "CODE"
 msgstr "CODE"
 
-#: ../inc/wpsongs-addadminsettings.php:69
+#: ../inc/wpsongs-addadminsettings.php:74
 msgid "Song list defaults"
 msgstr "Nastavení seznamu písní"
 
-#: ../inc/wpsongs-addadminsettings.php:70
-msgid "Show table header in songlist"
-msgstr "Zobrazit hlavičku tabulky v seznamu písní"
-
-#: ../inc/wpsongs-addadminsettings.php:71
-msgid "Show link to authors list"
-msgstr "Zobrazit odkaz na seznam autorů"
-
-#: ../inc/wpsongs-addadminsettings.php:72
+#: ../inc/wpsongs-addadminsettings.php:75
 msgid ""
 "You should use these options to set behavior of song list. You can specify "
 "own parameters to song list lookout."
@@ -553,23 +559,36 @@ msgstr ""
 "Měli byste používat tyto možnosti k nastavení chování seznamu písní. Můžete "
 "určit vlastní parametry, ovlivňující vzhled a chování seznamu."
 
-#: ../inc/wpsongs-addadminsettings.php:73
+#: ../inc/wpsongs-addadminsettings.php:76
+msgid "On list display"
+msgstr "V seznamu zobrazit"
+
+#: ../inc/wpsongs-addadminsettings.php:77
+msgid "Show table header in songlist"
+msgstr "Zobrazit hlavičku tabulky v seznamu písní"
+
+#: ../inc/wpsongs-addadminsettings.php:78
 msgid "Show year that the song was published in"
 msgstr "Zobrazit rok publikace písně"
 
-#: ../inc/wpsongs-addadminsettings.php:74
+#: ../inc/wpsongs-addadminsettings.php:79
 msgid "Show song genre in list"
 msgstr "Zobrazit žánr písně v seznamu"
 
-#: ../inc/wpsongs-addadminsettings.php:75
+#: ../inc/wpsongs-addadminsettings.php:80
 msgid "Show song album in list"
 msgstr "Zobrazit album písně v seznamu"
 
-#: ../inc/wpsongs-addadminsettings.php:76
+#: ../inc/wpsongs-addadminsettings.php:81
+msgid ""
+"Show number of songs related to term (on Authors, Albums and Genres list)"
+msgstr "Zobrazit počet písní, přiřazených k Autorovi, Albu nebo Žánru"
+
+#: ../inc/wpsongs-addadminsettings.php:82
 msgid "Show songlist on this page"
 msgstr "Zobrazit seznam písní na této stránce"
 
-#: ../inc/wpsongs-addadminsettings.php:77
+#: ../inc/wpsongs-addadminsettings.php:83
 msgid ""
 "Show list of songs after text of selected page (or replace it's whole "
 "content))"
@@ -577,43 +596,35 @@ msgstr ""
 "Zobrazit seznam písní až po obsahu vybrané stránky (v opačném případě "
 "nahrazuje celý její obsah)"
 
-#: ../inc/wpsongs-addadminsettings.php:78
+#: ../inc/wpsongs-addadminsettings.php:84
 msgid "Order songs by"
 msgstr "Řadit písně podle"
 
-#: ../inc/wpsongs-addadminsettings.php:79
+#: ../inc/wpsongs-addadminsettings.php:85
 msgid "Order"
 msgstr "Pořadí"
 
-#: ../inc/wpsongs-addadminsettings.php:80
+#: ../inc/wpsongs-addadminsettings.php:86
 msgid "Show attached files icons"
 msgstr "Zobrazit ikony připojených souborů"
 
-#: ../inc/wpsongs-addadminsettings.php:81
+#: ../inc/wpsongs-addadminsettings.php:87
 msgid "Automatically add page"
 msgstr "Automaticky přidat stránku"
 
-#: ../inc/wpsongs-addadminsettings.php:124
+#: ../inc/wpsongs-addadminsettings.php:131
 msgid "No"
 msgstr "Ne"
 
-#: ../inc/wpsongs-addadminsettings.php:132
-#: ../inc/wpsongs-addadminsettings.php:133
-#: ../inc/wpsongs-addadminsettings.php:140
-#: ../inc/wpsongs-addadminsettings.php:145 ../inc/wpsongs-cuspt-song.php:5
-#: ../inc/wpsongs-cuspt-song.php:17
-msgid "Songs"
-msgstr "Písně"
-
-#: ../inc/wpsongs-addadminsettings.php:132
+#: ../inc/wpsongs-addadminsettings.php:139
 msgid "Page was added yet. You shouldn't have it twice :)"
 msgstr "Stránka byla již přidána. Neměli byste ji na webu mít vícekrát :)"
 
-#: ../inc/wpsongs-addadminsettings.php:144
+#: ../inc/wpsongs-addadminsettings.php:151
 msgid "Page was added correctly :)"
 msgstr "Stránka v pořádku přidána :)"
 
-#: ../inc/wpsongs-addadminsettings.php:236
+#: ../inc/wpsongs-addadminsettings.php:250
 msgid ""
 "No pages found on your site. You should add some, or use automatical adding "
 "below."
@@ -621,11 +632,11 @@ msgstr ""
 "Žádné stránky nebyly nalezeny. Měli byste nějaké přidat, anebo použít "
 "přidávání možností níže."
 
-#: ../inc/wpsongs-addadminsettings.php:254
+#: ../inc/wpsongs-addadminsettings.php:268
 msgid "Save settings"
 msgstr "Uložit nastavení"
 
-#: ../inc/wpsongs-addadminsettings.php:259
+#: ../inc/wpsongs-addadminsettings.php:273
 msgid ""
 "If you like this plugin, donate me with some money. Every pence can "
 "encourage me in developing the best :)"
@@ -633,27 +644,23 @@ msgstr ""
 "Pokud se ti líbí tento plugin, pošli mi nějaké drobné. Každý haléř mně může "
 "motivovat ve vydávání toho nejlepšího, co umím :)"
 
-#: ../inc/wpsongs-addadminsettings.php:266
-#: ../inc/wpsongs-addadminsettings.php:282
+#: ../inc/wpsongs-addadminsettings.php:280
+#: ../inc/wpsongs-addadminsettings.php:296
 msgid "Guide"
 msgstr "Příručka"
 
-#: ../inc/wpsongs-addadminsettings.php:266
+#: ../inc/wpsongs-addadminsettings.php:280
 msgid "How to use"
 msgstr "Jak používat"
 
-#: ../inc/wpsongs-addadminsettings.php:267
-#: ../inc/wpsongs-addadminsettings.php:271
+#: ../inc/wpsongs-addadminsettings.php:281
+#: ../inc/wpsongs-addadminsettings.php:285
 msgid "Settings"
 msgstr "Nastavení"
 
-#: ../inc/wpsongs-addadminsettings.php:283
+#: ../inc/wpsongs-addadminsettings.php:297
 msgid "Donate me"
 msgstr "Podpořte mně"
-
-#: ../inc/wpsongs-cuspt-tax-author.php:4
-msgid "Authors"
-msgstr "Autoři"
 
 #: ../inc/wpsongs-cuspt-tax-author.php:6
 msgid "Search authors"
@@ -758,6 +765,18 @@ msgstr "Název:"
 #: ../inc/wpsongs-widget.php:46
 msgid "Count of entries displayed:"
 msgstr "Počet zobrazovaných písní:"
+
+#~ msgid "Go back"
+#~ msgstr "Jít zpět"
+
+#~ msgid "Show list of all authors"
+#~ msgstr "Zobrazit seznam všech autorů"
+
+#~ msgid "Show all authors"
+#~ msgstr "Všichni autoři"
+
+#~ msgid "Show link to authors list"
+#~ msgstr "Zobrazit odkaz na seznam autorů"
 
 #~ msgid "Allow adding tempo to song"
 #~ msgstr "Povolit přidávání tempa písním"
