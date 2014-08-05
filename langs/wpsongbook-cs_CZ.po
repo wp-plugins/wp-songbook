@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Songbook\n"
-"POT-Creation-Date: 2014-08-05 08:59+0100\n"
-"PO-Revision-Date: 2014-08-05 09:03+0100\n"
+"POT-Creation-Date: 2014-08-05 09:59+0100\n"
+"PO-Revision-Date: 2014-08-05 10:01+0100\n"
 "Last-Translator: Sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
@@ -427,7 +427,7 @@ msgid "Descending order"
 msgstr "Sestupné pořadí"
 
 #: ../inc/wpsongs-addadminsettings.php:44
-#: ../inc/wpsongs-addadminsettings.php:281
+#: ../inc/wpsongs-addadminsettings.php:288
 msgid "Songbook settings"
 msgstr "Nastavení zpěvníku"
 
@@ -636,7 +636,15 @@ msgstr ""
 msgid "Save settings"
 msgstr "Uložit nastavení"
 
-#: ../inc/wpsongs-addadminsettings.php:273
+#: ../inc/wpsongs-addadminsettings.php:274
+msgid ""
+"You can support this plugin by voting 5 stars and saying that it works in "
+"Wordpress repositories"
+msgstr ""
+"Můžete podpořit plugin, pokud budete hlasovat pro 5 hvězdiček a oznámíte, že "
+"plugin funguje, ve zdroji pluginů na Wordpress.org."
+
+#: ../inc/wpsongs-addadminsettings.php:278
 msgid ""
 "If you like this plugin, donate me with some money. Every pence can "
 "encourage me in developing the best :)"
@@ -644,21 +652,21 @@ msgstr ""
 "Pokud se ti líbí tento plugin, pošli mi nějaké drobné. Každý haléř mně může "
 "motivovat ve vydávání toho nejlepšího, co umím :)"
 
-#: ../inc/wpsongs-addadminsettings.php:280
-#: ../inc/wpsongs-addadminsettings.php:296
+#: ../inc/wpsongs-addadminsettings.php:287
+#: ../inc/wpsongs-addadminsettings.php:303
 msgid "Guide"
 msgstr "Příručka"
 
-#: ../inc/wpsongs-addadminsettings.php:280
+#: ../inc/wpsongs-addadminsettings.php:287
 msgid "How to use"
 msgstr "Jak používat"
 
-#: ../inc/wpsongs-addadminsettings.php:281
-#: ../inc/wpsongs-addadminsettings.php:285
+#: ../inc/wpsongs-addadminsettings.php:288
+#: ../inc/wpsongs-addadminsettings.php:292
 msgid "Settings"
 msgstr "Nastavení"
 
-#: ../inc/wpsongs-addadminsettings.php:297
+#: ../inc/wpsongs-addadminsettings.php:304
 msgid "Donate me"
 msgstr "Podpořte mně"
 

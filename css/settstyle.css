@@ -75,17 +75,38 @@
     display:block;
     padding:3px 2px 0 4px;
 }
-#seccol .oddil:hover{
+#seccol .oddil ul{
     display:block;
-    background:rgba(160,220,160,0.4);
-    font-weight:bolder;
+    width:98%;
+    margin:3px auto;
+    padding:10px;
+    clear:both;
+    overflow:hidden;
+}
+#seccol .oddil ul li{
+    display:block;
+    width:98%;
+    margin:15px 3px;
+}
+#seccol .oddil #donation{
+    list-style-image:url(../img/star.png)
 }
 #seccol #donatebutt{
     display:block;
+    float:right;
     background-size:100% 100% !important;
     background-repeat:no-repeat;
-    width:160px;
-    height:60px;
+    width:110px;
+    height:45px;
     cursor:pointer;
     margin:4px 4px 4px;
+}
+#seccol #votenow{
+    display:block;
+    float:right;
+    background-size:100% 100% !important;
+    background-repeat:no-repeat;
+    margin:4px;
+    width:103px;
+    height:63px;
 }

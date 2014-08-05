@@ -269,8 +269,15 @@ function songbook_settpage(){
     </form>
     <div id="seccol">
         <div class="oddil">
-            <a id="donatebutt" style="background:url(<?php echo plugins_url('../img/paypal-donate-button.png', __FILE__ ); ?>);" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"></a>
-            <?php _e('If you like this plugin, donate me with some money. Every pence can encourage me in developing the best :)','wpsongbook'); ?>
+            <ul id="donation">
+                <li>
+                    <a id="votenow" style="background:url(<?php echo plugins_url('../img/votenow.png', __FILE__ ); ?>);" href="http://wordpress.org/plugins/wp-songbook/" target="_blank" title="WP-songbook repository"></a><?php _e('You can support this plugin by voting 5 stars and saying that it works in Wordpress repositories','wpsongbook'); ?>
+                </li>
+                <li>
+                    <a id="donatebutt" target="_blank" style="background:url(<?php echo plugins_url('../img/paypal-donate-button.png', __FILE__ ); ?>);" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"></a>
+                    <?php _e('If you like this plugin, donate me with some money. Every pence can encourage me in developing the best :)','wpsongbook'); ?>
+                </li>
+            </ul>
         </div>
     </div>
     </div>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Songbook\n"
-"POT-Creation-Date: 2014-08-05 08:58+0100\n"
-"PO-Revision-Date: 2014-08-05 08:58+0100\n"
+"POT-Creation-Date: 2014-08-05 09:59+0100\n"
+"PO-Revision-Date: 2014-08-05 09:59+0100\n"
 "Last-Translator: Sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "Language: toedit\n"
@@ -399,7 +399,7 @@ msgid "Descending order"
 msgstr ""
 
 #: ../inc/wpsongs-addadminsettings.php:44
-#: ../inc/wpsongs-addadminsettings.php:281
+#: ../inc/wpsongs-addadminsettings.php:288
 msgid "Songbook settings"
 msgstr ""
 
@@ -602,27 +602,33 @@ msgstr ""
 msgid "Save settings"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:273
+#: ../inc/wpsongs-addadminsettings.php:274
+msgid ""
+"You can support this plugin by voting 5 stars and saying that it works in "
+"Wordpress repositories"
+msgstr ""
+
+#: ../inc/wpsongs-addadminsettings.php:278
 msgid ""
 "If you like this plugin, donate me with some money. Every pence can "
 "encourage me in developing the best :)"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:280
-#: ../inc/wpsongs-addadminsettings.php:296
+#: ../inc/wpsongs-addadminsettings.php:287
+#: ../inc/wpsongs-addadminsettings.php:303
 msgid "Guide"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:280
+#: ../inc/wpsongs-addadminsettings.php:287
 msgid "How to use"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:281
-#: ../inc/wpsongs-addadminsettings.php:285
+#: ../inc/wpsongs-addadminsettings.php:288
+#: ../inc/wpsongs-addadminsettings.php:292
 msgid "Settings"
 msgstr ""
 
-#: ../inc/wpsongs-addadminsettings.php:297
+#: ../inc/wpsongs-addadminsettings.php:304
 msgid "Donate me"
 msgstr ""
 
