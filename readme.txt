@@ -63,6 +63,8 @@ If anything doesn't work, please visit "Support" tab, and leave a topic in forum
 
 == Changelog ==
 
+= 1.5.1 =
+- Fixed error with displaying list
 = 1.5 =
 - Now allows choose content displayed in the list by default
 - Improved filtering archive link for custom taxonomies
