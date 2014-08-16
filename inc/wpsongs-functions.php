@@ -194,6 +194,7 @@ function authorsongsurl($url,$term,$taxonomy){
             $ending='cont=albums&tag='.$term_con['slug'];
         break;
     }
+    
     if(stripos($listurl,'?'))$ending_f='&'.$ending;
     else $ending_f='?'.$ending;
     return $listurl.$ending_f;

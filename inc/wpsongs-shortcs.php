@@ -30,7 +30,6 @@ function songbook_pluginlistshc($songbook_toedit) {
             switch($sb_dispcont){
                 case'authors':
                     $tax='songauthor';
-                    echo 123456789;
                 break;
                 case'albums':
                     $tax='songalbum';
@@ -107,10 +106,12 @@ function songbook_pluginlistshc($songbook_toedit) {
         $thead=(count($theader)>0)?sb_array_removeempty($theader):false;
         
         $terms=get_terms($taxname);
+        
         $v=0;
         foreach($terms as $term){
             $sb_tcont[$v][]='<a id="'.$term->term_id.'" href="'.get_term_link($term,$taxname).'" title="'.__('See all songs of author','wpsongbook').'">'.$term->name.'</a>';
             $sb_tcont[$v][]=(get_option('songbook_shcdefs_dispsongcount')==='display')?$term->count:false;
+            $v++;
         }
     }
     
