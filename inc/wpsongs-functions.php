@@ -1,10 +1,10 @@
 <?php
 function sb_array_removeempty($input){
     if(is_array($input)){
-        function filter_arr($filinput){
+        function sb_filter_arr($filinput){
             return ($filinput !== NULL && $filinput !== '');
         }
-        return array_filter($input,'filter_arr');
+        return array_filter($input,'sb_filter_arr');
     }
 }
 
