@@ -13,18 +13,20 @@ function songbook_metabox_files(){
         $songbook_value=(get_post_meta($post->ID,'songbook_filebox',true)!=="N")?get_post_meta($post->ID,'songbook_filebox',true):false;
         $songbook_array=(is_array($songbook_value))?$songbook_value[0]:$songbook_value;
         $value=(unserialize($songbook_array))?unserialize($songbook_array):explode(',',$songbook_array);
-        if(is_array($value)&&$value[0]!=="N;"&&!empty($value)){
+        if(is_array($value)){
+            
         foreach(array_keys($value) as $file){
             if(is_int($file)&&wp_get_attachment_url($file)){
             $attachment=get_post($file);
             $title=($value[$file]['title'])?$value[$file]['title']:$attachment->post_title;
             $lockclass=($value[$file]['private']=='private')?'locked':'unlocked';
+            $url=(isset($value[$file]['url']))?$value[$file]['url']:wp_get_attachment_url($file);
 ?>            
 <div class="file" id="file_<?php echo $file; ?>">
                 <span class="exticon <?php echo ($value[$file]['extension'])?$value[$file]['extension']:''; ?>">
                 </span>
                 <div class="maininfo">
-                    <p class="filetitle"><a id="href_<?php echo $file; ?>" href="<?php echo $title; ?>"><?php echo $title; ?></a></p>
+                    <p class="filetitle"><a id="href_<?php echo $file; ?>" href="<?php echo $value[$file]['extension']; ?>" target="_blank"><?php echo $title; ?></a></p>
                     <input type="hidden" id="fileid" name="fileid[]" value="<?php echo $file; ?>"/>
                     <input type="hidden" id="private_<?php echo $file; ?>" name="private_<?php echo $file; ?>" value="<?php echo $value[$file]['private']; ?>"/>
                     <input type="hidden" id="url_<?php echo $file; ?>" name="url_<?php echo $file; ?>" value="<?php echo $value[$file]['url']; ?>"/>
@@ -51,7 +53,7 @@ function songbook_metabox_files(){
         echo'</div>';
 }
 function songbook_save_filemetabox($songbook_postid){
-    if(!wp_verify_nonce($_POST['songbook_filebox_noncename'],plugin_basename(__FILE__))||!current_user_can('edit_post'))return;
+    if(!wp_verify_nonce((isset($_POST['songbook_filebox_noncename']))?$_POST['songbook_filebox_noncename']:false,plugin_basename(__FILE__))||!current_user_can('edit_post'))return;
     if(defined('DOING_AUTOSAVE')&&DOING_AUTOSAVE)return;
         $songbook_fileids=$_POST['fileid'];
         if(count($songbook_fileids)>1){

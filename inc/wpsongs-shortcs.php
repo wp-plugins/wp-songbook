@@ -23,6 +23,7 @@ function songbook_pluginlistshc($songbook_toedit) {
         $theader[]=(get_option('songbook_shcdefs_dispthead')==='display'&&get_option('songbook_shcdefs_dispalbum')==='display')?__('Album','wpsongbook'):false;
         $theader[]=(get_option('songbook_shcdefs_dispthead')==='display'&&get_option('songbook_shcdefs_dispgenre')==='display')?__('Genre','wpsongbook'):false;
         $theader[]=(get_option('songbook_shcdefs_dispthead')==='display'&&get_option('songbook_shcdefs_dispyear')==='display')?__('Year','wpsongbook'):false;
+        $theader[]=(get_option('songbook_shcdefs_dispthead')==='display'&&get_option('songbook_shcdefs_dispextrascolumn')==='display')?false:false;
         $thead=(count($theader)>0)?sb_array_removeempty($theader):false;
         
 
@@ -74,12 +75,33 @@ function songbook_pluginlistshc($songbook_toedit) {
                 $salbums=get_the_term_list(get_the_ID(),'songalbum');
                 $sgenres=get_the_term_list(get_the_ID(),'songgenre');
                 $syear=get_the_time('Y');
+                $sextracolumn='';
+                
+                if(get_option('songbook_shcdefs_dispextrascolumn')==='display'){
+                    $editicon=(current_user_can('edit_posts'))?plugins_url('../img/editic.png',__FILE__):false;
+                    
+                    // 3rd param: $single. Value of true means get scalar value, not an array.    
+                    $ytlink = get_post_meta( get_the_ID(), 'songbook_video_link', true );
+
+                    // Will ensure that $ytlink is boolean false, and not an empty string.
+                    $ytlink = ( ! empty( $ytlink ) ) ? $ytlink : false;
+                            
+                    $yttitle=($ytlink && songbook_getpagetitle($ytlink))?songbook_getpagetitle($ytlink):false;
+                            
+                    $iconurl=plugins_url('../img/video.ico',__FILE__);
+                    
+                    $sextracolumn=($editicon)?'<a href="'.get_edit_post_link().'" title="'.__('Edit song','wpsongbook').'">'.'<img style="width:26px;" src="'.$editicon.'"/>'.'</a>':null;
+                    $sextracolumn.=($ytlink)?'<a href="'.$ytlink.'"':null;
+                    $sextracolumn.=($ytlink && $yttitle)? ' title="'.songbook_getpagetitle($ytlink).'"':null;
+                    $sextracolumn.=($ytlink)?'>'.'<img src="'.$iconurl.'"/>'.'</a>':null;
+                }
                 
                 $sb_tcont[$v][]='<a href="'.$surl.'" title="'.__('See whole song','wpsongbook').'">'.$stitle.'</a>';
                 $sb_tcont[$v][]=(get_option('songbook_disp_authorsinshc')==='display')?$sauthors:false;
                 $sb_tcont[$v][]=(get_option('songbook_shcdefs_dispalbum')==='display')?$salbums:false;
                 $sb_tcont[$v][]=(get_option('songbook_shcdefs_dispgenre')==='display')?$sgenres:false;
                 $sb_tcont[$v][]=(get_option('songbook_shcdefs_dispyear')==='display')?$syear:false;
+                $sb_tcont[$v][]=(get_option('songbook_shcdefs_dispextrascolumn')==='display'&&isset($sextracolumn))?$sextracolumn:false;
                 
                 $v++;
             }

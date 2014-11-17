@@ -21,11 +21,10 @@ $this->toreturn='<table'.$tableclass_fin.'>';
 $this->toreturn.=($headtext)?$this->thead($cellnum,$headtext):'';
 $this->toreturn.=($rowdata)?$this->rowcontent($cellnum,$rowdata):'';
 $this->toreturn.='</table>';
-return 'Mazanec';
 }
 
 private function thead($cellnum,$content){
-if(!is_array($content))return null;
+if(!is_array($content))return;
 $i=0;
 $toreturn='<thead>';
 while($i<$cellnum){
@@ -38,7 +37,7 @@ return $toreturn;
 }
 
 private function rowcontent($cellnum,$content){
-if(!is_array($content))return null;
+if(!is_array($content))return;
 $x=0;
 $toreturn='';
 while($x<count($content)){
@@ -91,6 +90,7 @@ function songbook_gettagcont($url, $tagname)
     return $matches[1];
  }
 function songbook_getpagetitle($url){
+    if(!file_get_contents($url))return __('The title could not be found on the given URL','wpsongbook');
     $str=file_get_contents($url);
     if(strlen($str)>0){
         preg_match("/\<title\>(.*)\<\/title\>/",$str,$title);

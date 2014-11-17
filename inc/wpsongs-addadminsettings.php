@@ -78,6 +78,7 @@ function songbook_settpage(){
         'songbook_shcdefs_dispyear'=>__('Show year that the song was published in','wpsongbook'),
         'songbook_shcdefs_dispgenre'=>__('Show song genre in list','wpsongbook'),
         'songbook_shcdefs_dispalbum'=>__('Show song album in list','wpsongbook'),
+        'songbook_shcdefs_dispextrascolumn'=>__('Show a column for displaying links to files and videos','wpsongbook'),
         'songbook_shcdefs_dispsongcount'=>__('Show number of songs related to term (on Authors, Albums and Genres list)','wpsongbook'),
         'songbook_shcdefs_listpageid'=>__('Show songlist on this page','wpsongbook'),
         'songbook_shcdefs_showintext'=>__('Show list of songs after text of selected page (or replace it\'s whole content))','wpsongbook'),
@@ -117,6 +118,7 @@ function songbook_settpage(){
         $songbook_newopts['songbook_shcdefs_dispsongcount']=$ifposted['songbook_shcdefs_dispsongcount'];
         $songbook_newopts['songbook_shcdefs_dispyear']=$ifposted['songbook_shcdefs_dispyear']; //y
         $songbook_newopts['songbook_shcdefs_dispgenre']=$ifposted['songbook_shcdefs_dispgenre']; //y
+        $songbook_newopts['songbook_shcdefs_dispextrascolumn']=$ifposted['songbook_shcdefs_dispextrascolumn']; //y
         $songbook_newopts['songbook_shcdefs_dispalbum']=$ifposted['songbook_shcdefs_dispalbum']; //y
         $songbook_newopts['songbook_shcdefs_listpageid']=$ifposted['songbook_shcdefs_listpageid']; //y
         $songbook_newopts['songbook_shcdefs_showintext']=$ifposted['songbook_shcdefs_showintext']; //y
@@ -231,6 +233,7 @@ function songbook_settpage(){
             <input type="checkbox" name="songbook_shcdefs_dispgenre" value="display" <?php checked(get_option('songbook_shcdefs_dispgenre'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispgenre']; ?><br/>
             <input type="checkbox" name="songbook_shcdefs_dispyear" value="display" <?php checked(get_option('songbook_shcdefs_dispyear'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispyear']; ?><br/>
             <input type="checkbox" name="songbook_shcdefs_dispalbum" value="display" <?php checked(get_option('songbook_shcdefs_dispalbum'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispalbum']; ?><br/>
+            <input type="checkbox" name="songbook_shcdefs_dispextrascolumn" value="display" <?php checked(get_option('songbook_shcdefs_dispextrascolumn'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispextrascolumn']; ?><br/>
             <input type="checkbox" name="songbook_shcdefs_dispsongcount" value="display" <?php checked(get_option('songbook_shcdefs_dispsongcount'),'display'); ?>><?php echo$songbook_translation['songbook_shcdefs_dispsongcount']; ?><br/>
 
             <?php

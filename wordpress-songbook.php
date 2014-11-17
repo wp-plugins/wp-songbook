@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP songbook
  * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with songs. More info in description
- * Version: 1.5.1
+ * Version: 1.5.2
  * Text Domain: wpsongbook
  * Domain Path: /langs
  * Author: Sjiamnocna
@@ -125,27 +125,10 @@ function songbook_enqueue_public(){
 }
 
 //activation hook
-function songbook_activation(){
-    include_once('inc/wpsongs-functions.php');
-    if(get_option('songbook_version')){
-        $songbook_updated=(get_option('songbook_version')!=songbook_version());
-        if($songbook_updated){
-            songbook_saveopt('songbook_version',songbook_version());
-            function sb_upgraded() {
-            echo '<div id="updated" class="updated fade"><p><strong>'.sprintf(__('Congratulations. You have successfuly upgraded your WP songbook plugin from version %2$s to %1$s'),songbook_version(),get_option('songbook_version')).'</strong> '.'</p></div>';
-            }
-            add_action('admin_notices','sb_upgraded');
-        }
-    }else{
-            function sb_firstlaunch() {
-            echo'<div id="updated" class="updated fade"><p><strong>'.sprintf(__('Welcome, I\'m the Songbook. You can use me to manage lyrics and add files to it. You can have a nice view on settings page, to recognize what am I able to do :)')).'</strong> '.'</p></div>';
-            }
-            add_action('admin_notices','sb_upgraded');
-        songbook_saveopt('songbook_version',songbook_version());
-        songbook_setdefaults(songbook_version());
-    }
-}
-register_activation_hook(__FILE__,'songbook_activation');
+
+//function songbook_activation(){}
+//register_activation_hook(__FILE__,'songbook_activation');
+
 add_action('plugins_loaded','songbook_plugin_init');
 add_action('wp_enqueue_scripts','songbook_enqueue_public');
 add_action('admin_enqueue_scripts','songbook_enqueue_admin');
