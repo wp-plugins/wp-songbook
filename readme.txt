@@ -63,6 +63,8 @@ If anything doesn't work, please visit "Support" tab, and leave a topic in forum
 
 == Changelog ==
 
+= 1.5.3 =
+- Trying to fix some bug in code, that may couse PHP error on some servers
 = 1.5.2 =
 - Added edit song button into song list
 - Readded video link to the song list

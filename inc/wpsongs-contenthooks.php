@@ -57,7 +57,7 @@ function songbook_contentfilter($songbook_toedit) {
     }
 if(get_the_term_list($post->post_id,'songauthor')){
    $songbook_curposttaxauthor=(get_option('songbook_disp_authorsinsong')=='display')?get_the_term_list($post->post_id,'songauthor',__('Author: ','wpsongbook').'&nbsp;',', '):'';
-   $songbook_editedcontent='<p style="display:block;width:98%;margin:0px auto;padding:0px 1%;font-style:italic;color:gray;font-size:110%;border-bottom:1px dashed rgb(244,222,202);">'.$songbook_curposttaxauthor.'</p>';
+   $songbook_editedcontent=(!empty($songbook_curposttaxauthor)&&$songbook_curposttaxauthor)?'<p style="display:block;width:98%;margin:0px auto;padding:0px 1%;font-style:italic;color:gray;font-size:110%;border-bottom:1px dashed rgb(244,222,202);">'.$songbook_curposttaxauthor.'</p>':'';
 }
 if(songbook_dispfiles(get_the_ID())){
     $songbook_files_result=songbook_dispfiles(get_the_ID());
