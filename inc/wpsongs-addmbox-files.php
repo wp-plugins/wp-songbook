@@ -26,7 +26,7 @@ function songbook_metabox_files(){
                 <span class="exticon <?php echo ($value[$file]['extension'])?$value[$file]['extension']:''; ?>">
                 </span>
                 <div class="maininfo">
-                    <p class="filetitle"><a id="href_<?php echo $file; ?>" href="<?php echo $value[$file]['extension']; ?>" target="_blank"><?php echo $title; ?></a></p>
+                    <p class="filetitle"><a id="href_<?php echo $file; ?>" href="<?php echo $value[$file]['url']; ?>" target="_blank"><?php echo $title; ?></a></p>
                     <input type="hidden" id="fileid" name="fileid[]" value="<?php echo $file; ?>"/>
                     <input type="hidden" id="private_<?php echo $file; ?>" name="private_<?php echo $file; ?>" value="<?php echo $value[$file]['private']; ?>"/>
                     <input type="hidden" id="url_<?php echo $file; ?>" name="url_<?php echo $file; ?>" value="<?php echo $value[$file]['url']; ?>"/>

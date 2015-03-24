@@ -29,7 +29,7 @@ function songbook_cptbase() {
     'has_archive'=>true,
     'hierarchical'=>false,
     'menu_position'=>10,
-    'supports'=>array('title','editor')
+    'supports'=>array('title','editor',(get_option('songbook_enable_comments')==='enable')?'comments':false)
   );
   register_post_type( 'song', $args );
 }

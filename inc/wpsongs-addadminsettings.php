@@ -48,6 +48,7 @@ function songbook_settpage(){
         'songbook_enable_setvideolink'=>__('Allow adding video link','wpsongbook'),
         'songbook_enable_authorstax'=>__('Allow using authors','wpsongbook'),
         'songbook_enable_albumstax'=>__('Allow using albums','wpsongbook'),
+        'songbook_enable_comments'=>__('Allow visitors add comments to the lyrics','wpsongbook'),
         'songbook_enable_genrestax'=>__('Allow using genres','wpsongbook'),
         'songbook_enable_sbwidget'=>__('Allow using sidebar widget','wpsongbook'),
         'songbook_enable_songwidgets'=>__('Allow using songbook widgets (Under songs)','wpsongbook'),
@@ -99,6 +100,7 @@ function songbook_settpage(){
         $songbook_newopts['songbook_enable_setvideolink']=$ifposted['songbook_enable_setvideolink']; //y
         $songbook_newopts['songbook_enable_authorstax']=$ifposted['songbook_enable_authorstax']; //y
         $songbook_newopts['songbook_enable_genrestax']=$ifposted['songbook_enable_genrestax']; //y
+        $songbook_newopts['songbook_enable_comments']=$ifposted['songbook_enable_comments']; //y
         $songbook_newopts['songbook_enable_albumstax']=$ifposted['songbook_enable_albumstax']; //y
         $songbook_newopts['songbook_enable_sbwidget']=$ifposted['songbook_enable_sbwidget'];
         $songbook_newopts['songbook_mincap_addfiles']=$ifposted['songbook_mincap_addfiles']; //y
@@ -169,6 +171,7 @@ function songbook_settpage(){
                 <input type="checkbox" name="songbook_enable_authorstax" value="enable" <?php checked(get_option('songbook_enable_authorstax'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_authorstax']; ?><br/>
                 <input type="checkbox" name="songbook_enable_genrestax" value="enable" <?php checked(get_option('songbook_enable_genrestax'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_genrestax']; ?><br/>
                 <input type="checkbox" name="songbook_enable_albumstax" value="enable" <?php checked(get_option('songbook_enable_albumstax'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_albumstax']; ?><br/>
+                <input type="checkbox" name="songbook_enable_comments" value="enable" <?php checked(get_option('songbook_enable_comments'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_comments']; ?><br/>
                 <input type="checkbox" name="songbook_enable_sbwidget" value="enable" <?php checked(get_option('songbook_enable_sbwidget'),'enable'); ?>><?php echo$songbook_translation['songbook_enable_sbwidget']; ?>&nbsp;&nbsp;&nbsp;<span style="color:graytext;font-size:102%;font-style:italic;">//still not implemented</span><br/>
         </div>
         <div class="oddil">

@@ -63,6 +63,10 @@ If anything doesn't work, please visit "Support" tab, and leave a topic in forum
 
 == Changelog ==
 
+
+= 1.6 =
+- Added option to allow adding comments to lyrics
+- Fixed problem with lyrics wrapper appearing on every post
 = 1.5.3 =
 - Trying to fix some bug in code, that may couse PHP error on some servers
 = 1.5.2 =

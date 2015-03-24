@@ -1,6 +1,6 @@
 <?php
 function songbook_dispfiles($songid){
-    if(get_option('songbook_disp_filelistinsong')!='display'||!get_post_meta($songid,'songbook_filebox',true)||get_option('songbook_disp_backtolistinsong')=='display'||!is_single())return NULL;
+    if(get_option('songbook_disp_filelistinsong')!='display'||!get_post_meta($songid,'songbook_filebox',true))return null;
 //download file when _get download
 //    if($_GET['download'])songbook_downfile($_GET['download']);
 //    $postmeta=(is_array(get_post_meta($songid,'songbook_filebox',true)))?get_post_meta($songid,'songbook_filebox',true)[0]:get_post_meta($songid,'songbook_filebox',true);
@@ -48,9 +48,11 @@ function songbook_dispfiles($songid){
 
 function songbook_contentfilter($songbook_toedit) {
     global $post;
-    //if not post type song, end proccess
-    if(is_search()||is_archive()||!is_single())return$songbook_toedit;
-    //add backtolist link to content
+        //if not post type song, end
+    if(is_search()||is_archive()||!is_single()||get_post_type()!=='song')return$songbook_toedit;
+        //if nothing to display, end
+    if(get_option('songbook_disp_filelistinsong')!=='display'||get_option('songbook_disp_lyrelement')!=='none'||get_option('songbook_disp_backtolistinsong')!=='display')
+        //add backtolist link to content
     if(get_option('songbook_disp_backtolistinsong')=='display'){
         $posturl=get_permalink(get_option('songbook_shcdefs_listpageid'));
         $songbook_backtolistlinklink='<a class="backtolist" href="'.$posturl.'" title="'.__('Go back to song list','wpsongbook').'">&lt;&lt;&nbsp;'.__('Go back to song list','wpsongbook').'</a>';

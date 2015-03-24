@@ -2,14 +2,15 @@
 /**
  * Plugin Name: WP songbook
  * Description: Wordpress plugin, allowing people to manage lyrics and all what has something to do with songs. More info in description
- * Version: 1.5.3
+ * Version: 1.6
  * Text Domain: wpsongbook
  * Domain Path: /langs
  * Author: Sjiamnocna
  * Author URI: http://sjiaphoto.g6.cz/
  * Plugin URI: http://sjiaphoto.g6.cz/wp-songbook/
  */
-//include other filesgo 
+//include other files
+
   include_once('inc/wpsongs-functions.php');
   include_once('inc/wpsongs-cuspt-song.php');
   if(get_option('songbook_enable_authorstax')==='enable')include_once('inc/wpsongs-cuspt-tax-author.php');
@@ -51,7 +52,7 @@ $wp_version = get_bloginfo('version');
 //  if(!wp_style_is('songbook_songlist_style','registered'))
           wp_register_style('songbook_songlist_style',plugins_url().'/wp-songbook/css/songlist.css');
 //  if(!wp_style_is('songbook_songbase_style','registered'))
-  //wp_register_style('songbook_songbase_style',plugins_url().'/wp-songbook/css/songbasics.css');
+          wp_register_style('songbook_songbase_style',plugins_url().'/wp-songbook/css/songbasics.css');
 //localize scripts
     $songbook_filebox_functions_translation=array(
         'unlink_confirm'=>__('Really unlink file from song?','wpsongbook'),
