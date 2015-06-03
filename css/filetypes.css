@@ -1,0 +1,49 @@
+/*
+Style for filetype icons
+*/
+    .file .aac{
+        background:url(../img/exticons_32/aac.png) no-repeat;
+    }
+    .file .avi{
+        background:url(../img/exticons_32/avi.png) no-repeat;
+    }
+    .file .doc{
+        background:url(../img/exticons_32/doc.png) no-repeat;
+    }
+    .file .flv{
+        background:url(../img/exticons_32/flv.png) no-repeat;
+    }
+    .file .mid{
+        background:url(../img/exticons_32/mid.png) no-repeat;
+    }
+    .file .mp3{
+        background:url(../img/exticons_32/mp3.png) no-repeat;
+    }
+    .file .mpg{
+        background:url(../img/exticons_32/mpg.png) no-repeat;
+    }
+    .file .pdf{
+        background:url(../img/exticons_32/pdf.png) no-repeat;
+    }
+    .file .ppt{
+        background:url(../img/exticons_32/ppt.png) no-repeat;
+    }
+    .file .rar{
+        background:url(../img/exticons_32/rar.png) no-repeat;
+    }
+    .file .txt{
+        background:url(../img/exticons_32/txt.png) no-repeat;
+    }
+    .file .wav{
+        background:url(../img/exticons_32/wav.png) no-repeat;
+    }
+    .file .xml{
+        background:url(../img/exticons_32/xml.png) no-repeat;
+    }
+    .file .zip{
+        background:url(../img/exticons_32/zip.png) no-repeat;
+    }
+    .file .image{
+        background:url(../img/exticons_32/undefined_image.png) no-repeat;
+        background-size:85% 80% !important;
+    }

@@ -1,0 +1,65 @@
+.backtolist{
+    display:block;
+    margin:1px;
+    font-size:110%;
+    background:rgba(122,56,24,0.4);
+}
+.sb_songfiles{
+    display:block;
+    margin:5px 15% 20px 35%;
+    background:rgba(220,210,245,0.6);
+    border:2px double #003DF5;
+    width:50%;
+}
+.sb_songfiles:before{
+    content:attr(title);
+    display:block;
+    width:100%;
+    text-align:center;
+    background:lightblue;
+    color:#003300;
+    font-size:120%;
+    font-style:italic;
+}
+.sb_songfiles .file{
+        display:inline-block;
+        overflow:hidden;
+        margin:1px auto;
+        width:97%;
+        background:rgba(244,244,244,0.5);
+        padding:4px 1.5%;
+        clear:both;
+}
+.sb_songfiles .file .maininfo{
+        float:left;
+        width:86.5%;
+        margin:0px;
+        padding:0px;
+}
+.sb_songfiles .file > .maininfo .filetitle{
+        display:block;
+        width:98%;
+        margin:0px auto;
+        padding:0px 0.5% 0px 1.5%;
+}
+.sb_songfiles .file .exticon{
+        float:left;
+        width:13.5%;
+        margin:0px;
+        padding:0px;
+        background-position:50% 50%;
+        height:30px;
+}
+.sb_songfiles .file .toolbar{
+        display:block;
+        margin:0px;
+        opacity:0;
+        padding:1px 5%;
+        transition:opacity ease-in 0.2s 0.03s;
+}
+.sb_songfiles .file:hover .toolbar{
+        opacity:1;
+}
+.sb_songfiles .file .toolbar a{
+        margin:0 5px;
+}
