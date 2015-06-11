@@ -1,0 +1,210 @@
+/*
+    Name: Theme for settings screen - WP Songbook
+    Author: sjiamnocna
+*/
+#songbook_admin_wrap{
+    display:block;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    clear:both;
+    
+    font-size:14px;
+}
+#songbook_admin_wrap #content{
+    display:block;
+    width:92%;
+    margin:5px auto;
+    background:rgb(222,222,222);
+    border:2px solid rgb(234, 234, 234);
+    border-radius:5px;
+    min-width:550px;
+    padding:5px;
+    clear:left;
+    overflow:hidden;
+}
+#songbook_admin_wrap #content .button-primary{
+    padding:10px;
+    font-size:150%;
+    height:auto;
+    margin:10px;
+}
+#songbook_admin_wrap #content .button-donate{
+    background:url(../img/paypal-donate-button.png);
+    background-size:100% 100%;
+    width:15%;
+    border:none;
+    margin-top:0;
+    min-height:48px;
+    min-width:130px;
+}
+#songbook_admin_wrap #content > .left{
+    display:block;
+    width:60%;
+    margin:10px 0 5px 0.25%;
+    padding:0;
+    float:left;
+    background:white;
+    min-height:500px;
+}
+#songbook_admin_wrap #content > .left p{
+    padding:0em 2% 0.5em;
+    margin:0 auto;
+}
+#songbook_admin_wrap #content > .left .part{
+    padding:0;
+    display:none;
+}
+#songbook_admin_wrap #content > .left .part h2{
+    display:block;
+    width:100%;
+    font-size:200%;
+    font-weight:bold;
+    padding:5px 0 2px;
+    margin:5px auto;
+    text-align:center;
+    border-bottom:1px solid lightgrey;
+}
+#songbook_admin_wrap #content > .left .part .inside{
+    width:100%;
+    padding:0 0 10px;
+    clear:left;
+    overflow:hidden;
+}
+#songbook_admin_wrap #content > .left .part .inside .left{
+    width:68%;
+    float:left;
+}
+#songbook_admin_wrap #content > .left .part .inside .left .text{
+    margin:3px auto;
+    padding:0px 1% 10px;
+    border-bottom:1px dashed blueviolet;
+}
+#songbook_admin_wrap #content > .left .part .inside .left .text:first-child{
+    margin-top:10px;
+}
+#songbook_admin_wrap #content > .left .part .inside .left .text:last-child{
+    border-bottom:none;
+}
+#songbook_admin_wrap #content > .left .part .inside .left .text .title{
+    font-size:150%;
+    padding:5px 2% 0;
+}
+#songbook_admin_wrap #content > .left .part .inside .right{
+    width:30%;
+    float:left;
+}
+#songbook_admin_wrap #content > .left .part .inside .field{
+    display:block;
+    font-size:120%;
+    width:95%;
+    margin:15px auto;
+    padding:10px 1%;
+    clear:left;
+    overflow:hidden;
+}
+#songbook_admin_wrap #content > .left .part .inside .content{
+    display:block;
+    font-size:120%;
+    width:95%;
+    margin:0px auto;
+    padding:0px 1%;
+    clear:left;
+    overflow:hidden;
+}
+#songbook_admin_wrap #content > .left .part .inside .field:hover{
+    background:rgb(254, 254, 200);
+    background:rgba(222,222,22,0.2);
+}
+#songbook_admin_wrap #content > .left .part .inside .field  .note{
+    padding:0 10px;
+    font-size:90%;
+    color:gray;
+    font-style:italic;
+}
+#songbook_admin_wrap #content > .left .part.active{
+    display:block;
+}
+#songbook_admin_wrap #content > .right{
+    display:block;
+    width:35%;
+    margin:10px 0 5px 0.25%;
+    padding:20px 0;
+    float:left;
+    background:rgb(35,40,45);
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#songbook_admin_wrap #content > .right a{
+    display:block;
+    width:60%;
+    font-size:130%;
+    font-weight: bold;
+    padding:15px;
+    background:black;
+    color:lightyellow;
+    text-align:center;
+    margin:3px 0 1px 0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:0 1px 1px 1px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#songbook_admin_wrap #content > .right a:hover{
+    border-color:blue;
+}
+#songbook_admin_wrap #content > .right a.active{
+    border-left:4px solid orangered;
+    cursor:default;
+}
+#songbook_admin_wrap #content > .right a.active:hover{
+    border-color:transparent;
+    border-left-color:orangered;
+}
+
+#songbook_admin_wrap #shcdefs_tablecont .sortable-x{
+    width:90%;
+    margin:10px auto;
+    clear:left;
+    overflow:hidden;
+}
+#songbook_admin_wrap #shcdefs_tablecont .sortable-default .tbitem{
+    padding:3px;
+    margin:5px;
+    float:left;
+    border-bottom:2px solid transparent;
+}
+#songbook_admin_wrap #shcdefs_tablecont .sortable-default .tbitem:hover{
+    cursor:pointer;
+    border-bottom-color:darkmagenta;
+}
+#songbook_admin_wrap #shcdefs_tablecont .sortable-x .tbitem{
+    display:block;
+    padding:5px;
+    margin:5px 2px;
+    cursor:move;
+    color:whitesmoke;
+    float:left;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background:blue;
+}
+#songbook_admin_wrap #shcdefs_tablecont .sortable-x .tbitem.placeholder{
+    background:transparent;
+    width:50px;
+    height: 50px;
+}
