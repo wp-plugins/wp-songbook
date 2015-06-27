@@ -1,0 +1,1135 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Songbook\n"
+"POT-Creation-Date: 2015-06-27 10:24+0100\n"
+"PO-Revision-Date: 2015-06-27 10:26+0100\n"
+"Last-Translator: sjiamnocna <jancikuvmail@gmail.com>\n"
+"Language-Team: sjiamnocna <jancikuvmail@gmail.com>\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: inc\n"
+"X-Poedit-SearchPath-1: inc/admin\n"
+
+#: inc/class.taxonomies.php:27 inc/admin/songlist.php:47
+msgid "Authors"
+msgstr "Autoři"
+
+#: inc/class.taxonomies.php:28 inc/abstract.functions.php:49
+msgid "Author"
+msgstr "Autor"
+
+#: inc/class.taxonomies.php:29
+msgid "Search authors"
+msgstr "Vyhledat autora"
+
+#: inc/class.taxonomies.php:30
+msgid "Popular authors"
+msgstr "Oblíbení autoři"
+
+#: inc/class.taxonomies.php:31
+msgid "All authors"
+msgstr "Všichni autoři"
+
+#: inc/class.taxonomies.php:34
+msgid "Edit author"
+msgstr "Upravit autora"
+
+#: inc/class.taxonomies.php:35
+msgid "Update author"
+msgstr "Aktualizovat informace"
+
+#: inc/class.taxonomies.php:36
+msgid "Add new author"
+msgstr "Přidat autora"
+
+#: inc/class.taxonomies.php:37
+msgid "New author name"
+msgstr "Jméno autora"
+
+#: inc/class.taxonomies.php:38
+msgid "Separate authors by commas"
+msgstr "Oddělte autory čárkou"
+
+#: inc/class.taxonomies.php:39
+msgid "Add or remove authors"
+msgstr "Přidat nebo odebrat autory"
+
+#: inc/class.taxonomies.php:40
+msgid "Choose from most used authors"
+msgstr "Vybrat z nejvíce přiřazovaných autorů"
+
+#: inc/class.taxonomies.php:41
+msgid "No authors found"
+msgstr "Žádný autor nenalezen"
+
+#: inc/class.taxonomies.php:42
+msgid "Song authors"
+msgstr "Autor písně"
+
+#: inc/class.taxonomies.php:54 inc/admin/songlist.php:49
+msgid "Genres"
+msgstr "Žánry"
+
+#: inc/class.taxonomies.php:55 inc/abstract.functions.php:50
+msgid "Genre"
+msgstr "Žánr"
+
+#: inc/class.taxonomies.php:56
+msgid "Search genres"
+msgstr "Vyhledávat žánr"
+
+#: inc/class.taxonomies.php:57
+msgid "Popular genres"
+msgstr "Oblíbené žánry"
+
+#: inc/class.taxonomies.php:58
+msgid "All genres"
+msgstr "Všechny žánry"
+
+#: inc/class.taxonomies.php:61
+msgid "Edit genre"
+msgstr "Upravit žánr"
+
+#: inc/class.taxonomies.php:62
+msgid "Update genre"
+msgstr "Aktualizovat informace o žánru"
+
+#: inc/class.taxonomies.php:63
+msgid "Add new genre"
+msgstr "Přidat žánr"
+
+#: inc/class.taxonomies.php:64
+msgid "New genre name"
+msgstr "Název nového žánru"
+
+#: inc/class.taxonomies.php:65
+msgid "Separate genres by commas"
+msgstr "Oddělte žánry čárkou"
+
+#: inc/class.taxonomies.php:66
+msgid "Add or remove genres"
+msgstr "Přidat nebo odebrat žánry"
+
+#: inc/class.taxonomies.php:67
+msgid "Choose from most used genres"
+msgstr "Vybrat z nejvíce přiřazovaných žánrů"
+
+#: inc/class.taxonomies.php:68
+msgid "No genres found"
+msgstr "Žádný žánr nenalezen"
+
+#: inc/class.taxonomies.php:69
+msgid "Song genres"
+msgstr "Žánr písně"
+
+#: inc/class.taxonomies.php:81 inc/admin/songlist.php:48
+msgid "Albums"
+msgstr "Alba"
+
+#: inc/class.taxonomies.php:82 inc/abstract.functions.php:51
+msgid "Album"
+msgstr "Album"
+
+#: inc/class.taxonomies.php:83
+msgid "Search albums"
+msgstr "Prohledávat alba"
+
+#: inc/class.taxonomies.php:84
+msgid "Popular albums"
+msgstr "Oblíbená alba"
+
+#: inc/class.taxonomies.php:85
+msgid "All albums"
+msgstr "Všechny alba"
+
+#: inc/class.taxonomies.php:88
+msgid "Edit album"
+msgstr "Upravit album"
+
+#: inc/class.taxonomies.php:89
+msgid "Update album"
+msgstr "Aktualizovat album"
+
+#: inc/class.taxonomies.php:90
+msgid "Add new album"
+msgstr "Přidat nové album"
+
+#: inc/class.taxonomies.php:91
+msgid "New album name"
+msgstr "Jméno nového alba"
+
+#: inc/class.taxonomies.php:92
+msgid "Separate albums by commas"
+msgstr "Oddělte alba čárkami"
+
+#: inc/class.taxonomies.php:93
+msgid "Add or remove albums"
+msgstr "Přidat nebo odebrat alba"
+
+#: inc/class.taxonomies.php:94
+msgid "Choose from most used albums"
+msgstr "Vybrat z nejpoužívanějších alb"
+
+#: inc/class.taxonomies.php:95
+msgid "No albums found"
+msgstr "Žádná alba nenalezena"
+
+#: inc/class.taxonomies.php:96
+msgid "Song albums"
+msgstr "Album písně"
+
+#: inc/class.base.php:39
+msgid "Really unlink file from song?"
+msgstr "Opravdu odebrat soubory z písně?"
+
+#: inc/class.base.php:40
+msgid "New title:"
+msgstr "Nový titulek:"
+
+#: inc/class.base.php:43
+msgid "Choose files to link"
+msgstr "Zvolte soubory k přidání"
+
+#: inc/class.base.php:44 inc/class.metabox.php:11
+msgid "Link files"
+msgstr "Připojit soubory"
+
+#: inc/class.base.php:47
+msgid "Set new title for the file (will be shown instead of filename)"
+msgstr "Nastavit nový titulek pro soubor (zobrazí se místo jména souboru)"
+
+#: inc/class.base.php:48
+msgid "Set file publicly visible or visible to users only"
+msgstr ""
+"Nastavit soubor veřejně viditelným, nebo viditelným pouze pro přihlášené"
+
+#: inc/class.base.php:49
+msgid "Unlink file from song"
+msgstr "Odebrat soubor z písně"
+
+#: inc/class.base.php:50
+msgid "Click to link files to song"
+msgstr "Kliknutím připojíte soubory k písni"
+
+#: inc/class.base.php:51
+msgid "Set song speed"
+msgstr "Nastavit rychlost písně"
+
+#: inc/class.metabox.php:18
+msgid "Add files"
+msgstr "Přidat soubory"
+
+#: inc/class.metabox.php:57
+msgid ""
+"No file linked with this song. You have to link some first, to see it here. "
+"Simply click one of the buttons above :)"
+msgstr ""
+"Nebyly nalezeny žádné soubory, přidané k této písni. Musíte nejprve nějaké "
+"přidat, jednoduchým kliknutím na tlačítka výše :)"
+
+#: inc/class.posttypes.php:25 inc/class.posttypes.php:37
+#: inc/class.admin.php:25 inc/admin/songlist.php:46
+msgid "Songs"
+msgstr "Písně"
+
+#: inc/class.posttypes.php:26
+msgid "Song"
+msgstr "Píseň"
+
+#: inc/class.posttypes.php:27
+msgid "Add new"
+msgstr "Přidat"
+
+#: inc/class.posttypes.php:28
+msgid "Add new song"
+msgstr "Přidat píseň"
+
+#: inc/class.posttypes.php:29
+msgid "Edit song"
+msgstr "Upravit píseň"
+
+#: inc/class.posttypes.php:30
+msgid "New song"
+msgstr "Nová píseň"
+
+#: inc/class.posttypes.php:31
+msgid "All songs"
+msgstr "Všechny písně"
+
+#: inc/class.posttypes.php:32
+msgid "View song"
+msgstr "Zobrazit píseň"
+
+#: inc/class.posttypes.php:33
+msgid "Search songs"
+msgstr "Vyhledat píseň"
+
+#: inc/class.posttypes.php:34
+msgid "No song found"
+msgstr "Žádná píseň nenalezena"
+
+#: inc/class.posttypes.php:35
+msgid "No song found in trash"
+msgstr "Žádná píseň nenalezena v koši"
+
+#: inc/abstract.functions.php:37
+msgid "Go back to the song list"
+msgstr "Zpět k seznamu písní"
+
+#: inc/abstract.functions.php:48 inc/abstract.functions.php:57
+#: inc/abstract.functions.php:61 inc/abstract.functions.php:65
+msgid "Title"
+msgstr "Název"
+
+#: inc/abstract.functions.php:52
+msgid "Year"
+msgstr "Rok"
+
+#: inc/abstract.functions.php:53 inc/abstract.functions.php:77
+msgid "Video"
+msgstr "Video"
+
+#: inc/abstract.functions.php:54 inc/abstract.functions.php:78
+msgid "Song files"
+msgstr "Soubory písně"
+
+#: inc/abstract.functions.php:58 inc/abstract.functions.php:62
+#: inc/abstract.functions.php:66
+msgid "Count"
+msgstr "Počet"
+
+#: inc/abstract.functions.php:72
+msgid "Display lyrics for"
+msgstr "Zobrazit text písně"
+
+#: inc/class.admin.php:12 inc/class.admin.php:115
+msgid "Settings"
+msgstr "Nastavení"
+
+#: inc/class.admin.php:12 inc/class.admin.php:55 inc/class.admin.php:128
+msgid "Songbook settings"
+msgstr "Nastavení zpěvníku"
+
+#: inc/class.admin.php:54
+msgid "Plugin info"
+msgstr "Informace o pluginu"
+
+#: inc/class.admin.php:56
+msgid "Capabilities"
+msgstr "Oprávnění"
+
+#: inc/class.admin.php:58
+msgid "Language"
+msgstr "Jazyk"
+
+#: inc/class.admin.php:59
+msgid "Song content"
+msgstr "Obsah písní"
+
+#: inc/class.admin.php:60
+msgid "Song list behavior"
+msgstr "Vzhled seznamu písní"
+
+#: inc/class.admin.php:64
+msgid "WP Songbook plugin settings"
+msgstr "WP Songbook - nastavení pluginu"
+
+#: inc/class.admin.php:106
+msgid "Save settings"
+msgstr "Uložit nastavení"
+
+#: inc/class.admin.php:129
+msgid "Donate me"
+msgstr "Podpořte mně"
+
+#: inc/admin/basic.php:3
+msgid "Allow file linking"
+msgstr "Povolit připojování souborů"
+
+#: inc/admin/basic.php:6
+msgid "Adds extra field for attaching files to the song"
+msgstr "Přidá nové pole pro připojení souborů k písním"
+
+#: inc/admin/basic.php:11 inc/admin/basic.php:27 inc/admin/basic.php:43
+#: inc/admin/basic.php:59 inc/admin/basic.php:75 inc/admin/basic.php:91
+#: inc/admin/basic.php:108 inc/admin/basic.php:125 inc/admin/basic.php:142
+msgid "Disable"
+msgstr "Zakázat"
+
+#: inc/admin/basic.php:12 inc/admin/basic.php:28 inc/admin/basic.php:44
+#: inc/admin/basic.php:60 inc/admin/basic.php:76 inc/admin/basic.php:92
+#: inc/admin/basic.php:109 inc/admin/basic.php:126 inc/admin/basic.php:143
+msgid "Enable"
+msgstr "Povolit"
+
+#: inc/admin/basic.php:19
+msgid "Allow adding video link"
+msgstr "Povolit připojování videí"
+
+#: inc/admin/basic.php:22
+msgid "Adds extra field for song video link (Youtube)"
+msgstr "Přidá speciální políčko pro odkaz na video (Youtube)"
+
+#: inc/admin/basic.php:35
+msgid "Allow using authors"
+msgstr "Povolit používání autorů u písní"
+
+#: inc/admin/basic.php:38
+msgid "Adds \"Authors\" taxonomy to sort songs by its author"
+msgstr "Přidá taxonomii \"Autoři\" k řazení písní podle autorů"
+
+#: inc/admin/basic.php:51
+msgid "Allow using albums"
+msgstr "Povolit používání alb"
+
+#: inc/admin/basic.php:54
+msgid "Adds \"Albums\" taxonomy to sort songs by its album"
+msgstr "Přidá taxonomii \"Alba\" k řazení písní podle alb"
+
+#: inc/admin/basic.php:67
+msgid "Allow using genres"
+msgstr "Povolit používání žánrů"
+
+#: inc/admin/basic.php:70
+msgid "Adds \"Genre\" taxonomy to sort songs by its genre"
+msgstr "Přidá taxonomii \"Žánry\" k řazení písní podle žánrů"
+
+#: inc/admin/basic.php:83
+msgid "Enable song comments"
+msgstr "Povolit komentáře písní"
+
+#: inc/admin/basic.php:86
+msgid ""
+"Allows users to add comments to song (it may be set also differently for "
+"each song, if this is enabled)"
+msgstr ""
+"Umožní uživatelům webu komentovat písně (pokud toto povolíte, můžete to "
+"vypnout u každé písně zvlášť)"
+
+#: inc/admin/basic.php:99
+msgid "Allow using playlists"
+msgstr "Povolit používání seznamů písní"
+
+#: inc/admin/basic.php:102 inc/admin/basic.php:119 inc/admin/basic.php:136
+#: inc/admin/songlist.php:239 inc/admin/songlist.php:256
+msgid "Still in development, use at your own risk :)"
+msgstr "Stále ve vývoji - použijte na vlastní nebezpečí :)"
+
+#: inc/admin/basic.php:103
+msgid ""
+"Adds new post type, that may make song lists (more songs together in custom "
+"order)"
+msgstr ""
+"Přidá nový typ obsahu, který umožní vytvořit seznam písní (více písní po "
+"sobě v libovolném pořadí)"
+
+#: inc/admin/basic.php:116
+msgid "Allow using sidebar widget"
+msgstr "Povolit používání widgetu"
+
+#: inc/admin/basic.php:120
+msgid ""
+"Adds new widget to display songbook info. You can find it on the Themes -> "
+"Widgets page"
+msgstr ""
+"Přidá nový postranní panel ke zobrazení informací o písních. Můžete jej "
+"najít v záložce Vzhled -> Widgety"
+
+#: inc/admin/basic.php:133
+msgid "Allow Songside widgets"
+msgstr "Povolit Widgety písní"
+
+#: inc/admin/basic.php:137
+msgid ""
+"Adds opportunity to add useful informations to the bottom of the song "
+"content (you can specify here and also in editor for current song)"
+msgstr ""
+"Umožňuje přidávat užitečné informace pod obsah písně (pokud je povoleno, "
+"můžete obsah upravit individuálně pod každou písní v editoru)"
+
+#: inc/admin/pluginfo.php:4
+msgid "Wordpress Songbook"
+msgstr "Zpěvník pro Wordpress"
+
+#: inc/admin/pluginfo.php:5
+msgid ""
+"You may use these pages to set the behavior of the plugin. Just choose part "
+"that you would like to change on the right."
+msgstr ""
+"Použijte tyto stránky k nastavení chování a vzhledu pluginu. Stačí zvolit, "
+"kterou část funkcí chcete nastavit vpravo."
+
+#: inc/admin/pluginfo.php:8
+msgid "Notice"
+msgstr "Upozornění"
+
+#: inc/admin/pluginfo.php:9
+msgid ""
+"Some of the features are still in development or were not implemented yet. "
+"Please, use them with caution on your own risk"
+msgstr ""
+"Některé funkce jsou stále ve vývoji, nebo dosud nebyly zprovozněny. "
+"Používejte je jen na vlastní riziko."
+
+#: inc/admin/songcontent.php:3
+msgid "Display link back to songlist"
+msgstr "Zobrazit odkaz zpět k seznamu"
+
+#: inc/admin/songcontent.php:6
+msgid "Adds link to the page set for the song list above the lyrics"
+msgstr "Přidá odkaz na stránku nastavenou jako seznam písní nad text písně"
+
+#: inc/admin/songcontent.php:11 inc/admin/songcontent.php:27
+#: inc/admin/songcontent.php:43 inc/admin/songcontent.php:77
+#: inc/admin/songcontent.php:93 inc/admin/songcontent.php:109
+#: inc/admin/songlist.php:148 inc/admin/songlist.php:164
+#: inc/admin/songlist.php:180 inc/admin/songlist.php:196
+#: inc/admin/songlist.php:212 inc/admin/songlist.php:228
+#: inc/admin/songlist.php:245 inc/admin/songlist.php:262
+msgid "Don't display"
+msgstr "Nezobrazovat"
+
+#: inc/admin/songcontent.php:12 inc/admin/songcontent.php:28
+#: inc/admin/songcontent.php:44 inc/admin/songcontent.php:78
+#: inc/admin/songcontent.php:94 inc/admin/songcontent.php:110
+#: inc/admin/songlist.php:149 inc/admin/songlist.php:165
+#: inc/admin/songlist.php:181 inc/admin/songlist.php:197
+#: inc/admin/songlist.php:213 inc/admin/songlist.php:229
+#: inc/admin/songlist.php:246 inc/admin/songlist.php:263
+msgid "Display"
+msgstr "Zobrazit"
+
+#: inc/admin/songcontent.php:19
+msgid "Display attached files"
+msgstr "Zobrazit připojené soubory"
+
+#: inc/admin/songcontent.php:22
+msgid "Shows attached file list in songs"
+msgstr "Zobrazit připojené soubory při zobrazení písně"
+
+#: inc/admin/songcontent.php:35
+msgid "Display files only for members"
+msgstr "Zobrazit připojené soubory jen přihlášeným uživatelům"
+
+#: inc/admin/songcontent.php:38
+msgid "Whether to display the song files only to logged in members of the site"
+msgstr "Zobrazit připojené soubory jen přihlášeným uživatelům"
+
+#: inc/admin/songcontent.php:51 inc/admin/songlist.php:236
+msgid "Display video link"
+msgstr "Zobrazit odkaz na video"
+
+#: inc/admin/songcontent.php:54
+msgid "Whether to display video link and where)"
+msgstr ""
+"Nastaví, jestli chcete zobrazit odkaz na video, a umožňuje zvolit, kde jej "
+"chcete zobrazit."
+
+#: inc/admin/songcontent.php:59
+msgid "Dont display"
+msgstr "Nezobrazovat"
+
+#: inc/admin/songcontent.php:60
+msgid "Display in songs head (together with authors etc.)"
+msgstr "Zobrazit v hlavičce písně (společně se jmény autorů ap.)"
+
+#: inc/admin/songcontent.php:61
+msgid "Embed (below lyrics)"
+msgstr "Vložit do stránky přehrávač (pod text)"
+
+#: inc/admin/songcontent.php:62
+msgid "In the file list"
+msgstr "Do seznamu souborů"
+
+#: inc/admin/songcontent.php:69 inc/admin/songcontent.php:72
+msgid "Display authors in songs"
+msgstr "Zobrazit jména autorů při čtení textu písně"
+
+#: inc/admin/songcontent.php:85 inc/admin/songcontent.php:88
+msgid "Display genres in songs"
+msgstr "Zobrazovat žánr písně"
+
+#: inc/admin/songcontent.php:101
+msgid "Display albums in songs"
+msgstr "Zobrazit alba při čtení textu písně"
+
+#: inc/admin/songcontent.php:104
+msgid "Display album in songs"
+msgstr "Zobrazit alba v písni"
+
+#: inc/admin/songcontent.php:117
+msgid "Lyrics wrapper"
+msgstr "Obal textu písně"
+
+#: inc/admin/songcontent.php:120
+msgid "Select element which should wrap the song lyrics"
+msgstr "Vyber, čím má být text písně obalen"
+
+#: inc/admin/songcontent.php:125
+msgid "No element"
+msgstr "Ničím"
+
+#: inc/admin/songcontent.php:126
+msgid "Div"
+msgstr "Div"
+
+#: inc/admin/songcontent.php:127
+msgid "Blockquote"
+msgstr "Citace"
+
+#: inc/admin/songcontent.php:128
+msgid "Preformated"
+msgstr "Předformátovaný text"
+
+#: inc/admin/songcontent.php:129
+msgid "Code"
+msgstr "Kód"
+
+#: inc/admin/capabilities.php:3
+msgid "Show Songs menu"
+msgstr "Zobrazit položku Písně v administraci"
+
+#: inc/admin/capabilities.php:6
+msgid ""
+"Choose minimal permission, which user needs to be able to even see the "
+"\"Songs\" menu"
+msgstr ""
+"Vyberte právo, které uživatel musí mít, aby se mu zobrazovala záložka \"písně"
+"\""
+
+#: inc/admin/capabilities.php:11 inc/admin/capabilities.php:30
+#: inc/admin/capabilities.php:49 inc/admin/capabilities.php:68
+msgid "Manage options"
+msgstr "Upravovat nastavení"
+
+#: inc/admin/capabilities.php:12 inc/admin/capabilities.php:31
+#: inc/admin/capabilities.php:50 inc/admin/capabilities.php:69
+msgid "Read private pages"
+msgstr "Číst soukromé stránky"
+
+#: inc/admin/capabilities.php:13 inc/admin/capabilities.php:32
+#: inc/admin/capabilities.php:51 inc/admin/capabilities.php:70
+msgid "Publish posts"
+msgstr "Publikovat"
+
+#: inc/admin/capabilities.php:14 inc/admin/capabilities.php:33
+#: inc/admin/capabilities.php:52 inc/admin/capabilities.php:71
+msgid "Edit posts"
+msgstr "Upravovat příspěvky"
+
+#: inc/admin/capabilities.php:15 inc/admin/capabilities.php:34
+#: inc/admin/capabilities.php:53 inc/admin/capabilities.php:72
+msgid "Read"
+msgstr "Číst"
+
+#: inc/admin/capabilities.php:22
+msgid "Add files or video link to songs"
+msgstr "Přidat soubory nebo odkaz na video k písni"
+
+#: inc/admin/capabilities.php:25
+msgid ""
+"Choose minimal permission, which user needs to be able to add files or video "
+"links to the songs"
+msgstr ""
+"Vyberte právo, které uživatel musí mít, aby mohl přidávat a upravovat odkaz "
+"na video"
+
+#: inc/admin/capabilities.php:41
+msgid "Add and edit song taxonomies (authors, albums, genres)"
+msgstr "Přidat či upravit taxonomie (Autoři, Alba, Žánry)"
+
+#: inc/admin/capabilities.php:44
+msgid ""
+"Choose minimal permission, which user needs to add and edit song taxonomies "
+"like Authors, Albums or Genre"
+msgstr ""
+"Vyberte právo, které uživatel musí mít, aby mohl přidávat a upravovat "
+"taxonomie (Autoři, Alba, Žánry)"
+
+#: inc/admin/capabilities.php:60
+msgid "Update song widget settings"
+msgstr "Upravovat nastavení panelů s informacemi pod písní"
+
+#: inc/admin/capabilities.php:63
+msgid ""
+"Choose minimal permission, which user needs to be able to set content of the "
+"song widgets"
+msgstr ""
+"Vyberte právo, které uživatel musí mít, aby mohl měnit obsah postranního "
+"panelu písní"
+
+#: inc/admin/language.php:2
+msgid "Back to list link text"
+msgstr "Text \"Zpět k seznamu\""
+
+#: inc/admin/language.php:5
+msgid "Sets the back to list link text"
+msgstr "Nastaví text odkazu \"Zpět k seznamu\""
+
+#: inc/admin/songlist.php:3
+msgid "Song list page"
+msgstr "Stránka seznamu písní"
+
+#: inc/admin/songlist.php:6
+msgid "Choose page on which should be the list printed"
+msgstr "Vyberte stránku, na které bude seznam zobrazen"
+
+#: inc/admin/songlist.php:14
+msgid "Autoadd new page"
+msgstr "Automaticky přidat stránku"
+
+#: inc/admin/songlist.php:29
+msgid "Visit page:"
+msgstr "Zobrazit stránku:"
+
+#: inc/admin/songlist.php:32
+msgid "Fill in your new page title"
+msgstr "Vyplňte název nové stránky"
+
+#: inc/admin/songlist.php:38
+msgid "Display first"
+msgstr "V seznamu zobrazit"
+
+#: inc/admin/songlist.php:41
+msgid ""
+"Sets what will the list contain. You may set, the list will contain names of "
+"all authors with link to list of their songs etc."
+msgstr ""
+"Nastaví, co má seznam obsahovat. Např. můžete nastavit, že seznam zobrazí "
+"jména všech autorů s odkazy na jejich písně ap."
+
+#: inc/admin/songlist.php:56
+msgid "Songlist table content"
+msgstr "Obsah seznamu písní"
+
+#: inc/admin/songlist.php:60
+msgid "Only for experimental use"
+msgstr "Jen pro experimentální použití"
+
+#: inc/admin/songlist.php:61
+msgid "Allows to set order of collumns in the song list table"
+msgstr "Umožní zvolit pořadí sloupců v seznamu písní"
+
+#: inc/admin/songlist.php:106
+msgid "Order songs by"
+msgstr "Řadit písně podle"
+
+#: inc/admin/songlist.php:109
+msgid "This will order the songs by selected term"
+msgstr "Toto seřadí písně podle zvolené možnosti"
+
+#: inc/admin/songlist.php:114
+msgid "Song title"
+msgstr "Název písně"
+
+#: inc/admin/songlist.php:115
+msgid "Song author"
+msgstr "Autor písně"
+
+#: inc/admin/songlist.php:116
+msgid "Song album"
+msgstr "Album písně"
+
+#: inc/admin/songlist.php:117
+msgid "Song genre"
+msgstr "Žánr písně"
+
+#: inc/admin/songlist.php:124
+msgid "List order"
+msgstr "Řazení seznamu"
+
+#: inc/admin/songlist.php:127
+msgid "Sets ascending or descending ordering by the term above"
+msgstr "Nastaví "
+
+#: inc/admin/songlist.php:132
+msgid "Ascending"
+msgstr "Vzestupné pořadí"
+
+#: inc/admin/songlist.php:133
+msgid "Descending"
+msgstr "Sestupné pořadí"
+
+#: inc/admin/songlist.php:140
+msgid "Display table head"
+msgstr "Zobrazit hlavičku tabulky"
+
+#: inc/admin/songlist.php:143
+msgid "Display each column's description in the song list"
+msgstr "Zobrazovat nadpis každého sloupce tabulky v seznamu písní"
+
+#: inc/admin/songlist.php:156
+msgid "Display author"
+msgstr "Zobrazit autora"
+
+#: inc/admin/songlist.php:159
+msgid "Display author(s) of each song in the list"
+msgstr "Zobrazit jména autorů v seznamu písní"
+
+#: inc/admin/songlist.php:172
+msgid "Display genre"
+msgstr "Zobrazit žánr"
+
+#: inc/admin/songlist.php:175
+msgid "Display genre of each song in the list"
+msgstr "Zobrazit žánr písně v seznamu písní"
+
+#: inc/admin/songlist.php:188
+msgid "Display album"
+msgstr "Zobrazit album"
+
+#: inc/admin/songlist.php:191
+msgid "Display album of each song in the list"
+msgstr "Zobrazit album písně v seznamu písní"
+
+#: inc/admin/songlist.php:204
+msgid "Display year"
+msgstr "Zobrazit rok"
+
+#: inc/admin/songlist.php:207
+msgid ""
+"Adds column to display song year - you have to set it as publishing time of "
+"the song in the \"publish\" tab of editor"
+msgstr ""
+"Přidá sloupec s rokem, který nastavíte v editoru výběrem data publikace"
+
+#: inc/admin/songlist.php:220
+msgid "Display song count"
+msgstr "Zobrazit počet písní"
+
+#: inc/admin/songlist.php:223
+msgid ""
+"Displays count of the songs contained in current term (Author, Album or "
+"Genre) - useful e.g. when you set a list of authors"
+msgstr ""
+"Zobrazí počet písní spadající konkrétnímu zadání (Autora, Alba nebo Žánru) - "
+"např. v seznamu autorů uvedete počet písní"
+
+#: inc/admin/songlist.php:240
+msgid "Whether to display video link in the song list"
+msgstr "Zobrazit odkaz na video v seznamu písní"
+
+#: inc/admin/songlist.php:253
+msgid "Display linked files"
+msgstr "Zobrazit připojené soubory"
+
+#: inc/admin/songlist.php:257
+msgid "Whether to display linked files (as filetype icons) in the song list"
+msgstr "Zobrazí připojené soubory jako ikony v seznamu písní"
+
+#~ msgid "Display video link in songs"
+#~ msgstr "Zobrazovat odkaz na video při zobrazení písně"
+
+#~ msgid ""
+#~ "You haven't set your songbook page. Go %1$s to the settings %2$s and set "
+#~ "it, if you want to see the song list on website."
+#~ msgstr ""
+#~ "Ještě jste nenastavili stránku pro seznam písní.%1$s Běžte do nastavení "
+#~ "%2$s a nastavte ji, pokud chcete vidět seznam písní na webu."
+
+#~ msgid "Go to the settings page"
+#~ msgstr "Jděte na stránku nastavení"
+
+#~ msgid ""
+#~ "Your Wordpress version is to old (you use version %3$s) to run plugin WP "
+#~ "Songbook. You can update to newest version in %1$s Dashboard %2$s"
+#~ msgstr ""
+#~ "Verze Wordpressu, kterou používáte je příliš stará (používáte verzi %3$s) "
+#~ "aby na ní mohl fungovat plugin WP Songbook. Systém můžete aktualizovat v "
+#~ "%1$s Nástěnce %2$s"
+
+#~ msgid ""
+#~ "Congratulations. You have successfuly upgraded your WP songbook plugin "
+#~ "from version %2$s to %1$s"
+#~ msgstr ""
+#~ "Gratuluji. úspěšně jste aktualizovali plugin WP Songbook z verze %2$s na "
+#~ "verzi %1$s"
+
+#~ msgid ""
+#~ "Welcome, I'm the Songbook. You can use me to manage lyrics and add files "
+#~ "to it. You can have a nice view on settings page, to recognize what am I "
+#~ "able to do :)"
+#~ msgstr ""
+#~ "Vítejte, já jsem WP Songbook. Můžete mně použít ke správě textů písní a "
+#~ "přidávání souborů k písním. Můžete se mrknout na nastavení, abyste "
+#~ "poznali, co vše dovedu :)"
+
+#~ msgid "Another song properties"
+#~ msgstr "Další informace o písni"
+
+#~ msgid "Song tempo (BPM):"
+#~ msgstr "Rychlost písně:"
+
+#~ msgid "See whole song"
+#~ msgstr "Zobrazit celou píseň"
+
+#~ msgid "See all songs of author"
+#~ msgstr "Zobrazit všechny písně autora"
+
+#~ msgid "Show"
+#~ msgstr "Otevřít"
+
+#~ msgid "You must be logged to see these files"
+#~ msgstr "Musíte být přihlášeni, abyste viděli tyto soubory"
+
+#~ msgid "Author: "
+#~ msgstr "Autor:"
+
+#~ msgid "How to use songbook plugin"
+#~ msgstr "Jak používat tento Zpěvník"
+
+#~ msgid ""
+#~ "Using this plugin is very simple. Plugin allows you to add own posts "
+#~ "called song, then you can set it with Authors name and then add some "
+#~ "files to it. I'm trying to make it easy for all users even they're not "
+#~ "interested with wordpress and just needs add content"
+#~ msgstr ""
+#~ "Používání tohoto pluginu je velmi snadné. Plugin umožňuje přidávat "
+#~ "příspěvky pod názvem píseň, můžete nastavit jméno autora a přidat nějaké "
+#~ "soubory. Snažím se udělat to co nejjednodušší, třebaže nemají zkušenost s "
+#~ "Wordpressem a jen potřebují zveřejnit obsah."
+
+#~ msgid "Adding songs"
+#~ msgstr "Přidávání písní"
+
+#~ msgid ""
+#~ "You can add songs simple with clicking on Add new song. You set title, "
+#~ "lyrics, author and you publish it."
+#~ msgstr ""
+#~ "Můžete přidávat písně kliknutím na Přidat píseň. Napíšete název, slova, "
+#~ "přiřadíte autory a publikujete ji."
+
+#~ msgid ""
+#~ "Managing authors, albums and genres is as simple as managing categories. "
+#~ "You can simple add authors name (if you want you can add description too) "
+#~ "and save it. Than you can chose author (s) in edit song screen. Author "
+#~ "names shoud appear on single song output."
+#~ msgstr ""
+#~ "Správa autorů, alb a žánrů je stejně jednoduchá, jako úprava kategorií. "
+#~ "Můžete jednoduše přidat názvy a uložit je, a to jak v záložce, tak v "
+#~ "editoru, kde stačí pouze napsat název. Potom je můžete přiřazovat k "
+#~ "písním přímo v editoru. Jména autorů se zobrazují při výpisu celé písně."
+
+#~ msgid "Listing songs on public"
+#~ msgstr "Seznam písní"
+
+#~ msgid ""
+#~ "For list of all songs you should create page and set the song list on "
+#~ "options page."
+#~ msgstr ""
+#~ "Seznam písní se vkládá do stránek, a je možné jej pozměnit či změnit v "
+#~ "nastavení."
+
+#~ msgid ""
+#~ "For attaching files with songs you can use a box next to text editor. "
+#~ "It's very simple to use. If you hold CTRL you can choose more files to "
+#~ "link and if you click on cross next to filename, the file would be "
+#~ "removed."
+#~ msgstr ""
+#~ "Pro přidání souborů k písním, můžete použít rámeček umístěný vedle "
+#~ "editoru. Je velmi jednoduché jej používat. Pokud budete při výběru držet "
+#~ "klávesu CTRL, můžete vybírat více souborů. Pokud kliknete na křížek vedle "
+#~ "názvu souboru, soubor bude z písně odebrán."
+
+#~ msgid "Changes"
+#~ msgstr "Změny:"
+
+#~ msgid "No changes were made. Everything is, at it was :)"
+#~ msgstr "Žádné změny neproběhly. Vše je jak bylo :)"
+
+#~ msgid "Yes"
+#~ msgstr "Ano"
+
+#~ msgid "Manage categories"
+#~ msgstr "Spravovat kategorie (rubriky)"
+
+#~ msgid "Last modified"
+#~ msgstr "Data poslední změny"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Random"
+#~ msgstr "Náhodně"
+
+#~ msgid "General settings"
+#~ msgstr "Základní nastavení"
+
+#~ msgid "Basic controls of plugin"
+#~ msgstr "Základní kontrola pluginu"
+
+#~ msgid "Allow using songbook widgets (Under songs)"
+#~ msgstr "Povolit používání malých widgetů pod písněmi"
+
+#~ msgid "Allow only to users that can"
+#~ msgstr "Povolit pouze uživatelům, kteří mohou"
+
+#~ msgid "Manage song video link"
+#~ msgstr "Spravovat odkaz na video"
+
+#~ msgid "Manage song authors"
+#~ msgstr "Spravovat autory písní"
+
+#~ msgid "Behavior"
+#~ msgstr "Vzhled"
+
+#~ msgid "Appearance and beavior of publicly visible parts"
+#~ msgstr "Vzhled a chování veřejně viditelných částí"
+
+#~ msgid "Display list of attached files automatically in songs"
+#~ msgstr "Zobrazovat připojené soubory automaticky v písních"
+
+#~ msgid "Display video link in song (as icon next to song title)"
+#~ msgstr "Zobrazit odkaz na video v písni (jako ikonu vedle názvu písně)"
+
+#~ msgid "Wrap song lyrics with"
+#~ msgstr "Uzavřít text písní v"
+
+#~ msgid "nothing"
+#~ msgstr "ničem"
+
+#~ msgid "DIV"
+#~ msgstr "DIV"
+
+#~ msgid "BLOCKQUOTE"
+#~ msgstr "BLOCKQUOTE"
+
+#~ msgid "PRE"
+#~ msgstr "PRE"
+
+#~ msgid "CODE"
+#~ msgstr "CODE"
+
+#~ msgid ""
+#~ "You should use these options to set behavior of song list. You can "
+#~ "specify own parameters to song list lookout."
+#~ msgstr ""
+#~ "Měli byste používat tyto možnosti k nastavení chování seznamu písní. "
+#~ "Můžete určit vlastní parametry, ovlivňující vzhled a chování seznamu."
+
+#~ msgid "Show table header in songlist"
+#~ msgstr "Zobrazit hlavičku tabulky v seznamu písní"
+
+#~ msgid "Show year that the song was published in"
+#~ msgstr "Zobrazit rok publikace písně"
+
+#~ msgid "Show song genre in list"
+#~ msgstr "Zobrazit žánr písně v seznamu"
+
+#~ msgid "Show song album in list"
+#~ msgstr "Zobrazit album písně v seznamu"
+
+#~ msgid ""
+#~ "Show number of songs related to term (on Authors, Albums and Genres list)"
+#~ msgstr "Zobrazit počet písní, přiřazených k Autorovi, Albu nebo Žánru"
+
+#~ msgid "Show songlist on this page"
+#~ msgstr "Zobrazit seznam písní na této stránce"
+
+#~ msgid ""
+#~ "Show list of songs after text of selected page (or replace it's whole "
+#~ "content))"
+#~ msgstr ""
+#~ "Zobrazit seznam písní až po obsahu vybrané stránky (v opačném případě "
+#~ "nahrazuje celý její obsah)"
+
+#~ msgid "Order"
+#~ msgstr "Pořadí"
+
+#~ msgid "Automatically add page"
+#~ msgstr "Automaticky přidat stránku"
+
+#~ msgid "No"
+#~ msgstr "Ne"
+
+#~ msgid "Page was added yet. You shouldn't have it twice :)"
+#~ msgstr "Stránka byla již přidána. Neměli byste ji na webu mít vícekrát :)"
+
+#~ msgid "Page was added correctly :)"
+#~ msgstr "Stránka v pořádku přidána :)"
+
+#~ msgid ""
+#~ "No pages found on your site. You should add some, or use automatical "
+#~ "adding below."
+#~ msgstr ""
+#~ "Žádné stránky nebyly nalezeny. Měli byste nějaké přidat, anebo použít "
+#~ "přidávání možností níže."
+
+#~ msgid ""
+#~ "You can support this plugin by voting 5 stars and saying that it works in "
+#~ "Wordpress repositories"
+#~ msgstr ""
+#~ "Můžete podpořit plugin, pokud budete hlasovat pro 5 hvězdiček a oznámíte, "
+#~ "že plugin funguje, ve zdroji pluginů na Wordpress.org."
+
+#~ msgid ""
+#~ "If you like this plugin, donate me with some money. Every pence can "
+#~ "encourage me in developing the best :)"
+#~ msgstr ""
+#~ "Pokud se ti líbí tento plugin, pošli mi nějaké drobné. Každý haléř mně "
+#~ "může motivovat ve vydávání toho nejlepšího, co umím :)"
+
+#~ msgid "Guide"
+#~ msgstr "Příručka"
+
+#~ msgid "How to use"
+#~ msgstr "Jak používat"
+
+#~ msgid "Widget to work with CPT song"
+#~ msgstr "Widget pro práci s písněmi"
+
+#~ msgid "Songbook widget"
+#~ msgstr "Písně"
+
+#~ msgid "Title:"
+#~ msgstr "Název:"
+
+#~ msgid "Count of entries displayed:"
+#~ msgstr "Počet zobrazovaných písní:"
+
+#~ msgid "Go back"
+#~ msgstr "Jít zpět"
+
+#~ msgid "Show list of all authors"
+#~ msgstr "Zobrazit seznam všech autorů"
+
+#~ msgid "Show all authors"
+#~ msgstr "Všichni autoři"
+
+#~ msgid "Show link to authors list"
+#~ msgstr "Zobrazit odkaz na seznam autorů"
+
+#~ msgid "Allow adding tempo to song"
+#~ msgstr "Povolit přidávání tempa písním"
+
+#, fuzzy
+#~ msgid "The value is not a number"
+#~ msgstr "The value is not a number"
+
+#~ msgid "Remove file"
+#~ msgstr "Odebrat soubor"
+
+#~ msgid ""
+#~ "File was probably removed. It will be removed from this post after saving"
+#~ msgstr ""
+#~ "Soubor byl pravděpodobně odstraněn. Po uložení se odstraní i z tohoto "
+#~ "příspěvku"
+
+#~ msgid ""
+#~ "No files found attached to this post. You should add anything first. You "
+#~ "can choose more files when you hold CTRL"
+#~ msgstr ""
+#~ "Nebyly nalezeny žádné soubory, přidané k této písni. Měli byste nějaké "
+#~ "přidat. Můžete vybírat více souborů s přitisknutím klávesy CTRL"
+
+#~ msgid "Manage song tempo"
+#~ msgstr "Upravit rychlost písně"
+
+#, fuzzy
+#~ msgid "Set defaults"
+#~ msgstr "Nastavení seznamu písní"
