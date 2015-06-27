@@ -3,7 +3,7 @@ Contributors: sjiamnocna
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: songbook, songs, lyrics, info, music, songlist
 Requires at least: 3.2
-Tested up to: 4.0
+Tested up to: 4.2.2
 Stable tag: 0.9
 License: GPLv2 or later
 
@@ -63,10 +63,16 @@ If anything doesn't work, please visit "Support" tab, and leave a topic in forum
 
 == Changelog ==
 
-
+= 2.0.&alpha; &amp; 2.0.&beta; =
+- Everything's back compatible - you shouldn't loose anything, but for safety, backup your data before updating
+- Completely rebuilt code for better functionality and extensibility, replacing the old not properly working version
+- Refined plugin settings page and song metaboxes
+- New settings page
+- Removed help page - basic guide is located on settings page and every field has its description
+- Started archiving versions in the "Developers" tab
 = 1.6 =
 - Added option to allow adding comments to lyrics
-- Fixed problem with lyrics wrapper appearing on every post
+- Fixed problem with lyrics wrapper
 = 1.5.3 =
 - Trying to fix some bug in code, that may couse PHP error on some servers
 = 1.5.2 =
