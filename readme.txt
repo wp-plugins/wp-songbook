@@ -60,17 +60,17 @@ If you miss something, you can use settings page
 
 == Changelog ==
 
-= [2.0.&delta;](https://downloads.wordpress.org/plugin/wp-songbook.2.0d.zip) =
+= [2.0.&delta;](http://downloads.wordpress.org/plugin/wp-songbook.2.0d.zip) =
 - Fixed sort order in list
 
-= [2.0.&gamma;](https://downloads.wordpress.org/plugin/wp-songbook.2.0c.zip) =
+= [2.0.&gamma;](http://downloads.wordpress.org/plugin/wp-songbook.2.0c.zip) =
 - 
 - Rebuilt song info metabox
 - List may contain list of taxonomy terms linked to list of their songs
 - Added meta field for song duration
 - Added bones for future playlists feature
 
-= [2.0.&alpha;](https://downloads.wordpress.org/plugin/wp-songbook.2.0a.zip) &amp; [2.0.&beta;](https://downloads.wordpress.org/plugin/wp-songbook.2.0b.zip) =
+= [2.0.&alpha;](http://downloads.wordpress.org/plugin/wp-songbook.2.0a.zip) &amp; [2.0.&beta;](http://downloads.wordpress.org/plugin/wp-songbook.2.0b.zip) =
 - Everything's back compatible - you shouldn't loose anything, but for safety, backup your data before updating
 - Completely rebuilt code for better functionality and extensibility, replacing the old not properly working version
 - Refined plugin settings page and song metaboxes
