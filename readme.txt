@@ -60,6 +60,9 @@ If you miss something, you can use settings page
 
 == Changelog ==
 
+= [2.0.&delta;](https://downloads.wordpress.org/plugin/wp-songbook.2.0d.zip) =
+- Fixed sort order in list
+
 = [2.0.&gamma;](https://downloads.wordpress.org/plugin/wp-songbook.2.0c.zip) =
 - 
 - Rebuilt song info metabox
