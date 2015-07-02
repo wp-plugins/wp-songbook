@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Songbook\n"
+"POT-Creation-Date: 2015-06-30 19:12+0100\n"
+"PO-Revision-Date: 2015-06-30 19:12+0100\n"
+"Last-Translator: sjiamnocna <jancikuvmail@gmail.com>\n"
+"Language-Team: \n"
+"Language: toedit\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../inc\n"
+"X-Poedit-SearchPath-1: ../inc/admin\n"
+
+#: ../inc/class.taxonomies.php:27 ../inc/admin/songlist.php:47
+msgid "Authors"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:28 ../inc/abstract.functions.php:77
+msgid "Author"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:29
+msgid "Search authors"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:30
+msgid "Popular authors"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:31
+msgid "All authors"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:34
+msgid "Edit author"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:35
+msgid "Update author"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:36
+msgid "Add new author"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:37
+msgid "New author name"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:38
+msgid "Separate authors by commas"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:39
+msgid "Add or remove authors"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:40
+msgid "Choose from most used authors"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:41
+msgid "No authors found"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:42
+msgid "Song authors"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:54 ../inc/admin/songlist.php:49
+msgid "Genres"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:55 ../inc/abstract.functions.php:79
+msgid "Genre"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:56
+msgid "Search genres"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:57
+msgid "Popular genres"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:58
+msgid "All genres"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:61
+msgid "Edit genre"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:62
+msgid "Update genre"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:63
+msgid "Add new genre"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:64
+msgid "New genre name"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:65
+msgid "Separate genres by commas"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:66
+msgid "Add or remove genres"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:67
+msgid "Choose from most used genres"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:68
+msgid "No genres found"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:69
+msgid "Song genres"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:81 ../inc/admin/songlist.php:48
+msgid "Albums"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:82 ../inc/abstract.functions.php:81
+msgid "Album"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:83
+msgid "Search albums"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:84
+msgid "Popular albums"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:85
+msgid "All albums"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:88
+msgid "Edit album"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:89
+msgid "Update album"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:90
+msgid "Add new album"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:91
+msgid "New album name"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:92
+msgid "Separate albums by commas"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:93
+msgid "Add or remove albums"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:94
+msgid "Choose from most used albums"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:95
+msgid "No albums found"
+msgstr ""
+
+#: ../inc/class.taxonomies.php:96
+msgid "Song albums"
+msgstr ""
+
+#: ../inc/class.base.php:41
+msgid "Really unlink file from song?"
+msgstr ""
+
+#: ../inc/class.base.php:42
+msgid "New title:"
+msgstr ""
+
+#: ../inc/class.base.php:45
+msgid "Choose files to link"
+msgstr ""
+
+#: ../inc/class.base.php:46
+msgid "Link files"
+msgstr ""
+
+#: ../inc/class.base.php:49
+msgid "Set new title for the file (will be shown instead of filename)"
+msgstr ""
+
+#: ../inc/class.base.php:50
+msgid "Set file publicly visible or visible to users only"
+msgstr ""
+
+#: ../inc/class.base.php:51
+msgid "Unlink file from song"
+msgstr ""
+
+#: ../inc/class.base.php:52
+msgid "Click to link files to song"
+msgstr ""
+
+#: ../inc/class.base.php:53
+msgid "Set song speed"
+msgstr ""
+
+#: ../inc/class.metabox.php:13
+msgid "Song details"
+msgstr ""
+
+#: ../inc/class.metabox.php:14 ../inc/class.posttypes.php:65
+msgid "Playlist"
+msgstr ""
+
+#: ../inc/class.metabox.php:23
+msgid "Details"
+msgstr ""
+
+#: ../inc/class.metabox.php:24
+msgid "Files"
+msgstr ""
+
+#: ../inc/class.metabox.php:25
+msgid "Videos"
+msgstr ""
+
+#: ../inc/class.posttypes.php:29 ../inc/class.posttypes.php:41
+#: ../inc/class.admin.php:25 ../inc/admin/songlist.php:46
+msgid "Songs"
+msgstr ""
+
+#: ../inc/class.posttypes.php:30
+msgid "Song"
+msgstr ""
+
+#: ../inc/class.posttypes.php:31 ../inc/class.posttypes.php:66
+msgid "Add new"
+msgstr ""
+
+#: ../inc/class.posttypes.php:32
+msgid "Add new song"
+msgstr ""
+
+#: ../inc/class.posttypes.php:33
+msgid "Edit song"
+msgstr ""
+
+#: ../inc/class.posttypes.php:34
+msgid "New song"
+msgstr ""
+
+#: ../inc/class.posttypes.php:35
+msgid "All songs"
+msgstr ""
+
+#: ../inc/class.posttypes.php:36
+msgid "View song"
+msgstr ""
+
+#: ../inc/class.posttypes.php:37
+msgid "Search songs"
+msgstr ""
+
+#: ../inc/class.posttypes.php:38
+msgid "No song found"
+msgstr ""
+
+#: ../inc/class.posttypes.php:39
+msgid "No song found in trash"
+msgstr ""
+
+#: ../inc/class.posttypes.php:64 ../inc/class.posttypes.php:70
+#: ../inc/class.posttypes.php:76
+msgid "Playlists"
+msgstr ""
+
+#: ../inc/class.posttypes.php:67
+msgid "Add new playlist"
+msgstr ""
+
+#: ../inc/class.posttypes.php:68
+msgid "Edit playlist"
+msgstr ""
+
+#: ../inc/class.posttypes.php:69
+msgid "New playlist"
+msgstr ""
+
+#: ../inc/class.posttypes.php:71
+msgid "View playlist"
+msgstr ""
+
+#: ../inc/class.posttypes.php:72
+msgid "Search playlists"
+msgstr ""
+
+#: ../inc/class.posttypes.php:73
+msgid "No playlist found"
+msgstr ""
+
+#: ../inc/class.posttypes.php:74
+msgid "No playlist found in trash"
+msgstr ""
+
+#: ../inc/abstract.functions.php:60
+msgid "Go back to the song list"
+msgstr ""
+
+#: ../inc/abstract.functions.php:61
+msgid ""
+"We're sorry but nothing was found for selected conditions. An (probably "
+"green) alien from space have stolen everything similar this morning. Please, "
+"try something different"
+msgstr ""
+
+#: ../inc/abstract.functions.php:75 ../inc/abstract.functions.php:90
+#: ../inc/abstract.functions.php:94 ../inc/abstract.functions.php:98
+msgid "Title"
+msgstr ""
+
+#: ../inc/abstract.functions.php:83
+msgid "Year"
+msgstr ""
+
+#: ../inc/abstract.functions.php:85 ../inc/abstract.functions.php:115
+msgid "Video"
+msgstr ""
+
+#: ../inc/abstract.functions.php:87 ../inc/abstract.functions.php:117
+msgid "Song files"
+msgstr ""
+
+#: ../inc/abstract.functions.php:91 ../inc/abstract.functions.php:95
+#: ../inc/abstract.functions.php:99
+msgid "Count"
+msgstr ""
+
+#: ../inc/abstract.functions.php:105
+msgid "Display lyrics for"
+msgstr ""
+
+#: ../inc/class.admin.php:12 ../inc/class.admin.php:115
+msgid "Settings"
+msgstr ""
+
+#: ../inc/class.admin.php:12 ../inc/class.admin.php:55
+#: ../inc/class.admin.php:128
+msgid "Songbook settings"
+msgstr ""
+
+#: ../inc/class.admin.php:54
+msgid "Plugin info"
+msgstr ""
+
+#: ../inc/class.admin.php:56
+msgid "Capabilities"
+msgstr ""
+
+#: ../inc/class.admin.php:58
+msgid "Song content"
+msgstr ""
+
+#: ../inc/class.admin.php:59
+msgid "Song list behavior"
+msgstr ""
+
+#: ../inc/class.admin.php:60
+msgid "Language"
+msgstr ""
+
+#: ../inc/class.admin.php:64
+msgid "WP Songbook plugin settings"
+msgstr ""
+
+#: ../inc/class.admin.php:106
+msgid "Save settings"
+msgstr ""
+
+#: ../inc/class.admin.php:129
+msgid "Donate me"
+msgstr ""
+
+#: ../inc/admin/basic.php:3
+msgid "Allow file linking"
+msgstr ""
+
+#: ../inc/admin/basic.php:6
+msgid "Adds extra field for attaching files to the song"
+msgstr ""
+
+#: ../inc/admin/basic.php:11 ../inc/admin/basic.php:27
+#: ../inc/admin/basic.php:43 ../inc/admin/basic.php:59
+#: ../inc/admin/basic.php:75 ../inc/admin/basic.php:91
+#: ../inc/admin/basic.php:108 ../inc/admin/basic.php:125
+#: ../inc/admin/basic.php:142
+msgid "Disable"
+msgstr ""
+
+#: ../inc/admin/basic.php:12 ../inc/admin/basic.php:28
+#: ../inc/admin/basic.php:44 ../inc/admin/basic.php:60
+#: ../inc/admin/basic.php:76 ../inc/admin/basic.php:92
+#: ../inc/admin/basic.php:109 ../inc/admin/basic.php:126
+#: ../inc/admin/basic.php:143
+msgid "Enable"
+msgstr ""
+
+#: ../inc/admin/basic.php:19
+msgid "Allow adding video link"
+msgstr ""
+
+#: ../inc/admin/basic.php:22
+msgid "Adds extra field for song video link (Youtube)"
+msgstr ""
+
+#: ../inc/admin/basic.php:35
+msgid "Allow using authors"
+msgstr ""
+
+#: ../inc/admin/basic.php:38
+msgid "Adds \"Authors\" taxonomy to sort songs by its author"
+msgstr ""
+
+#: ../inc/admin/basic.php:51
+msgid "Allow using albums"
+msgstr ""
+
+#: ../inc/admin/basic.php:54
+msgid "Adds \"Albums\" taxonomy to sort songs by its album"
+msgstr ""
+
+#: ../inc/admin/basic.php:67
+msgid "Allow using genres"
+msgstr ""
+
+#: ../inc/admin/basic.php:70
+msgid "Adds \"Genre\" taxonomy to sort songs by its genre"
+msgstr ""
+
+#: ../inc/admin/basic.php:83
+msgid "Enable song comments"
+msgstr ""
+
+#: ../inc/admin/basic.php:86
+msgid ""
+"Allows users to add comments to song (it may be set also differently for "
+"each song, if this is enabled)"
+msgstr ""
+
+#: ../inc/admin/basic.php:99
+msgid "Allow using playlists"
+msgstr ""
+
+#: ../inc/admin/basic.php:102 ../inc/admin/basic.php:119
+#: ../inc/admin/basic.php:136 ../inc/admin/songlist.php:238
+#: ../inc/admin/songlist.php:255
+msgid "Still in development, use at your own risk :)"
+msgstr ""
+
+#: ../inc/admin/basic.php:103
+msgid ""
+"Adds new post type, that may make song lists (more songs together in custom "
+"order)"
+msgstr ""
+
+#: ../inc/admin/basic.php:116
+msgid "Allow using sidebar widget"
+msgstr ""
+
+#: ../inc/admin/basic.php:120
+msgid ""
+"Adds new widget to display songbook info. You can find it on the Themes -> "
+"Widgets page"
+msgstr ""
+
+#: ../inc/admin/basic.php:133
+msgid "Allow Songside widgets"
+msgstr ""
+
+#: ../inc/admin/basic.php:137
+msgid ""
+"Adds opportunity to add useful informations to the bottom of the song "
+"content (you can specify here and also in editor for current song)"
+msgstr ""
+
+#: ../inc/admin/pluginfo.php:4
+msgid "Wordpress Songbook"
+msgstr ""
+
+#: ../inc/admin/pluginfo.php:5
+msgid ""
+"You may use these pages to set the behavior of the plugin. Just choose part "
+"that you would like to change on the right."
+msgstr ""
+
+#: ../inc/admin/pluginfo.php:8
+msgid "Notice"
+msgstr ""
+
+#: ../inc/admin/pluginfo.php:9
+msgid ""
+"Some of the features are still in development or were not implemented yet. "
+"Please, use them with caution on your own risk"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:3
+msgid "Display link back to songlist"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:6
+msgid "Adds link to the page set for the song list above the lyrics"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:11 ../inc/admin/songcontent.php:27
+#: ../inc/admin/songcontent.php:43 ../inc/admin/songcontent.php:77
+#: ../inc/admin/songcontent.php:93 ../inc/admin/songcontent.php:109
+#: ../inc/admin/songlist.php:147 ../inc/admin/songlist.php:163
+#: ../inc/admin/songlist.php:179 ../inc/admin/songlist.php:195
+#: ../inc/admin/songlist.php:211 ../inc/admin/songlist.php:227
+#: ../inc/admin/songlist.php:244 ../inc/admin/songlist.php:261
+msgid "Don't display"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:12 ../inc/admin/songcontent.php:28
+#: ../inc/admin/songcontent.php:44 ../inc/admin/songcontent.php:78
+#: ../inc/admin/songcontent.php:94 ../inc/admin/songcontent.php:110
+#: ../inc/admin/songlist.php:148 ../inc/admin/songlist.php:164
+#: ../inc/admin/songlist.php:180 ../inc/admin/songlist.php:196
+#: ../inc/admin/songlist.php:212 ../inc/admin/songlist.php:228
+#: ../inc/admin/songlist.php:245 ../inc/admin/songlist.php:262
+msgid "Display"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:19
+msgid "Display attached files"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:22
+msgid "Shows attached file list in songs"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:35
+msgid "Display files only for members"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:38
+msgid "Whether to display the song files only to logged in members of the site"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:51 ../inc/admin/songlist.php:235
+msgid "Display video link"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:54
+msgid "Whether to display video link and where)"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:59
+msgid "Dont display"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:60
+msgid "Display in songs head (together with authors etc.)"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:61
+msgid "Embed (below lyrics)"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:62
+msgid "In the file list"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:69 ../inc/admin/songcontent.php:72
+msgid "Display authors in songs"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:85 ../inc/admin/songcontent.php:88
+msgid "Display genres in songs"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:101
+msgid "Display albums in songs"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:104
+msgid "Display album in songs"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:117
+msgid "Lyrics wrapper"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:120
+msgid "Select element which should wrap the song lyrics"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:125
+msgid "No element"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:126
+msgid "Div"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:127
+msgid "Blockquote"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:128
+msgid "Preformated"
+msgstr ""
+
+#: ../inc/admin/songcontent.php:129
+msgid "Code"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:3
+msgid "Show Songs menu"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:6
+msgid ""
+"Choose minimal permission, which user needs to be able to even see the "
+"\"Songs\" menu"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:11 ../inc/admin/capabilities.php:30
+#: ../inc/admin/capabilities.php:49 ../inc/admin/capabilities.php:68
+msgid "Manage options"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:12 ../inc/admin/capabilities.php:31
+#: ../inc/admin/capabilities.php:50 ../inc/admin/capabilities.php:69
+msgid "Read private pages"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:13 ../inc/admin/capabilities.php:32
+#: ../inc/admin/capabilities.php:51 ../inc/admin/capabilities.php:70
+msgid "Publish posts"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:14 ../inc/admin/capabilities.php:33
+#: ../inc/admin/capabilities.php:52 ../inc/admin/capabilities.php:71
+msgid "Edit posts"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:15 ../inc/admin/capabilities.php:34
+#: ../inc/admin/capabilities.php:53 ../inc/admin/capabilities.php:72
+msgid "Read"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:22
+msgid "Add files or video link to songs"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:25
+msgid ""
+"Choose minimal permission, which user needs to be able to add files or video "
+"links to the songs"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:41
+msgid "Add and edit song taxonomies (authors, albums, genres)"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:44
+msgid ""
+"Choose minimal permission, which user needs to add and edit song taxonomies "
+"like Authors, Albums or Genre"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:60
+msgid "Update song widget settings"
+msgstr ""
+
+#: ../inc/admin/capabilities.php:63
+msgid ""
+"Choose minimal permission, which user needs to be able to set content of the "
+"song widgets"
+msgstr ""
+
+#: ../inc/admin/language.php:2
+msgid "Back to list link text"
+msgstr ""
+
+#: ../inc/admin/language.php:5
+msgid "Sets the back to list link text"
+msgstr ""
+
+#: ../inc/admin/language.php:13
+msgid "Nothing found text"
+msgstr ""
+
+#: ../inc/admin/language.php:16
+msgid "Sets text displayed when nothing was found for selected condition"
+msgstr ""
+
+#: ../inc/admin/songlist.php:3
+msgid "Song list page"
+msgstr ""
+
+#: ../inc/admin/songlist.php:6
+msgid "Choose page on which should be the list printed"
+msgstr ""
+
+#: ../inc/admin/songlist.php:14
+msgid "Autoadd new page"
+msgstr ""
+
+#: ../inc/admin/songlist.php:29
+msgid "Visit page:"
+msgstr ""
+
+#: ../inc/admin/songlist.php:32
+msgid "Fill in your new page title"
+msgstr ""
+
+#: ../inc/admin/songlist.php:38
+msgid "Display first"
+msgstr ""
+
+#: ../inc/admin/songlist.php:41
+msgid ""
+"Sets what will the list contain. You may set, the list will contain names of "
+"all authors with link to list of their songs etc."
+msgstr ""
+
+#: ../inc/admin/songlist.php:56
+msgid "Songlist table content"
+msgstr ""
+
+#: ../inc/admin/songlist.php:60
+msgid "Allows to set order of collumns in the song list table"
+msgstr ""
+
+#: ../inc/admin/songlist.php:105
+msgid "Order songs by"
+msgstr ""
+
+#: ../inc/admin/songlist.php:108
+msgid "This will order the songs by selected term"
+msgstr ""
+
+#: ../inc/admin/songlist.php:113
+msgid "Song title"
+msgstr ""
+
+#: ../inc/admin/songlist.php:114
+msgid "Song author"
+msgstr ""
+
+#: ../inc/admin/songlist.php:115
+msgid "Song album"
+msgstr ""
+
+#: ../inc/admin/songlist.php:116
+msgid "Song genre"
+msgstr ""
+
+#: ../inc/admin/songlist.php:123
+msgid "List order"
+msgstr ""
+
+#: ../inc/admin/songlist.php:126
+msgid "Sets ascending or descending ordering by the term above"
+msgstr ""
+
+#: ../inc/admin/songlist.php:131
+msgid "Ascending"
+msgstr ""
+
+#: ../inc/admin/songlist.php:132
+msgid "Descending"
+msgstr ""
+
+#: ../inc/admin/songlist.php:139
+msgid "Display table head"
+msgstr ""
+
+#: ../inc/admin/songlist.php:142
+msgid "Display each column's description in the song list"
+msgstr ""
+
+#: ../inc/admin/songlist.php:155
+msgid "Display author"
+msgstr ""
+
+#: ../inc/admin/songlist.php:158
+msgid "Display author(s) of each song in the list"
+msgstr ""
+
+#: ../inc/admin/songlist.php:171
+msgid "Display genre"
+msgstr ""
+
+#: ../inc/admin/songlist.php:174
+msgid "Display genre of each song in the list"
+msgstr ""
+
+#: ../inc/admin/songlist.php:187
+msgid "Display album"
+msgstr ""
+
+#: ../inc/admin/songlist.php:190
+msgid "Display album of each song in the list"
+msgstr ""
+
+#: ../inc/admin/songlist.php:203
+msgid "Display year"
+msgstr ""
+
+#: ../inc/admin/songlist.php:206
+msgid ""
+"Adds column to display song year - you have to set it as publishing time of "
+"the song in the \"publish\" tab of editor"
+msgstr ""
+
+#: ../inc/admin/songlist.php:219
+msgid "Display song count"
+msgstr ""
+
+#: ../inc/admin/songlist.php:222
+msgid ""
+"Displays count of the songs contained in current term (Author, Album or "
+"Genre) - useful e.g. when you set a list of authors"
+msgstr ""
+
+#: ../inc/admin/songlist.php:239
+msgid "Whether to display video link in the song list"
+msgstr ""
+
+#: ../inc/admin/songlist.php:252
+msgid "Display linked files"
+msgstr ""
+
+#: ../inc/admin/songlist.php:256
+msgid "Whether to display linked files (as filetype icons) in the song list"
+msgstr ""
+
+#: ../inc/metabox/info.php:1
+msgid "Song tempo (BPM)"
+msgstr ""
+
+#: ../inc/metabox/info.php:14
+msgid "Song tagged in playlists:"
+msgstr ""
+
+#: ../inc/metabox/files.php:3
+msgid "Add files"
+msgstr ""

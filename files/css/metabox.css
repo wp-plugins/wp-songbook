@@ -1,0 +1,56 @@
+#song_meta{
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+#song_meta .nav{
+    display:block;
+    width:98%;
+    padding:0 1%;
+    margin:5px auto 0;
+    background:lightgray;
+    overflow:hidden;
+    clear:both;
+}
+#song_meta .nav span{
+    display:block;
+    background:white;
+    cursor:pointer;
+    font-size:120%;
+    font-weight:bold;
+    float:left;
+    padding:0.2em;
+    padding-bottom:0.05em;
+    margin:3px 1px 0;
+    border-bottom:2px solid white;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#song_meta .nav span:hover{
+    border-color:red;
+}
+#song_meta .nav span.active{
+    border-color:orangered;
+    cursor:default;
+}
+#song_meta .nav span.active:hover{
+    border-color:orangered;
+}
+#song_meta .section{
+    display:none;
+    width:98%;
+    margin:0;
+    padding:0.2em 1% 1em;
+}
+#song_meta .section.active{
+    display:block;
+}
+#song_meta .section span{
+    display:block;
+    margin:5px auto 0;
+}
