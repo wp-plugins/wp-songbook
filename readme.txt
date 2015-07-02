@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8
 Tags: songbook, songs, lyrics, info, music, songlist
 Requires at least: 3.2
 Tested up to: 4.2.2
-Stable tag: 0.9
+Stable tag: 1.6
 License: GPLv2 or later
 
 Wordpress plugin, that allows people to manage song lyrics and adds many other features to edit them.
@@ -17,8 +17,8 @@ WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog.
 - Custom post type "Songs"
 - Using editor you can edit lyrics of your song
 - Adds custom box for uploading and linking files to songs
-- Adds custom box for adding Youtube video and song tempo
-- Adds custom box for Authors, Albums and Genres.
+- Adds custom box for adding video links, song tempo and duration
+- Adds custom taxonomies Authors, Albums and Genres.
 
 = Linked file manager =
 - Allows to sort, lock for private or unlink files from songs
@@ -37,10 +37,7 @@ WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog.
 = Settings page =
 If you miss something, you can use settings page
 
-= Guide =
-Guide page is also added to your "Songs" menu to make you understand song managing
-
-If anything doesn't work, please visit "Support" tab, and leave a topic in forum. I'll also appreciate every idea to improve, so don't hesitate to leave a topic in forum.
+`If anything doesn't work, please visit "Support" tab, and leave a topic in forum. I'll also appreciate every idea to improve, so don't hesitate to [leave a topic in support forum]`
 
 == Screenshots ==
 
@@ -63,46 +60,63 @@ If anything doesn't work, please visit "Support" tab, and leave a topic in forum
 
 == Changelog ==
 
-= 2.0.&alpha; &amp; 2.0.&beta; =
+= [2.0.&gamma;](https://downloads.wordpress.org/plugin/wp-songbook.2.0c.zip) =
+- 
+- Rebuilt song info metabox
+- List may contain list of taxonomy terms linked to list of their songs
+- Added meta field for song duration
+- Added bones for future playlists feature
+
+= [2.0.&alpha;](https://downloads.wordpress.org/plugin/wp-songbook.2.0a.zip) &amp; [2.0.&beta;](https://downloads.wordpress.org/plugin/wp-songbook.2.0b.zip) =
 - Everything's back compatible - you shouldn't loose anything, but for safety, backup your data before updating
 - Completely rebuilt code for better functionality and extensibility, replacing the old not properly working version
 - Refined plugin settings page and song metaboxes
-- New settings page
 - Removed help page - basic guide is located on settings page and every field has its description
 - Started archiving versions in the "Developers" tab
+- Not all functions are available yet, use only for testing
+
 = 1.6 =
 - Added option to allow adding comments to lyrics
 - Fixed problem with lyrics wrapper
+
 = 1.5.3 =
 - Trying to fix some bug in code, that may couse PHP error on some servers
+
 = 1.5.2 =
 - Added edit song button into song list
 - Readded video link to the song list
 - Fixed bug that added link back to list to song list
 - Tested and improved for Wordpress 4.0
 - Fixed few PHP warnings
+
 = 1.5.1 =
 - Fixed error with displaying list
+
 = 1.5 =
 - Now allows choose content displayed in the list by default
 - Improved filtering archive link for custom taxonomies
 - Improved creating list table to be easier to add new columns for future
 - Updated language files
+
 = 1.4.3 =
 - Fixed warnings and notices shown by WP_DEBUG that may couse errors
 - Updated language files
+
 = 1.4.2 =
 - Added new warnings
 - Improved few functions to work better
 - Removed few parts, that could be wrong and arent necessary
+
 = 1.4.1 =
 - Fixed missing files, that resulted in error
+
 = 1.4 =
 - Added taxonomy Album + enable option to settings
 - Added taxonomy Genre + enable option to settings
 - Now there's an option to use publish year in the songlist (you can set time in editor on right side in publication controls)
 - Added options to allow of displaying song list grid new columns Album, Genre and Year
 - Updated language files with few new phrases
+
 = 1.3 =
 - Now its possible to display list of author's songs
 - Button for displaying Authors name was added to song list
