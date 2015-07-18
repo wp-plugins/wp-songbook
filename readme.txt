@@ -11,6 +11,8 @@ Wordpress plugin, that allows people to manage song lyrics and adds many other f
 
 == Description ==
 
+= Special announcement: In the developers tab are prepared testing versions of plugin. Dont use it on public site and report every error to the topic in forum (in Support tab). Thank you :) =
+
 WP Songbook adds opportunity to manage song lyrics on your Wordpress based blog. It's simple tool to add lyrics or authors and share lyrics or other files that relates to it. For now it allows set Lyrics, Authors, Files, Youtube link and Speed.
 
 = Songs managing =
@@ -60,17 +62,23 @@ If you miss something, you can use settings page
 
 == Changelog ==
 
-= [2.0.&delta;](http://downloads.wordpress.org/plugin/wp-songbook.2.0d.zip) =
+= 2.0.&epsilon; &amp; 2.0.&zeta; =
+- Added settings value check to prevent wrong values and breaking script
+- Added possibility to link shared Google docs file to a song
+- Settings page contains a short statistic of using plugin)
+- Finished song list items and the song content hooks
+- Prepared for PHP 7 constructors
+
+= 2.0.&delta; =
 - Fixed sort order in list
 
-= [2.0.&gamma;](http://downloads.wordpress.org/plugin/wp-songbook.2.0c.zip) =
-- 
+= 2.0.&gamma; =
 - Rebuilt song info metabox
 - List may contain list of taxonomy terms linked to list of their songs
 - Added meta field for song duration
 - Added bones for future playlists feature
 
-= [2.0.&alpha;](http://downloads.wordpress.org/plugin/wp-songbook.2.0a.zip) &amp; [2.0.&beta;](http://downloads.wordpress.org/plugin/wp-songbook.2.0b.zip) =
+= 2.0.&alpha; &amp; 2.0.&beta; =
 - Everything's back compatible - you shouldn't loose anything, but for safety, backup your data before updating
 - Completely rebuilt code for better functionality and extensibility, replacing the old not properly working version
 - Refined plugin settings page and song metaboxes
